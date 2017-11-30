@@ -1,0 +1,353 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=us-ascii">
+  <meta name="date" content="Wed Sep 28 00:00:00 UTC 2005">
+  <meta name="generator" content="deplate.rb">
+  <link rel="stylesheet" type="text/css" href="rubyStyle.css" title="rubyStyle">
+
+  <title></title>
+</head>
+
+<body>
+  <h1 id="hd001"><a name="file00Readme00viki1127923794009059999000" id="file00Readme00viki1127923794009059999000"></a>RMagick 1.14.1 (ImageMagick 6.3.0-7) win32 Installation</h1>
+
+  <p>In this file you find:</p>
+
+  <ul>
+    <li><a href="#hd001001">Change log</a></li>
+
+    <li><a href="#licensing">Licensing information</a></li>
+
+    <li><a href="#hd001002">Prerequisites</a></li>
+
+    <li><a href="#hd001003">Uninstall old versions</a></li>
+
+    <li><a href="#hd001004">Installation instructions</a></li>
+
+    <li><a href="#hd001004002">Post Installation</a></li>
+
+    <li><a href="#hd001005">Documentation</a></li>
+
+    <li><a href="#hd001006">FAQ / General Remarks</a></li>
+
+    <li><a href="#hd001007">Contact Information</a></li>
+
+    <li><a href="#hd001008">Credits</a></li>
+
+    <li><a href="#hd001009">License</a></li>
+  </ul>
+
+  <h2 id="hd001001">Changes / Past Releases available</h2>
+
+  <ul>
+    <li>RMagick 1.14.1 ImageMagick 6.3.0-7 Q8 2007-09-07
+      <ul>
+        <li>Fix to work with latest RubyGems</li>
+     </ul>
+     </li>
+    <li>RMagick 1.14.1 ImageMagick 6.3.0-7 Q8 2006-09-03
+      <ul>
+	<li>Built for Ruby 1.8.5
+       	  (<a href="http://rubyforge.org/projects/rubyinstaller">One-Click
+	    Installer - Windows v. 1.8.5-21</a>)</li>
+	<li>ImageMagick installer used is now 6.3.0-7 Q8</li>
+      </ul>
+    </li>
+
+    <li>RMagick 1.13.0 ImageMagick 6.2.9-3 2006-09-03
+      <ul>
+	<li>Built for Ruby 1.8.5
+       	  (<a href="http://rubyforge.org/projects/rubyinstaller">One-Click
+	    Installer - Windows v. 1.8.5-21</a>)</li>
+	<li>ImageMagick installer used is now 6.2.9-3</li>
+      </ul>
+    </li>
+
+    <li>RMagick 1.13.0 ImageMagick 6.2.9-0 2006-08-12
+
+      <ul>
+        <li>Built using <a href="http://wiki.rubygarden.org/Ruby/page/show/WindowsCompiler">VC++ 2003 Toolkit</a></li>
+
+        <li>MUST use ImageMagick installer (included) first</li>
+
+        <li>No post-install!!!</li>
+
+        <li>May need to specify complete paths for Windows fonts</li>
+      </ul>
+    </li>
+
+    <li>RMagick 1.9.2 ImageMagick 6.2.4-6 09/28/05
+
+      <ul>
+        <li>Allows for &lt;1/100 sec delay in animations (see documentation)</li>
+
+        <li>Maintenance release (Had the buffer error with 1.9.1 ?)</li>
+      </ul>
+    </li>
+
+    <li>RMagick 1.9.1 ImageMagick 6.2.3 09/09/05
+
+      <ul>
+        <li>Small fixes to RMagick</li>
+
+        <li>jp2 (jpeg2000) support compiled in</li>
+      </ul>
+    </li>
+
+    <li>RMagick 1.9.0 ImageMagick 6.2.3 08/15/05
+
+      <ul>
+        <li>RVG now working.</li>
+
+        <li>Some more <code>FreeTypeException</code> bug fixing, thanks to external contributors.</li>
+      </ul>
+    </li>
+
+    <li>RMagick 1.9.0 ImageMagick 6.1.5 12/22/04
+
+      <ul>
+        <li><code>FreeTypeException</code> should now be gone from font detection.</li>
+      </ul>
+    </li>
+
+    <li>RMagick 1.6.0 ImageMagick 6.0.5 08/30/04
+
+      <ul>
+        <li>WMF Files should now be working.</li>
+
+        <li>DLL installation added, that way we don&rsquo;t have one big executable.</li>
+      </ul>
+    </li>
+
+    <li>RMagick 1.5.0 ImageMagick 6.0.0
+
+      <ul>
+        <li>First GEM distribution.</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 id="licensing">Licensing information</h2>
+
+  <p>The RMagick library is released under the MIT license, which can be found at the <a href="#hd001009">end of this document</a>. ImageMagick uses a GPL compatible license (see the <a href="http://www.imagemagick.org/script/license.php">ImageMagick website</a>).</p>
+
+  <h2 id="hd001002">Prerequisites</h2>
+
+  <p>The 1.14.1 distribution comes with some changes to the prerequisites. The .so file is no longer statically linked to the ImageMagick library. Instead, you will need to install ImageMagick separately. (See <a href="#hd001004">Installation instructions</a> below). A copy of the ImageMagick 6.3.0-7 Q8 installer is included with this package. Do not use any other version of ImageMagick.</p>
+
+  <p>(One of the nice parts of having to use the ImageMagick installer is that postinstall.rb isn't totally necessary. In fact, it had to be altered to remove the setting of the MAGICK_CONFIG_PATH environmental variable.</p>
+
+  <p>(Unfortunately, this also may mean that you will need to use full pathnames for Windows fonts.)</p>
+
+  <p>The RMagick library was built against Ruby version <tt>ruby 1.8.5 (2006-08-25) [i386-mswin32]</tt>. This is the version of Ruby included in the <a href="http://rubyforge.org/projects/rubyinstaller">One Click Installer</a>, version 1.8.5-25.</p>
+
+  <p>The gem was packaged using RubyGems version 0.9.4.</p>
+
+  <p>The binary .so was built using the VC++ 2003 Toolkit, as described at <a href="http://wiki.rubygarden.org/Ruby/page/show/WindowsCompiler">the Ruby Garden wiki</a>. This compiler may have incompatibilities with the VC++ 6 compiler used to build Ruby for the One Click Installer. No guarantees are made in the release of this software.</p>
+
+  <p>This distribution comes in the form of a RubyGem, since I firmly belive that is the way to go for distribution of Ruby libraries. You should have a working copy of RubyGems, which can be downloaded from rubygems.rubyforge.org.</p>
+
+  <p>Oh, and erm..</p>
+  <pre>
+    gem --version
+</pre>
+
+  <p>should yield</p>
+  <pre>
+    0.9.0
+</pre>
+
+  <p>or higher. Just do that <code>gem update --system</code> once in a while.</p>
+
+  <h2 id="hd001003">Uninstalling of old versions</h2>
+
+  <h3 id="hd001003002">Removal of RMagick win32 1.5.0 (ImageMagick 6.0.0) or higher</h3>
+
+  <p>The old gem should not bother you, since RubyGem does the right thing. However, you can always:</p>
+  <pre>
+    gem uninstall RMagick
+</pre>
+
+  <p>or (for older versions of rubygems)</p>
+  <pre>
+    gem --uninstall RMagick 
+</pre>
+
+  <p>Don&rsquo;t forget to update your version of rubygems.</p>
+
+  <p>You get</p>
+  <pre>
+    Attempting to uninstall gem 'rmagick'
+    Successfully uninstalled RMagick-win32 version 1.6.0
+</pre>
+
+  <p>or the like.</p>
+
+  <p>You will also need to remove the MAGICK_CONFIGURE_PATH entry in the Windows registry. To do so manually, use:</p>
+  <pre>
+    Start &gt; Run... &gt; regedit
+</pre>Click on "My Computer" in the sidebar on the left. Before altering your registry (which you may regret at some point, particularly if you accidentally change or delete something), you may want to make a back up. To do so, from the menus choose
+  <pre>
+    File &gt; Export...
+</pre>choose a filename, and save a copy. Once you've done this (or if you choose not to), from the menu, select
+  <pre>
+    Edit &gt; Find...
+</pre>Then enter "<tt>MAGICK_CONFIGURE_PATH</tt>". If that entry contains an RMagick path, eg
+  <pre>
+    C:\ruby\lib\ruby\gems\1.8\gems\rmagick-1.13.0-win32
+</pre>Then delete it.
+
+  <h3 id="hd001003001">Removal of RMagick win32 1.4.0</h3>
+
+  <p>Those who have RMagick working in its version 1.4.0 should carefully remove it by hand (sorry). This involves:</p>
+
+  <ul>
+    <li>deleting RMagick.so from site_ruby/i386/</li>
+
+    <li>deleting RMagick.rb from site_ruby</li>
+
+    <li>deleting the registry key called ImageMagick</li>
+  </ul>
+
+  <p>Mixing the two distributions will not succeed and will probably result in crashes.</p>
+
+  <h2 id="hd001004">Installation instructions</h2>
+
+  <h3 id="hd001004001">Gem Install</h3>
+
+  <p>The Zip archive you have downloaded should contain the following files:</p>
+
+  <div class="table">
+    <table align="center" class="body">
+      <tr class="head">
+        <th class="body" style="text-align:left">File</th>
+
+        <th class="body" style="text-align:left">Description</th>
+      </tr>
+
+      <tr class="body">
+        <td class="body" style="text-align:left">README.html</td>
+
+        <td class="body" style="text-align:left">the file you are reading</td>
+      </tr>
+
+      <tr class="body">
+        <td class="body" style="text-align:left">README-RMAGICK.HTML</td>
+
+        <td class="body" style="text-align:left">original RMagick Readme (HTML)</td>
+      </tr>
+
+      <tr class="body">
+        <td class="body" style="text-align:left">README-RMAGICK.txt</td>
+
+        <td class="body" style="text-align:left">original RMagick Readme (Text)</td>
+      </tr>
+
+      <tr class="body">
+        <td class="body" style="text-align:left">ImageMagick-6.3.0-7-Q8-windows-dll.exe</td>
+
+        <td class="body" style="text-align:left">ImageMagick installer</td>
+      </tr>
+
+      <tr class="body">
+        <td class="body" style="text-align:left">RMagick-1.14.1-win32.gem</td>
+
+	<td class="body" style="text-align:left">the gem</td>
+      </tr>
+    </table>
+  </div>
+
+  <p>Let&rsquo;s go !</p>
+
+  <p>First, use the ImageMagick installer found in the zip file. The only option that you need to choose from the installation options is "Update executable search path." The other options are up to you. <em>Do not use any other version of ImageMagick.</em> If you have problems with RMagick we can help only when you are using the version of ImageMagick that is bundled with this release of RMagick.</p>
+
+  <p>Installing the gem is very simple:</p>
+  <pre>
+    gem install rmagick --local
+</pre>
+
+  <p>You should see:</p>
+  <pre>
+    Successfully installed rmagick, version 1.14.1
+</pre>
+
+  <h3 id="hd001004002">Post Installation</h3>
+  <p><strong>It may be necessary to restart any services, cmd.exe sessions, or even
+  reboot for current applications (Ruby on Rails based apps, in particular)
+  to use a fresh upgrade.</strong></p>
+
+  <h2 id="hd001005">Documentation</h2>
+
+  <p>Documentation has been installed into the directory of the gem, which can be found using the command:</p>
+  <pre>
+    gem environment
+</pre>The line(s) you should note is/are:
+  <pre>
+    - GEM PATH:
+       - c:/ruby/lib/ruby/gems/1.8
+</pre>Using this example, the documentation can be found in:
+  <pre>
+    c:\ruby\lib\ruby\gems\1.8\gems\rmagick-1.14.1-win32\docs
+</pre>And the examples are in:
+  <pre>
+    c:\ruby\lib\ruby\gems\1.8\gems\rmagick-1.14.1-win32\examples
+</pre>
+
+  <h2 id="hd001006">General Remarks</h2>
+
+  <p><em>If Ruby complains that it can't find RMagick</em>, be sure that you have set up the RubyGems environment. The simplest way to do this is to require "rubygems" first:</p>
+  <pre>
+        require 'rubygems'
+        require 'RMagick'
+</pre>There are other ways to set up the RubyGems environment. See the RubyGems <a href="http://docs.rubygems.org/read/chapter/3#page70">documentation</a> for more information.
+
+  <p><em>Use</em> <code>require 'RMagick</code>&rsquo;, spelled as shown. It seems that we managed to sneak a bit of case sensitivity into Ruby.</p>
+
+  <p><em>Don't use</em> <code>gem</code> to require RMagick. The <code>gem</code> statement is used only when you want to require a specific version of a library.</p>
+
+  <p><em>Help</em> If you need help installing or using RMagick, use the <a href="http://rubyforge.org/forum/forum.php?forum_id=33">Help Forum on RubyForge</a>.</p>
+
+  <p><em>Bugs and Comments</em> Please report bugs in RMagick, its documentation, or its installation programs to us via the bug tracker on the <a href="http://rubyforge.org/projects/rmagick/">RMagick project page</a> at RubyForge<a name="idx001" id="idx001"></a>. When reporting bugs, please specify that you are using the binary distribution of RMagick for windows. Don&rsquo;t forget to mention Ruby and Windows version.</p>
+
+  <h2 id="hd001007">Contact Information</h2>
+
+  <p>Comments for either the distribution or the library itself are welcome. <a href="mailto:rmagick@rubyforge.org">Write to us</a>.</p>
+
+  <h2 id="hd001008">Credits</h2>
+
+  <p>Thanks to</p>
+
+  <ul>
+    <li>Tim Hunter, for RMagick.</li>
+
+    <li>Brett DiFrischia, for the 1.14.1 Win32 release.</li>
+
+    <li>Kaspar Schiess, for the previous releases of RMagick on Windows.</li>
+
+    <li>ImageMagick Studio LLC, for ImageMagick and for hosting the RMagick documentation.</li>
+
+    <li>Bob Friesenhahn, for GraphicsMagick.</li>
+
+    <li>Simple Systems, for hosting the RMagick documentation.</li>
+  </ul>
+
+  <h2 id="hd001009">License</h2>
+
+  <p>Copyright &copy; 2007 by Timothy P. Hunter</p>
+
+  <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &ldquo;Software&rdquo;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+
+  <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+
+  <p>THE SOFTWARE IS PROVIDED &ldquo;AS IS&rdquo;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+
+  <p><a href="http://www.opensource.org/docs/definition.php">http://www.opensource.org/docs/definition.php</a></p>
+
+  <p><em>This software is OSI Certified Open Source Software.</em></p>
+
+  <p>OSI Certified is a certification mark of the Open Source Initiative.</p>
+</body>
+</html>
+
