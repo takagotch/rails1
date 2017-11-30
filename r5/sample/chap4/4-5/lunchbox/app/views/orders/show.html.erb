@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>注文日:</strong>
+  <%= @order.orderdate %>
+</p>
+
+<p>
+  <strong>注文者:</strong>
+  <%= @order.member.name %>
+</p>
+
+<p>
+  <strong>品目:</strong>
+  <%= @order.box.name %>
+</p>
+
+<%= link_to '編集', edit_order_path(@order) %> |
+<%= link_to '一覧へ', orders_path %> |
+<%= link_to '作業メニューへ', workmenu_path %>
+

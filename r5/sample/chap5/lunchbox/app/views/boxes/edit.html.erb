@@ -1,0 +1,9 @@
+<h1>データの編集</h1>
+
+<%= render 'form', box: @box %>
+
+<p><strong>編集中止：</strong>
+<%= link_to '再表示', @box %> |
+<%= link_to '一覧へ', boxes_path %> | <%= link_to '作業メニューへ', workmenu_path %>
+
+</p>

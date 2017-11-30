@@ -1,0 +1,16 @@
+実行例4-1
+rails generate scaffold Member name:string
+
+表membersの値の例（本書中では図4-1にのみ掲載）
+
+蔵井戸智勤
+江方真紀
+橋戸美夫
+武高瑠美
+
+
+実行例4-3
+rails generate scaffold Order orderdate:date member:references box:references
+
+実行例4-5 
+rails generate controller workmenu index

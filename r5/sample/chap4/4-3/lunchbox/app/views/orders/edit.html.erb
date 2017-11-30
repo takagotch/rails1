@@ -1,0 +1,7 @@
+<h1>データの編集</h1>
+
+<%= render 'form', order: @order %>
+
+<p><strong>編集中止：</strong>
+<%= link_to '再表示', @order %> |
+<%= link_to '一覧へ', orders_path %>

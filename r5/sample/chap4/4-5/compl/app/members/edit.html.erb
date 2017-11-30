@@ -1,0 +1,8 @@
+<h1>データの編集</h1>
+
+<%= render 'form', member: @member %>
+
+<p><strong>編集中止：</strong>
+<%= link_to '再表示', @member %> |
+<%= link_to '一覧へ', members_path %> | <%= link_to '作業メニューへ', workmenu_path %>
+

@@ -1,0 +1,63 @@
+<%= form_for(order) do |f| %>
+  <% if order.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(order.errors.count, "error") %> prohibited this order from being saved:</h2>
+
+      <ul>
+      <% order.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label '注文日' %>
+    <%= f.date_select :orderdate %>
+  </div>
+
+  <div class="field">
+    <%= f.label '注文者' %>
+    <% Member.all.each do |m| %> 
+    <%= radio_button('order', 'member_id', m.id) %>
+    <%=m.name%>
+  <% end %>
+  </div>
+
+<div class="field">
+ <%= f.label '品目' %>
+<% count = 0 %>
+ <table>
+  <% Box.all.each do |b| %>
+  
+    <% if count%3==0 %>
+      <tr>
+    <% end %>
+    
+    <td>
+      <%= image_tag "#{b.tagname}.png"%></br>
+      <%= radio_button('order', 'box_id', b.id) %>
+      <%=b.name%>
+    </td>
+    
+    <% if count%3==2 %>
+      </tr>
+    <% end %>
+    
+    <% count=count+1 %>
+  <% end %>
+  
+  <% if count%3==1 %>
+      <td></td></tr>
+  <% elsif count%3==2 %>
+      <td></td><td></td></tr>
+  <% end %>
+    
+  </table>
+ </div>
+
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

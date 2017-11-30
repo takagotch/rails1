@@ -1,0 +1,10 @@
+<h1>新規注文</h1>
+
+<%= render 'form', order: @order %>
+
+<%= link_to '入力中止', orders_path %> | 
+<% if @order.member %>
+   <%= link_to 'あなたの注文一覧へ', yourindex_path('member[id]'=> @order.member.id) %> |
+<% end %>
+<%= link_to '作業メニューへ', workmenu_path %>
+

@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+<h2>データの詳細：</h2>
+<p>
+  <strong>名前:</strong>
+  <%= @box.name %>
+</p>
+
+<p>
+  <strong>識別名:</strong>
+  <%= @box.tagname %>
+</p>
+
+<p>
+  <strong>価格:</strong>
+  <%= @box.price %>
+</p>
+
+<p>
+  <strong>内容:</strong>
+  <%= @box.content %>
+</p>
+
+<%= link_to '編集', edit_box_path(@box) %> |
+<%= link_to '一覧へ', boxes_path %>

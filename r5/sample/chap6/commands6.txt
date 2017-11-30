@@ -1,0 +1,11 @@
+実行例6-3 
+rails generate scaffold Comment content:text
+
+実行例6-5
+rails generate controller chatwindow index
+
+実行例6-6
+rails generate channel Chat
+
+実行例6-7
+rails generate job broadcast_comment
