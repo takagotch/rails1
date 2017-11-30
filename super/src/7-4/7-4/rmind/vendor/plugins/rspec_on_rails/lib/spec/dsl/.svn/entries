@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2007-10-18T09:20:11.805527Z"
+   url="http://svn.brain-tokyo.net/rmind/branches/pre_release/rmind/vendor/plugins/rspec_on_rails/lib/spec/dsl"
+   last-author="tnaka"
+   kind="dir"
+   uuid="58984862-3718-437e-a6a8-1024abe64f8b"
+   repos="http://svn.brain-tokyo.net/rmind"
+   revision="119"/>
+<entry
+   committed-rev="1"
+   name="configuration.rb"
+   text-time="2008-02-09T07:13:55.604157Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="7f4b3e488691542b5120ec3b00f430d8"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:55.541656Z"/>
+</wc-entries>

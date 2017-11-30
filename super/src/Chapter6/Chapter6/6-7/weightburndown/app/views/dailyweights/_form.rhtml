@@ -1,0 +1,12 @@
+<%= error_messages_for 'dailyweight' %>
+
+<!--[form:dailyweight]-->
+<p><label for="dailyweight_todays_weight">体重</label><br/>
+<%= text_field 'dailyweight', 'todays_weight'  %></p>
+
+<p><label for="dailyweight_review">ひとこと</label><br/>
+<%= text_area 'dailyweight', 'review',"rows"=>"3" %></p>
+
+<%= hidden_field 'dailyweight' , 'submit_date' if params[:submit_date]%>
+
+<!--[eoform:dailyweight]-->

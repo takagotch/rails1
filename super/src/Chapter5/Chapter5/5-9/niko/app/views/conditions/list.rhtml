@@ -1,0 +1,12 @@
+<h1>Niko-Niko Calendar</h1>
+
+ログインしている利用者: <%= session[:user].login %>
+
+<% store_location %>
+
+<%= link_to 'Logout', :controller => 'user', :action => 'logout' %>
+
+<br />
+
+<%= link_to 'New condition', :action => 'new' %>       
+

@@ -1,0 +1,88 @@
+<div id="page">
+  <div class="titlearea">
+      <h1 id="page-name" onclick="$('edit-page-name').show();$('subline').hide();$('page-name').hide();$('page_name').focus()" onmouseover="$(this).addClassName('hover')" onmouseout="$(this).removeClassName('hover')">
+        <%= h @page.name %>
+      </h1>
+    
+      <div id="edit-page-name" style="display: none">
+        <% form_for(@page) do |f| %>
+          <%= f.text_field :name, :class => 'text' %>
+          <br />
+          <%= submit_tag 'SAVE CHANGES' %> or <%= link_to_function 'Cancel', "$('edit-page-name').hide();$('page-name').show();$('subline').show();" %>
+        <% end %>
+      </div>
+    
+      <p id="subline">
+        <% unless @page.related_pages.empty? %>
+          &rarr; From <%= @page.related_pages.map{|p|link_to h(p.name), p}.to_sentence %>.
+        <% end %>
+      </p>
+    </div>
+      
+    <div id="page-content">
+    
+      <!--p>
+        - <%= link_to 'Delete this page', page_url(@page), :method => 'delete'  %>
+        - <%= link_to 'Older Versions', revisions_page_url(@page)  %>
+      </p-->
+
+      <p id='select-some-text-first' class='warning' style="display: none">
+        <span>You need to select some text before clicking the toolbar buttons</span>
+      </p>
+
+      <div id="editor" style="display: none">
+      </div>
+
+      <%= hidden_field 'page', 'path' %>
+      <%= hidden_field_tag 'mode', @mode %>
+    
+      <div id="content">
+        <%= @page.content %>
+      </div>
+    </div>  
+  
+    <iframe style="position: absolute; top: -200px; width: 10px; height: 1px; overflow: hidden;" src="javascript:void(0)" name="upload-frame">
+      ...
+    </iframe>
+  </div>
+  
+  <div class="edit" id="col1">
+    <h3>
+      This page:
+    </h3>
+  
+    <div id="enable-editing" style="<%= @mode.nil? ? '' : 'display: none' %>">
+      &raquo; <%= link_to_function "Edit this page", "window.ed_ = new Editor('editor', 'content')" %>
+    </div>
+    <div id="editor-saving" class="edit-button button" style="display: none">
+      Saving... <%= image_tag 'spinner.gif' %>
+    </div>
+    <div id="editing-toolbar" style="display: none">
+      <div class="cancel">
+        &raquo; <%= link_to_function "Cancel editing", "ed_.abort()" %>
+      </div>
+
+      <br />
+    
+      <h3>
+        Formatting:
+      </h3>
+    
+      <div id="toolbar">
+        <!-- Toolbar goes here -->
+      </div>
+      <br />
+      <div>
+        &raquo; <%= link_to_function "Save changes", "ed_.save()" %>
+      </div>
+    </div>
+  
+    <div id="rest-of-col1">
+      <p>
+        &raquo; <%= link_to 'Previous revisions', page_revisions_url(@page) %>
+      </p>
+
+      <%= render :partial=>'shared/sidebar' %>
+    </div>
+  </div>
+  

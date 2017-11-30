@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2007-10-18T09:20:11.805527Z"
+   url="http://svn.brain-tokyo.net/rmind/branches/pre_release/rmind/vendor/plugins/rspec_on_rails/lib/spec"
+   last-author="tnaka"
+   kind="dir"
+   uuid="58984862-3718-437e-a6a8-1024abe64f8b"
+   repos="http://svn.brain-tokyo.net/rmind"
+   revision="119"/>
+<entry
+   name="dsl"
+   kind="dir"/>
+<entry
+   committed-rev="1"
+   name="dsl.rb"
+   text-time="2008-02-09T07:13:58.994847Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="971ef2357c089e9995e1f72b220abcc3"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:55.651033Z"/>
+<entry
+   name="matchers"
+   kind="dir"/>
+<entry
+   committed-rev="1"
+   name="matchers.rb"
+   text-time="2008-02-09T07:13:59.026098Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="1caa991f425f5960db9909a82035beb8"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:55.869787Z"/>
+<entry
+   name="rails"
+   kind="dir"/>
+<entry
+   committed-rev="1"
+   name="rails.rb"
+   text-time="2008-02-09T07:13:59.104225Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="0b4b765ed545f9834d85245f5ad36f50"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:58.963597Z"/>
+</wc-entries>

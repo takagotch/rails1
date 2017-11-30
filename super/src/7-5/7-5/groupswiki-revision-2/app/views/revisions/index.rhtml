@@ -1,0 +1,34 @@
+<div id='page'>
+  <div class="titlearea">
+    <h1>Recent changes</h1>
+  </div>
+    
+    <% date = nil %>  
+    
+    <div id="other-page-content" class="revisions">
+
+      <% @revisions.group_by{|r|r.updated_at.to_date}.sort.reverse.each do |date, revisions| %>
+        <h2>
+          <%= date.strftime('%A, %B %d').sub(/\b0/,'') + date_ordinal(date) %>
+        </h2>
+        
+        <% revisions.each do |revision| %>
+
+          <p>
+            <span class="time">
+              <%= h revision.updated_at.strftime('%I:%M%p').downcase.sub(/^0/,'') %>
+            </span>
+            <%= link_to revision.name, revision.page %>
+          </p>
+        
+        <% end %>
+
+      <% end %>
+      
+      <!--Older changes: <%= pagination_links @pages, :window_size => 5 %> -->
+    </div>
+</div>
+
+<div class="edit">
+  <%= render_sidebar %>
+</div>

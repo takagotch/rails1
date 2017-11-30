@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2007-10-18T09:20:11.805527Z"
+   url="http://svn.brain-tokyo.net/rmind/branches/pre_release/rmind/vendor/plugins/rspec_on_rails/spec/rails/dsl"
+   last-author="tnaka"
+   kind="dir"
+   uuid="58984862-3718-437e-a6a8-1024abe64f8b"
+   repos="http://svn.brain-tokyo.net/rmind"
+   revision="119"/>
+<entry
+   committed-rev="1"
+   name="controller_isolation_spec.rb"
+   text-time="2008-02-09T07:14:03.791815Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="49a1c42c8f871676aebb9c8300cda246"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:03.416807Z"/>
+<entry
+   committed-rev="1"
+   name="view_spec_spec.rb"
+   text-time="2008-02-09T07:14:03.838690Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="54045457135fa61059fa01950009c9ab"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:03.448058Z"/>
+<entry
+   committed-rev="1"
+   name="configuration_spec.rb"
+   text-time="2008-02-09T07:14:03.885566Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="4c7a7f9bab7bf3cc45fc8f319d177f63"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:03.494934Z"/>
+<entry
+   committed-rev="1"
+   name="helper_spec_spec.rb"
+   text-time="2008-02-09T07:14:03.916817Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="a8632653ed4175c5db57d6a4d818e996"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:03.510559Z"/>
+<entry
+   committed-rev="1"
+   name="model_spec_spec.rb"
+   text-time="2008-02-09T07:14:03.948068Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="54de556715ea0d410d70dcf7483f9f83"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:03.557435Z"/>
+<entry
+   committed-rev="1"
+   name="shared_behaviour_spec.rb"
+   text-time="2008-02-09T07:14:03.979318Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="1062b49b0c63757ed0d1143268c25769"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:03.573060Z"/>
+<entry
+   committed-rev="1"
+   name="assigns_hash_proxy_spec.rb"
+   text-time="2008-02-09T07:14:04.010569Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="37b2f7c2734a8c7e4b8d742ab9361109"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:03.604311Z"/>
+<entry
+   committed-rev="1"
+   name="behaviour_factory_spec.rb"
+   text-time="2008-02-09T07:14:04.057445Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="14f2f399c338f6fa8a6044fd947d8b8f"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:03.651187Z"/>
+<entry
+   committed-rev="1"
+   name="test_unit_assertion_accessibility_spec.rb"
+   text-time="2008-02-09T07:14:04.088695Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="cf3cb9645db8fc0f102033e335f14b2b"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:03.666812Z"/>
+<entry
+   committed-rev="1"
+   name="controller_spec_spec.rb"
+   text-time="2008-02-09T07:14:04.119946Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="98a07e635d8857807aa3aaa3e433f88a"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:03.729313Z"/>
+<entry
+   committed-rev="1"
+   name="ivar_proxy_spec.rb"
+   text-time="2008-02-09T07:14:04.151196Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="711350cf022a6c3f386dd7720445c508"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:03.760564Z"/>
+</wc-entries>

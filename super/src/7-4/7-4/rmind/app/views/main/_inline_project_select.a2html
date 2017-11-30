@@ -1,0 +1,8 @@
+
+
+   <<span#prj_sel_area<
+     %= select_project_tag "task", "project_id", task.project_id, :id=>:project_select
+     % func = remote_function(:submit=> "prj_sel_area", :url=>{:action=>:edit_task, :id=>task.id})
+     %= button_to_function "ok", func
+     &#160;
+     %= link_to_remote 'cancel', :url => { :action=>:show_task, :id=>task.id, :cmd=>'close'}

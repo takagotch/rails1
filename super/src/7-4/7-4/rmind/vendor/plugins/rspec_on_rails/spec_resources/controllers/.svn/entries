@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2007-10-18T09:20:11.805527Z"
+   url="http://svn.brain-tokyo.net/rmind/branches/pre_release/rmind/vendor/plugins/rspec_on_rails/spec_resources/controllers"
+   last-author="tnaka"
+   kind="dir"
+   uuid="58984862-3718-437e-a6a8-1024abe64f8b"
+   repos="http://svn.brain-tokyo.net/rmind"
+   revision="119"/>
+<entry
+   committed-rev="1"
+   name="action_view_base_spec_controller.rb"
+   text-time="2008-02-09T07:13:50.947818Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="016184e508bab0a38dc16587f358c11e"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:50.744689Z"/>
+<entry
+   committed-rev="1"
+   name="redirect_spec_controller.rb"
+   text-time="2008-02-09T07:13:51.010319Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="c75019ea6736a7e9ea50fa77f9d4e3f1"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:50.775940Z"/>
+<entry
+   committed-rev="1"
+   name="controller_spec_controller.rb"
+   text-time="2008-02-09T07:13:51.057195Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="e03023049e5b06101cd83521a77ac4ca"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:50.822816Z"/>
+<entry
+   committed-rev="1"
+   name="rjs_spec_controller.rb"
+   text-time="2008-02-09T07:13:51.104071Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="d6b3ad9ae6f3cc7ccd08e421e2b8bca6"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:50.854066Z"/>
+<entry
+   committed-rev="1"
+   name="render_spec_controller.rb"
+   text-time="2008-02-09T07:13:51.135322Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="03ce071c938d4bb85f2ed7d3b8e16a7c"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:50.900942Z"/>
+</wc-entries>

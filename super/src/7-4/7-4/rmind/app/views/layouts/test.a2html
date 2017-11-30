@@ -1,0 +1,7 @@
+
+<<html <
+  <<head<
+    <title>Reviewable Mind</title>
+  <<body<
+    <<:content_for_layout|NoSanitize>>
+

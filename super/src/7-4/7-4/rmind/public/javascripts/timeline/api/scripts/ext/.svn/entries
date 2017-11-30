@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="88"
+   name=""
+   committed-date="2008-01-18T05:56:16.138860Z"
+   url="http://svn.brain-tokyo.net/rmind/branches/pre_release/rmind/public/javascripts/timeline/api/scripts/ext"
+   last-author="tnaka"
+   kind="dir"
+   uuid="58984862-3718-437e-a6a8-1024abe64f8b"
+   repos="http://svn.brain-tokyo.net/rmind"
+   revision="119"/>
+<entry
+   committed-rev="88"
+   name="japanese-eras.js"
+   text-time="2008-02-09T07:14:23.542194Z"
+   committed-date="2008-01-18T05:56:16.138860Z"
+   checksum="8fc442b4c4670abcd2538343007b1f2e"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:23.479693Z"/>
+</wc-entries>

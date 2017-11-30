@@ -1,0 +1,14 @@
+<% if pages.empty? %>
+  <p>
+    No pages found.
+  </p>
+<% else %>
+  <ul>
+    <% pages.each do |page| %>
+      <li>
+        <%= link_to h(page.name), page %><br />
+        <%= page.content.nil? ? '' : truncate(page.content.gsub(/<.+?>/,'')) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>

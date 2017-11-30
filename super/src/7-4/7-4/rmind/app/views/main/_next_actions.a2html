@@ -1,0 +1,31 @@
+<<div#next_actions<
+
+    <<fieldset#na_cond<
+      <<legend<
+        context
+      << [context_tags ] <
+        %= check_box_tag "na[]", $_.id, @na[$_.id], :id=>"na_#{$_.id}" , :class=>'na_check'
+        <<:name>>
+      <<div.button_area<
+        %= link_to_function("check all") { |page| page.select('input.na_check').each { |e| e.checked = 'true' } }
+        %= ' '
+        %= link_to_function("uncheck all") { |page| page.select('input.na_check').each { |e| e.checked = nil } }
+        %= ' '
+        %= button_to_function _("reload"), remote_function(:submit=> "na_cond", :url=>{:action=>:show_task, :id=>nil })
+
+    <%
+      locals = {
+        :list_name => "next actions list",
+        :header => [
+          { :title=>' ', :width=>'40' },
+          { :title=>'project', :width=>'110' },
+          { :title=>'task', :width=>'400' },
+          { :title=>'tag', :width=>'100' },
+        ],
+        :show_tag => true,
+        :show_project => true,
+        :show_done_at => false,
+        :ajax_task_done => true,
+      }
+    %>
+    %= render :partial=>'task_list', :object=>@next_actions, :locals=>locals

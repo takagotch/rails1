@@ -1,0 +1,9 @@
+<br>
+<h1>体重の記録</h1>
+
+<% form_tag :action => 'create' do %>
+  <%= render :partial => 'form' %>
+  <%= submit_tag "記録する" %>
+<% end %>
+
+<%= link_to '戻る', :action => 'list' %>

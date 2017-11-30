@@ -1,0 +1,96 @@
+<%#カレンダー用のスタイルシートを読み込みます%>
+<%= stylesheet_link_tag '/stylesheets/calendar/blue/style.css' %>
+
+<%=image_tag 'burndownweight'%>
+
+<%#グラフ画像を表示します%>
+<div style="float:left;width:auto;">
+<%if @loadmap %>
+  <img src="<%=url_for(:controller=>'weightburndown', :action=>'draw')%>">
+<% end%>
+</div>
+
+<div style="width:auto;">
+  <%= link_to 'ロードマップを作成する',:controller => 'loadmaps',:action => 'new' if @loadmap.blank?%>
+  <%if @loadmap %>
+    <table>
+      <tr style="background-color:#CCCCFF;font-weight:bold;">
+        <td colspan="2">
+          あなたのロードマップ
+        </td>
+      </tr>
+      <tr>
+        <td style="background-color:#CCCCFF;">
+          開始時の体重(kg):
+        </td>
+        <td>
+          <%= @loadmap.current_weight%>
+        </td>
+      </tr>
+      <tr>
+        <td style="background-color:#CCCCFF;">
+          本日の体重(kg):
+        </td>
+        <td>
+          <%=link_to "記録しましょう！",:controller => 'dailyweights',:action => 'new' if @dailyweight.blank? && Date.today<@loadmap.target_date%>
+          <%=@dailyweight.todays_weight unless @dailyweight.blank?%>
+          <%=link_to "修正する",:controller => 'dailyweights',:action => 'edit',:id => @dailyweight unless @dailyweight.blank?%>
+        </td>
+      </tr>
+      <tr>
+        <td style="background-color:#CCCCFF;">
+          ゴール:
+        </td>
+        <td>
+          <%= @loadmap.target_date.strftime("%Y年%m月%d日") %>までに
+          <%= @loadmap.target_weight%>kg
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <%= link_to 'ロードマップを見直す',:controller => 'loadmaps',:action => 'edit',:id=>@loadmap unless @loadmap.blank?%>
+        </td>
+      </tr>
+    </table>
+  <%end%>
+</div>
+
+<%#カレンダーを表示します%>
+<%if @loadmap %>
+<div style="width:auto;">
+  <p style="color: red;font-weight:bold"><%= flash[:alert] %></p>
+  
+  <%= link_to('前の月へ',:action => 'index', :year => @prev.year, :month => @prev.month) %>&nbsp;
+  <%= link_to('今月', :action => 'index') %>&nbsp;
+  <%= link_to('次の月へ', :action => 'index', :year => @next.year, :month => @next.month) %>
+  <%=
+  calendar(:year => @year, :month => @month,:month_name_class  => "monthName") do |date|
+    cell_attrs = {:class => 'day'}
+    cell_text = "<br />\n"
+
+    #記録漏れ
+    begin
+      cell_text << link_to("nodata",:action=>'new',:controller=>'dailyweights',:submit_date =>date) 
+      cell_attrs = {:class => 'blankDay'}
+    end if date < Date.today && date >= @loadmap.start_date && date <= @loadmap.target_date
+
+    @weight_records[date].each do |dailyweight|
+      cell_attrs[:class] = 'day'
+      cell_text = "<br />\n"
+      cell_text << h(dailyweight.todays_weight)+"kg"
+      cell_text << "<br />\n"
+      cell_text << link_to(image_tag('review.gif',"title"=>dailyweight.review,"border"=>"0","size"=>"20x15"),{:controller=>'dailyweights',:action=>'review',:id=>dailyweight},:popup => ['ひとこと','height=200,width=200,scrollbars=yes']) unless dailyweight.review.blank?
+      
+    end
+
+    #開始日
+    cell_attrs = {:class => 'specialDay'} if date == @loadmap.start_date
+    #目標日
+    cell_attrs = {:class => 'specialDay'} if date == @loadmap.target_date
+
+    [date.mday.to_s + cell_text, cell_attrs]
+
+  end
+  %>
+</div>
+<%end%>

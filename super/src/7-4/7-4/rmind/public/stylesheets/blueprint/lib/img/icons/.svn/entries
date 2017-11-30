@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2007-10-18T09:20:11.805527Z"
+   url="http://svn.brain-tokyo.net/rmind/branches/pre_release/rmind/public/stylesheets/blueprint/lib/img/icons"
+   last-author="tnaka"
+   kind="dir"
+   uuid="58984862-3718-437e-a6a8-1024abe64f8b"
+   repos="http://svn.brain-tokyo.net/rmind"
+   revision="119"/>
+<entry
+   committed-rev="1"
+   name="textfield_key.png"
+   text-time="2008-02-09T07:14:30.589204Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="dc3d4d8784961f01f8baa5b27cf56dde"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:30.479827Z"/>
+<entry
+   committed-rev="1"
+   name="cross.png"
+   text-time="2008-02-09T07:14:30.636080Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="42492684e24356a4081134894eabeb9e"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:30.526703Z"/>
+<entry
+   committed-rev="1"
+   name="tick.png"
+   text-time="2008-02-09T07:14:30.667331Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="c9b528b9541e127967eda62f79118ef0"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:30.573579Z"/>
+</wc-entries>

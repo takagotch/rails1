@@ -1,0 +1,102 @@
+#wiki-title{
+  font: bold 1.8em arial;
+}
+#wiki-title a{
+  color: #f07;
+}
+body{
+  font: 12px verdana;
+}
+body#content{
+  font: 12px verdana;
+  height: 100%;
+  background: url(/images/editing-background.png);
+  padding: 2px;
+  margin: 0;
+}
+/*#content p.list-style{
+  padding-left: 30px;
+  background-image: url(/images/extlink.gif);
+  background-repeat: no-repeat;
+}
+*/
+div#content, body#content{
+  line-height: 1.4em;
+}
+
+#content pre{
+  background: #ffa;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  width: 100%;
+  overflow: hidden;
+}
+#content h1{
+  font: normal 1.5em arial;
+}
+#content h2{
+  font: bold 1.2em arial;
+  color: black;
+}
+#content a{
+  color: #596674 !important; 
+  cursor: pointer !important;
+  text-decoration: underline !important;
+}
+a:hover, #content a:hover{
+  background: #596674 !important; 
+  color: white !important;
+  cursor: pointer !important;
+  text-decoration: underline !important;
+}
+div#content{
+  margin: 0 0 50px 0;
+  padding: 0;
+  position: relative;
+  border: 1px solid white;
+}
+iframe.editor{
+  position: relative;
+}
+iframe.editor{
+  background: url(/images/editing-background.png);
+  width: 100%;
+}
+div#content, iframe.editor{
+  margin: 0;
+  padding: 0;
+}
+#content *{
+  margin: 0;
+  padding: 0;
+}
+#content ul{
+  margin-left: 2em;
+}
+div#content{
+  padding: 9px;
+}
+body#content{
+  padding: 10px;
+}
+
+#content a.weblink{
+  background-image: url(/images/extlink.gif);
+  background-repeat: no-repeat;
+  background-position: 1px 4px;
+  padding-left: 15px;
+}
+
+#content table{
+  width: 100%;
+  border-collapse: collapse;
+}
+#content th{
+  background: #eee;
+}
+#content th, #content td{
+  vertical-align: top;
+  border: 1px solid #777;
+  padding: 5px;
+  width: 50%;
+}

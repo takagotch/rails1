@@ -1,0 +1,41 @@
+<div id="page">
+  <div id="page-content">
+
+    <h1>Guten Tag <%= h current_user.name %>!</h1>
+
+    <p>
+      Your email address:<br />
+      <%= link_to h(current_user.email), 'mailto:' + current_user.email %>
+    </p>
+
+    <h2>
+      These are the wikis you own:
+    </h2>
+
+    <% current_user.owned_wikis.each do |wiki| %>
+      <p>
+        &middot; <%= link_to h(wiki.name), wiki.uri %>
+      </p>
+    <% end %>
+
+    <h2>
+      These are wikis you have participated on:
+    </h2>
+
+    <% wikis = (current_user.wikis - current_user.owned_wikis) %>
+    
+    <% if wikis.empty? %>
+      <p>
+        You haven't participated in any wikis yet.
+      </p>
+    <% end %>
+    
+    <% wikis.each do |wiki| %>
+      <p>
+        &middot; <%= link_to h(wiki.name), wiki.uri %>
+      </p>
+    <% end %>
+  </div>
+</div>
+
+<%= render :partial => 'shared/generic_sidebar' %>

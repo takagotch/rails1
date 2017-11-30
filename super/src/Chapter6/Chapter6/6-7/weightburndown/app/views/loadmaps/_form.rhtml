@@ -1,0 +1,13 @@
+<%= error_messages_for 'loadmap' %>
+
+<!--[form:loadmap]-->
+<p><label for="loadmap_current_weight">現在の体重</label><br/>
+<%= text_field 'loadmap', 'current_weight'  %></p>
+
+<p><label for="loadmap_target_weight">目標の体重</label><br/>
+<%= text_field 'loadmap', 'target_weight'  %></p>
+
+<p><label for="loadmap_target_date">いつまでに？</label><br/>
+<%= date_select 'loadmap', 'target_date',:start_year => Time.now.year, :use_month_numbers => true%></p>
+
+<!--[eoform:loadmap]-->

@@ -1,0 +1,261 @@
+<?xml version="1.0"?>
+<log>
+<logentry
+   revision="432">
+<author>lhoffman</author>
+<date>2007-12-04T23:42:03.074271Z</date>
+<msg>skip transclusions beyond char limit in line mode</msg>
+</logentry>
+<logentry
+   revision="433">
+<author>lhoffman</author>
+<date>2007-12-05T00:19:23.491050Z</date>
+<msg>move fragment_store config to wagn.rb</msg>
+</logentry>
+<logentry
+   revision="434">
+<author>lhoffman</author>
+<date>2007-12-05T03:08:34.137252Z</date>
+<msg>fix indexed_name update</msg>
+</logentry>
+<logentry
+   revision="435">
+<author>lhoffman</author>
+<date>2007-12-05T03:09:14.159340Z</date>
+<msg>add options for pointer type</msg>
+</logentry>
+<logentry
+   revision="436">
+<author>ethanmcc</author>
+<date>2007-12-05T05:04:47.350679Z</date>
+<msg>fixed pointer editing</msg>
+</logentry>
+<logentry
+   revision="437">
+<author>ethanmcc</author>
+<date>2007-12-06T18:56:25.661037Z</date>
+<msg>pointer fixes / phantom handling</msg>
+</logentry>
+<logentry
+   revision="438">
+<author>ethanmcc</author>
+<date>2007-12-07T00:28:21.525865Z</date>
+<msg>slot bug fix</msg>
+</logentry>
+<logentry
+   revision="439">
+<author>lhoffman</author>
+<date>2007-12-10T04:00:15.022309Z</date>
+<msg>remove breaking google call</msg>
+</logentry>
+<logentry
+   revision="440">
+<author>lhoffman</author>
+<date>2007-12-10T04:00:45.553369Z</date>
+<msg>alternative suggestion for when migration 100 breaks</msg>
+</logentry>
+<logentry
+   revision="441">
+<author>ethanmcc</author>
+<date>2007-12-11T02:39:11.919025Z</date>
+<msg>better paging print css</msg>
+</logentry>
+<logentry
+   revision="442">
+<author>lhoffman</author>
+<date>2007-12-13T18:45:21.517741Z</date>
+<msg>fix script type</msg>
+</logentry>
+<logentry
+   revision="443">
+<author>lhoffman</author>
+<date>2007-12-13T18:45:57.784026Z</date>
+<msg>postgres data dump script</msg>
+</logentry>
+<logentry
+   revision="444">
+<author>lhoffman</author>
+<date>2007-12-13T18:46:46.100555Z</date>
+<msg>query counting script</msg>
+</logentry>
+<logentry
+   revision="445">
+<author>lhoffman</author>
+<date>2007-12-13T20:00:48.094542Z</date>
+<msg>tweak dump_data script</msg>
+</logentry>
+<logentry
+   revision="446">
+<author>lhoffman</author>
+<date>2007-12-14T00:27:20.528726Z</date>
+<msg>fix recent changes dates</msg>
+</logentry>
+<logentry
+   revision="447">
+<author>lhoffman</author>
+<date>2007-12-18T03:07:25.619257Z</date>
+<msg>footer, template from cache, &amp; other optimizations</msg>
+</logentry>
+<logentry
+   revision="448">
+<author>lhoffman</author>
+<date>2007-12-18T03:07:51.645479Z</date>
+<msg>set version to 0.9.1</msg>
+</logentry>
+<logentry
+   revision="449">
+<author>lhoffman</author>
+<date>2007-12-18T03:59:15.495699Z</date>
+<msg>fix builtin card omission in CachedCard.get changes</msg>
+</logentry>
+<logentry
+   revision="450">
+<author>lhoffman</author>
+<date>2007-12-18T04:14:01.068714Z</date>
+<msg>hack around broken permissions on serch templates</msg>
+</logentry>
+<logentry
+   revision="451">
+<author>lhoffman</author>
+<date>2007-12-18T04:26:16.118499Z</date>
+<msg>fix search paging</msg>
+</logentry>
+<logentry
+   revision="452">
+<author>lhoffman</author>
+<date>2007-12-18T04:26:39.733069Z</date>
+<msg>fix image upload on new cards</msg>
+</logentry>
+<logentry
+   revision="453">
+<author>lhoffman</author>
+<date>2007-12-18T04:27:31.298752Z</date>
+<msg>fix? default search limit?</msg>
+</logentry>
+<logentry
+   revision="454">
+<author>lhoffman</author>
+<date>2007-12-19T01:42:40.545845Z</date>
+<msg>fix non-search templates being used as auto-cards</msg>
+</logentry>
+<logentry
+   revision="455">
+<author>lhoffman</author>
+<date>2007-12-19T02:04:42.292149Z</date>
+<msg>fix non-search templates being used as auto-cards in edit mode</msg>
+</logentry>
+<logentry
+   revision="456">
+<author>lhoffman</author>
+<date>2007-12-21T18:04:57.366393Z</date>
+<msg>fix auto searches again</msg>
+</logentry>
+<logentry
+   revision="457">
+<author>lhoffman</author>
+<date>2008-01-02T17:15:27.619070Z</date>
+<msg>don't break if a name isn't specified</msg>
+</logentry>
+<logentry
+   revision="458">
+<author>lhoffman</author>
+<date>2008-01-03T15:42:38.571730Z</date>
+<msg>add comment_author to cached_card</msg>
+</logentry>
+<logentry
+   revision="459">
+<author>lhoffman</author>
+<date>2008-01-03T16:45:12.145623Z</date>
+<msg>update INSTALL doc</msg>
+</logentry>
+<logentry
+   revision="460">
+<author>ethanmcc</author>
+<date>2008-01-09T03:05:14.796553Z</date>
+<msg>custom code for connectipedia migration</msg>
+</logentry>
+<logentry
+   revision="461">
+<author>lhoffman</author>
+<date>2008-01-09T03:31:21.056055Z</date>
+<msg>add parsing to meyer orgparse</msg>
+</logentry>
+<logentry
+   revision="462">
+<author>lhoffman</author>
+<date>2008-01-11T00:08:57.971809Z</date>
+<msg>add find_or_create!</msg>
+</logentry>
+<logentry
+   revision="463">
+<author>lhoffman</author>
+<date>2008-01-11T00:11:10.781400Z</date>
+<msg>ensure auto card names are junctions</msg>
+</logentry>
+<logentry
+   revision="464">
+<author>lhoffman</author>
+<date>2008-01-11T00:13:38.758874Z</date>
+<msg>meyer custom parser</msg>
+</logentry>
+<logentry
+   revision="465">
+<author>ethanmcc</author>
+<date>2008-01-11T01:25:06.160987Z</date>
+<msg>fixed rename</msg>
+</logentry>
+<logentry
+   revision="466">
+<author>ethanmcc</author>
+<date>2008-01-11T01:51:11.568512Z</date>
+<msg>fixed remembered page func</msg>
+</logentry>
+<logentry
+   revision="467">
+<author>lhoffman</author>
+<date>2008-01-11T01:54:43.172815Z</date>
+<msg>custom who knows most handling</msg>
+</logentry>
+<logentry
+   revision="468">
+<author>lhoffman</author>
+<date>2008-01-15T23:12:57.598481Z</date>
+<msg>mmt migration update</msg>
+</logentry>
+<logentry
+   revision="469">
+<author>lhoffman</author>
+<date>2008-01-15T23:51:36.943945Z</date>
+<msg>dont populate who knows most</msg>
+</logentry>
+<logentry
+   revision="470">
+<author>lhoffman</author>
+<date>2008-01-16T00:39:26.535554Z</date>
+<msg>fix pointer editor in multi-edit</msg>
+</logentry>
+<logentry
+   revision="471">
+<author>lhoffman</author>
+<date>2008-01-17T19:16:42.552561Z</date>
+<msg>render -- for blank transcluded cards</msg>
+</logentry>
+<logentry
+   revision="472">
+<author>lhoffman</author>
+<date>2008-01-22T19:11:11.207943Z</date>
+<msg>more years in calendar dropdown</msg>
+</logentry>
+<logentry
+   revision="473">
+<author>lhoffman</author>
+<date>2008-01-22T19:30:23.807963Z</date>
+<msg>more past years in calendar</msg>
+</logentry>
+<logentry
+   revision="474">
+<author>lhoffman</author>
+<date>2008-01-22T19:44:06.649766Z</date>
+<msg>yet more more past years in calendar</msg>
+</logentry>
+</log>

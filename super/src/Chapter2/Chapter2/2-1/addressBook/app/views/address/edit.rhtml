@@ -1,0 +1,9 @@
+<h1>Editing address</h1>
+<%form_tag :action => 'update', :id => @address do %><%=render :partial => 'form' %>
+<br>
+<%=link_to 'Mail List',:controller => 'user_Mail' , :action => 'userMailList', :id => @address %>
+<br><br>
+<%=submit_tag 'Edit' %>
+<%end %>
+<%=link_to 'Show', :action => 'show', :id => @address %> |
+<%=link_to 'Back', :action => 'list' %>

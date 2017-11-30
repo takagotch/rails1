@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2007-10-18T09:20:11.805527Z"
+   url="http://svn.brain-tokyo.net/rmind/branches/pre_release/rmind/spec/helpers"
+   last-author="tnaka"
+   kind="dir"
+   uuid="58984862-3718-437e-a6a8-1024abe64f8b"
+   repos="http://svn.brain-tokyo.net/rmind"
+   revision="119"/>
+<entry
+   committed-rev="1"
+   name="main_helper_spec.rb"
+   text-time="2008-02-09T07:13:45.838345Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="85ae4047f257b2f1b0d47fc6a0667ed4"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:45.666467Z"/>
+<entry
+   committed-rev="1"
+   name="tasks_helper_spec.rb"
+   text-time="2008-02-09T07:13:45.869595Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="fb698eadc65b721d6888e67a6bc77073"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:45.682092Z"/>
+<entry
+   committed-rev="1"
+   name="project_helper_spec.rb"
+   text-time="2008-02-09T07:13:45.900846Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="0c2c95106f1f4fc6f218250bd181d573"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:45.697717Z"/>
+<entry
+   committed-rev="1"
+   name="tag_helper_spec.rb"
+   text-time="2008-02-09T07:13:45.932097Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="322e80427e44adf8f1a96422875af320"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:45.744593Z"/>
+<entry
+   committed-rev="1"
+   name="user_helper_spec.rb"
+   text-time="2008-02-09T07:13:45.994598Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="f93a6c95815e36cd81efe044274d470b"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:45.760218Z"/>
+<entry
+   committed-rev="1"
+   name="cui_helper_spec.rb"
+   text-time="2008-02-09T07:13:46.025848Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="e26be6b3f0b1a47585116df1b1bb5d53"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:45.807094Z"/>
+</wc-entries>

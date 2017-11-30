@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+PRODID:-//ReviewableMind//EN
+METHOD:PUBLISH
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Japan
+BEGIN:STANDARD
+DTSTART:19390101T000000
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+END:STANDARD
+END:VTIMEZONE
+<% @schedules.each do |sch| %>
+BEGIN:VEVENT
+UID:<%= sch.uid %>
+DTSTAMP:<%= sch.timestamp %>
+SUMMARY:<%= sch.summary %>
+LOCATION:<%= sch.location %>
+DTSTART;TZID=Japan:<%= sch.dtstart %>
+DTEND;TZID=Japan:<%= sch.dtend %>
+DESCRIPTION:<%= sch.description %>
+TRANSP:TRANSPARENT
+PRIORITY:0
+CLASS:PUBLIC
+END:VEVENT
+<% end %>
+END:VCALENDAR
+

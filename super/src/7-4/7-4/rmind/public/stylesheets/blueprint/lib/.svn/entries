@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2007-10-18T09:20:11.805527Z"
+   url="http://svn.brain-tokyo.net/rmind/branches/pre_release/rmind/public/stylesheets/blueprint/lib"
+   last-author="tnaka"
+   kind="dir"
+   uuid="58984862-3718-437e-a6a8-1024abe64f8b"
+   repos="http://svn.brain-tokyo.net/rmind"
+   revision="119"/>
+<entry
+   committed-rev="1"
+   name="buttons.css"
+   text-time="2008-02-09T07:14:30.807958Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="3a84ea8228300e94a76748173765900d"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:30.042319Z"/>
+<entry
+   committed-rev="1"
+   name="reset.css"
+   text-time="2008-02-09T07:14:30.839209Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="795d5a5621ac85a9d7c2c8567fde4db0"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:30.073569Z"/>
+<entry
+   committed-rev="1"
+   name="compressed.css"
+   text-time="2008-02-09T07:14:30.870459Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="7d832995f2acbd770c4ffe376b877500"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:30.104820Z"/>
+<entry
+   name="img"
+   kind="dir"/>
+<entry
+   committed-rev="1"
+   name="grid.css"
+   text-time="2008-02-09T07:14:30.901710Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="e722eb551f5596a3ad18c74a5fc4df11"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:30.120445Z"/>
+<entry
+   committed-rev="1"
+   name="typography.css"
+   text-time="2008-02-09T07:14:30.948586Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="92839217649ac09209b87d0c03813876"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:30.776708Z"/>
+</wc-entries>

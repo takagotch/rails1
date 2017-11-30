@@ -1,0 +1,9 @@
+<br>
+<h1>本日の体重の修正</h1>
+
+<% form_tag :action => 'update', :id => @dailyweight do %>
+  <%= render :partial => 'form' %>
+  <%= submit_tag '修正する' %>
+<% end %>
+
+<%= link_to '戻る', :action => 'list' %>

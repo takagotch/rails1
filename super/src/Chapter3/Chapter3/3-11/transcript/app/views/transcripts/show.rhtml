@@ -1,0 +1,45 @@
+<%= stylesheet_link_tag "transcript.css" %>
+<h1>議事録の詳細</h1>
+<div class="transcript">
+    <table>
+        <tr>
+            <td colspan="2" class="operation">
+                <%= link_to '編集', :action => 'edit', :id => @transcript %> |
+                <%= link_to '戻る', :action => 'list' %>
+            </td>
+        </tr>
+        <tr>
+            <td>タイトル：</td>
+            <td><%=h @transcript.title %></td>
+        </tr>
+        <tr>
+            <td>説明：</td>
+            <td><%=h @transcript.description %></td>
+        </tr>
+        <tr>
+            <td>登録日：</td>
+            <td><%=h @transcript.created_on.strftime("%Y/%m/%d %X") %></td>
+        </tr>
+        <tr>
+            <td>更新日：</td>
+            <td><%=h @transcript.updated_on.strftime("%Y/%m/%d %X") %></td>
+        </tr>
+        <tr>
+            <td>タグ：</td>
+            <td><%=h @transcript.tag %></td>
+        </tr>
+        <tr>
+            <td>登録者：</td>
+            <td><%=h @transcript.user.lastname + @transcript.user.firstname %></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <%= image_tag url_for(:action => "get_transcript",:id => @transcript.id),
+                                                       :alt    => @transcript.filename,
+                                                       :title  => @transcript.description,
+                                                       :border => 0
+                %>
+            </td>
+        </tr>
+    </table>
+</div>

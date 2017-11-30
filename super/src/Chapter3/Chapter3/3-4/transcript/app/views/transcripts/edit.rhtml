@@ -1,0 +1,9 @@
+<h1>Editing transcript</h1>
+
+<% form_tag :action => 'update', :id => @transcript do %>
+  <%= render :partial => 'form' %>
+  <%= submit_tag 'Edit' %>
+<% end %>
+
+<%= link_to 'Show', :action => 'show', :id => @transcript %> |
+<%= link_to 'Back', :action => 'list' %>

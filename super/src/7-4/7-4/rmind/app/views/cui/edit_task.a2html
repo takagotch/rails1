@@ -1,0 +1,28 @@
+<%(BeforeCompile)
+  use_macro(FormTag)
+%>
+
+
+<<div:task<
+  <<form_tag<
+    <<table<
+      <<<--------------------------------------------------------------
+        ||| Text     || %= text_field 'task', 'text'                 |
+      <<<--------------------------------------------------------------
+        ||| Project:  || %= select_project "task", "project_id"      |
+      <<<--------------------------------------------------------------
+        ||| Tag      || <<field<                                       |
+        |||          ||     %= text_field_tag 'tag', @task.tag         |
+        |||          ||     %= submit_tag 'settag'                   |
+      ---------------------------------------------------------------
+    <<:taggings<
+      % if $_.form_name
+      %   form_name = "tagging/cui/#{$_.form_name}"
+      %   @tagging = $_
+      %=  render :partial=>form_name
+      % end
+
+    %= submit_tag "update", :class => "submit"
+    %= submit_tag "done", :class => "submit"
+    %= check_box_tag "continue", "continue", true
+    continue processing inbox tasks

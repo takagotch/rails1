@@ -1,0 +1,48 @@
+  <%= javascript_include_tag :defaults %>
+  <%= stylesheet_link_tag 'task' %>
+  <script language="JavaScript">
+    function deleteTask(id) {
+      var targetTask = document.getElementById(id);
+      targetTask.parentNode.removeChild(targetTask);
+    }
+  </script>
+<br/>
+<table class = "board" id="board">
+  <tr>
+    <td colspan="3" style="text-align:right;">
+      <%= link_to 'かんばんに戻る', :action => 'list' %>
+    </td>
+  </tr>
+  <tr>
+    <td class="recycle" id="recycle" colspan="3">
+        <div id="todoCaption" class="gomiCaption">ゴミ箱</div>
+      <%= render :partial => 'task', :collection => @recycles %>
+    </td>
+  </tr>
+  <tr>
+    <td class="recover" id="todo">
+      <div id="todoCaption" class="gomiCaption">ToDoに戻す</div>
+      ここにドロップするとタスクのステータスをToDoに戻します。
+    </td>
+    <%=drop_receiving_element 'todo',
+      :update =>'info',
+      :complete=> visual_effect(:fade),
+      :url => {:action => 'change_status',:status => 'todo'} %>
+    <td class="recover" id="doing">
+        <div id="DoingCaption" class="gomiCaption">Doingに戻す</div>
+        ここにドロップするとタスクのステータスをDoingに戻します。
+    </td>
+    <%=drop_receiving_element 'doing',
+        :update =>'info',
+        :complete=> visual_effect(:fade),
+        :url => {:action => 'change_status' ,:status => 'doing'} %>
+    <td class="recover" id="done">
+        <div id="DoneCaption" class="gomiCaption">Doneに戻す</div>
+        ここにドロップするとタスクのステータスをDoneに戻します。
+    </td>
+    <%=drop_receiving_element 'done',
+        :update =>'info',
+        :complete=> visual_effect(:fade) ,
+        :url => {:action => 'change_status',:status => 'done'} %>
+  </tr>
+</table>

@@ -1,0 +1,26 @@
+<%= error_messages_for 'address' %>
+
+<!--[form:address]-->
+<p><label for="address_name">Name</label><br/>
+<%= text_field 'address', 'name'  %></p>
+
+<p><label for="address_zipCode">Zipcode</label><br/>
+<%= text_field 'address', 'zipCode'  %></p>
+
+<p><label for="address_address">Address</label><br/>
+<%= text_field 'address', 'address'  %></p>
+
+<p><label for="userDetail_telNum">TEL NUM</label><br/>
+<%= text_field 'userDetail', 'telNum'  %></p>
+
+<p><label for="userDetail_profile">Profile</label><br/>
+<%= text_area 'userDetail', 'profile'  %></p>
+
+
+<p><label for="address_created_on">Create on</label><br/>
+<%= datetime_select 'address', 'created_on'  %></p>
+
+<p><label for="address_updated_on">Update on</label><br/>
+<%= datetime_select 'address', 'updated_on'  %></p>
+<!--[eoform:address]-->
+

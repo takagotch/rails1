@@ -1,0 +1,17 @@
+<<div#message_area<
+
+  %= image_tag "s.gif", :alt=>"spacer",:height=>"16"
+  <%
+    msgs = [:message, :notice, :warning, :error].collect do |n|
+       unless flash[n].blank?
+         { :name => n, :msg => flash[n] }
+       else
+         nil
+       end
+    end
+  %>
+    <<:msgs|AcceptData[nil]<
+      <<span:|Attr[:id=>:name, :body=>:msg]>>
+
+  << ?![flash[:undo_link].blank?] <
+   %= link_to flash[:undo_link], "/main/undo", :method=>:post

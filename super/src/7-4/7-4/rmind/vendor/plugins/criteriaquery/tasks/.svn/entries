@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="14"
+   name=""
+   committed-date="2007-10-18T13:35:10.173200Z"
+   url="http://svn.brain-tokyo.net/rmind/branches/pre_release/rmind/vendor/plugins/criteriaquery/tasks"
+   last-author="tnaka"
+   kind="dir"
+   uuid="58984862-3718-437e-a6a8-1024abe64f8b"
+   repos="http://svn.brain-tokyo.net/rmind"
+   revision="119"/>
+<entry
+   committed-rev="14"
+   name="criteria_query_tasks.rake"
+   text-time="2008-02-09T07:14:07.370008Z"
+   committed-date="2007-10-18T13:35:10.173200Z"
+   checksum="9a864c57ce0d7a2c436d61cbe33ec38b"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:07.323132Z"/>
+</wc-entries>

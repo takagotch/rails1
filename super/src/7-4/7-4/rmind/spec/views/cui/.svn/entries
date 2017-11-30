@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2007-10-18T09:20:11.805527Z"
+   url="http://svn.brain-tokyo.net/rmind/branches/pre_release/rmind/spec/views/cui"
+   last-author="tnaka"
+   kind="dir"
+   uuid="58984862-3718-437e-a6a8-1024abe64f8b"
+   repos="http://svn.brain-tokyo.net/rmind"
+   revision="119"/>
+<entry
+   committed-rev="1"
+   name="inbox_view_spec.rb"
+   text-time="2008-02-09T07:13:48.416519Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="0fc4e9f6243d074003f1ca80b94b0dfc"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:48.369643Z"/>
+<entry
+   committed-rev="1"
+   name="edit_task_view_spec.rb"
+   text-time="2008-02-09T07:13:48.463395Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="e7a7575fadb2fbe20782cea55d91ebe4"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:48.385269Z"/>
+</wc-entries>

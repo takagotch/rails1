@@ -1,0 +1,16 @@
+<div class="col2">
+  <h1>Users</h1>
+
+  <p>
+    The following people have contributed to
+    <%= current_wiki.name %>.
+  </p>
+
+  <% current_wiki.contributing_users.each do |user| %>
+    <p>
+      &middot; <%= link_to user.name, user %>
+    </p>
+  <% end %>
+</div>
+
+<%= render_sidebar %>

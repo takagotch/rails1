@@ -1,0 +1,41 @@
+
+  << ?[ task_list.size == 0 ] <
+    (There is no task in  [<<:list_name>>]  now)
+
+  << ?[ task_list.size > 0 ] <
+    <<table<
+      <<tr<
+        <<th :header | Attr[:width => :width, :body=>:title] >>
+      <<:task_list | TaskHelper <
+        %  tag_edit = (@current_task and @current_task.id == $_.id and @cmd == 'tag_edit')
+        <<tr :| Attr[:class=>:cycle_class] <
+          <<th <
+            <<?[ajax_task_done]<
+              <<:done_check_ajax>>
+            <<?![ajax_task_done]<
+              <<:done_check>>
+
+          <<td :project_with_link ?[show_project] >>
+
+          <<td<
+              <<div :| Attr[:id=>:task_id] | Join[:nbsp] <
+                <<span :| Attr[:id=>:handle_id] <
+                  [+]
+                <<:task_window_link>>
+              <<:install_draggable>>
+
+          << ?![tag_edit] <
+            <<td :| Attr[:onclick=>:tag_edit_link] <
+              << :taggings <
+                <<a : | Attr[:href=>:tag_url, :body=>:tag_name] >>
+                &#160;
+              #%= link_to_remote '*' , :url=>{ :action=>:show_task, :id=>$_.id, :cmd=>'tag_edit' }
+              %= image_tag "s.gif", :alt=>"spacer", :height=>"1"
+          << ?[tag_edit] <
+            <<td<
+              %= render :partial=>'main/inline_edit_tag', :locals=> { :task=>$_ }
+          << ?[show_done_at] <
+              <<td:done_at | StandardDateFormat>>
+
+        <<:install_draggable>>
+

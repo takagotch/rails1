@@ -1,0 +1,38 @@
+<div id='page'>
+  <div class="titlearea">
+    <h1>Older Versions of <%= link_to h(@page.name), @page %></h1>
+  </div>
+
+  <div id="other-page-content">
+    <% if @page.versions.count < 2 %>
+      <p>
+        There are no older versions of this page.
+      </p>
+    <% else %>
+      <% previous = prepare_for_diff(@page.content) %>
+  
+      <% @page.versions.reverse.slice(2..20).each do |p| %>
+        <% next if p.content.nil? %>
+        <% content = prepare_for_diff(p.content) %>
+        <% difference = diff(previous, content) %>
+        <% previous = content %>
+
+        <% unless difference.empty? %>
+          <div>
+            <p>
+              <b><%= 'Revision #' + p.version.to_s %></b> -
+              <%= link_to 'Go back to this version', revert_page_url(:id => @page.path, :version => p.version) %>
+            </p>
+            Changes: <%= difference %>
+          </div>
+          <br />
+          <br />
+        <% end %>
+      <% end %>
+    <% end %>
+  </div>
+</div>
+
+<div class="edit">
+  <%= render_sidebar %>
+</div>

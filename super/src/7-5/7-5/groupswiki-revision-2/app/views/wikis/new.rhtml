@@ -1,0 +1,43 @@
+<div id='page'>
+  <div class="titlearea">
+    <h1>
+      Create a fresh new wiki:
+    </h1>
+  </div>
+    
+  <div id="other-page-content">
+
+    <%= error_messages_for 'wiki' %>
+
+    <% form_for @wiki do |f| %>
+      <p>
+        <b>Site name:</b><br />
+        http://<%= text_field_tag 'wiki[domain]', @wiki.domain ? @wiki.domain.sub('.groupswiki.com','') : '', :style => 'width: 120px;' %>
+        <b>&nbsp;. groupswiki . com</b>
+      </p>
+    
+      <p>
+        <b>Your email address:</b><br />
+        <%= f.text_field 'email' %>
+      </p>
+
+      <p>
+        <%= f.check_box 'accepted' %><b>I accept the <a href="/pages/terms">Terms of Service</a>.</b>
+      </p>
+
+      <p>
+        This wiki is free for you to use. There are <a href="/pages/limits">some limits</a> on what
+        you can do with a free wiki. 
+      </p>
+
+      <center>
+        <%= submit_tag 'CREATE MY WIKI' %>
+      </center>
+      
+    <% end %>
+
+    <script>
+      $('wiki[domain]').focus();
+    </script>
+  </div>
+</div>

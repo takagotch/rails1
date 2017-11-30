@@ -1,0 +1,12 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+ben_access_beer:
+  user_id: 1
+  wiki_id: 1
+  
+ben_access_cars:
+  user_id: 1
+  wiki_id: 2
+
+pedro_access_cars:
+  user_id: 2
+  wiki_id: 2

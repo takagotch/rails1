@@ -1,0 +1,44 @@
+<h1>Niko-Niko Calendar</h1>
+
+ログインしている利用者: <%= session[:user].login %>
+
+<% store_location %>
+
+<%= link_to 'Logout', :controller => 'user', :action => 'logout' %>
+
+<br />
+
+<%= link_to 'New condition', :action => 'new' %>
+
+<table>
+  <tr>
+    <th>Login name</th>               
+    <% for date in date_columns %>
+      <th><%= date %></th>
+    <% end %>
+  </tr>
+
+
+  <% for user in User.find_all %>
+    <tr>
+      <% if user.id == session[:user].id %>
+        <td class="login_user"><%= user.login %></td>
+      <% else %>
+        <td><%= user.login %></td>
+      <% end %>
+
+      <% cond_hash = hash_by_date(user.conditions) %> 
+      <% for date in date_array %>        
+        <% cond = cond_hash[date] %>
+        <% if user.id == session[:user].id %>
+          <td class="login_user">                
+            <%= image_tag(image_src(cond), :alt=>image_alt(cond)) %>
+          </td>
+        <% else %>
+          <td><%= image_tag(image_src(cond), :alt=>image_alt(cond)) %></td>
+        <% end %>
+      <% end %>
+    </tr>
+  <% end %>
+</table>
+  

@@ -1,0 +1,3 @@
+
+page["task_#{@current_task.id}"].show
+page[:message_area].reload

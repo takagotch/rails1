@@ -1,0 +1,30 @@
+<%= error_messages_for 'task' %>
+<div id='task_form_block'>
+<%= form_remote_tag :url => { :action => @form_action, :id => @task.id},:html => {:id => 'task_form'}%>
+  <label for="task_content">何をしようかな？</label>
+  <br/>
+  <%= text_area 'task', 'content',"cols" => 80, "rows" => 3  %>
+  <br/>
+  <label for="priority">あとで</label>
+  <span>
+    <%= radio_button("task", "priority", "1") %>
+    <%=image_tag("priority1.jpg",:size => "20x20",:border => 0)%>
+  </span>
+  <span>
+    <%= radio_button("task", "priority", "2")%>
+    <%=image_tag("priority2.jpg",:size => "20x20",:border => 0)%>
+  </span>
+  <span>
+    <%= radio_button("task", "priority", "3") %>
+    <%=image_tag("priority3.jpg",:size => "20x20",:border => 0)%>
+  </span>
+  <label for="priority">すぐに</label>
+  <br>
+  <label for="task_owner">誰が？</label>
+  <%= text_field 'task', 'owner'  %>
+  <br/>
+  <br/>
+  <%= submit_tag @form_button %>
+<%= end_form_tag%>
+<!--[eoform:task]-->
+</div>

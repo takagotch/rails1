@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2007-10-18T09:20:11.805527Z"
+   url="http://svn.brain-tokyo.net/rmind/branches/pre_release/rmind/public/stylesheets/blueprint/lib/img"
+   last-author="tnaka"
+   kind="dir"
+   uuid="58984862-3718-437e-a6a8-1024abe64f8b"
+   repos="http://svn.brain-tokyo.net/rmind"
+   revision="119"/>
+<entry
+   committed-rev="1"
+   name="grid.png"
+   text-time="2008-02-09T07:14:30.729832Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="de62e4655687261ad22d887ea5d0c971"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:30.370450Z"/>
+<entry
+   name="icons"
+   kind="dir"/>
+</wc-entries>

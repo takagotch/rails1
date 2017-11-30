@@ -1,0 +1,18 @@
+
+<%(BeforeCompile)
+  use_macro(TwoColumnsForm)
+%>
+
+abcdefg
+<<div class="form":|Attr[:title=>:title_helper]<
+  <h3>Add Project</h3>
+  <<two_columns_form<
+    <<<------------------------------------------------------------------------------
+      ||| Parent: | %= select_project "parent", "id"                |
+    <<<------------------------------------------------------------------------------
+      ||| Name:   | %= text_field_tag  "name", nil, :size => 100                 |
+    <<button_bar<--------------------------------------------------------------------
+      %= submit_tag _('add_project')
+      %= link_to 'index', :action=>:index
+
+

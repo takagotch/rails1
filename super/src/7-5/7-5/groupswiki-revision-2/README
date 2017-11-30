@@ -1,0 +1,51 @@
+== Welcome to Groupswiki
+
+Groupswiki is a Wiki-engine that tries to take away the barriers from 
+non-technical users contributing to a wiki. It was built by Ben Nolan
+(bnolan@gmail.com).
+
+Groupswiki is AGPL Licensed.
+
+You can get a hosted Groupswiki at www.groupswiki.com.
+
+== Installation
+
+You will need the following to use groupswiki:
+
+ * Ruby 1.8.5+
+ * MySQL server
+
+And the following gems:
+
+ * rails - we use version 1.2.3
+ * tidy - we use version 1.1.2
+ * minimagick or rmagick
+ 
+Once you've got these - run the following commands on the command-
+line to set up your installation:
+
+  mysqladmin -u root create groupswiki_production
+  RAILS_ENV=production rake db:migrate
+  RAILS_ENV=production rake db:fixtures:load
+  RAILS_ENV=production script/server
+  
+The wiki should now be available via your webbrowser at:
+
+  http://localhost:3000/
+
+== License
+
+Groupswiki is (c) 2006-2007 Ben Nolan.
+
+Groupswiki is AGPL Licensed. See http://www.affero.org/oagpl.html
+for details.
+
+The application comes with no warranty - express or implied. Use of 
+the application is at your own risk.
+
+== Contact
+
+Go to www.groupswiki.com or you can email bnolan+gw@gmail.com, the
+google code site is at http://code.google.com/p/groupswiki/.
+
+Have fun!

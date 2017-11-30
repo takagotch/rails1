@@ -1,0 +1,23 @@
+<%(BeforeCompile)
+  use_macro(TwoColumnsForm)
+%>
+
+<<div class="form" :|Attr[:title=>:title_helper]<
+  <h3>Please Edit</h3>
+  <<two_columns_form <
+    <<<------------------------------------------------------------------------------
+      ||| Login ID: | <<:user \| :login>> |
+    <<<------------------------------------------------------------------------------
+      ||| Password: | <%= password_field "user", "password", :size=>30, :value=>"" %>|
+    <<<------------------------------------------------------------------------------
+      ||| Password(confirm): | <%= password_field "user", "password_confirmation", :size=>30, :value=>"" %>|
+    <<<------------------------------------------------------------------------------
+      ||| Email: | <%= text_field "user", "email", :size => 30 %>                |
+    <<button_bar<--------------------------------------------------------------------
+      <%= submit_tag _('Update') %>
+      &#160;
+      <%= link_to _('Login'), :action => 'login' %>
+      &#160;
+      <%= link_to _('Settings'), :action => 'setting' %>
+<< ?[params[:sel_test]] <
+  <%= button_to _('DeleteNoConfirm'), { :action => 'delete', :id=> @user.id} %>

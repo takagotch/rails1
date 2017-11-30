@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="96"
+   name=""
+   committed-date="2008-01-21T09:14:35.098151Z"
+   url="http://svn.brain-tokyo.net/rmind/branches/pre_release/rmind/spec/models"
+   last-author="tnaka"
+   kind="dir"
+   uuid="58984862-3718-437e-a6a8-1024abe64f8b"
+   repos="http://svn.brain-tokyo.net/rmind"
+   revision="119"/>
+<entry
+   committed-rev="1"
+   name="address_spec.rb"
+   text-time="2008-02-09T07:13:46.541483Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="66cbb44c6602bf6cd7a13d13492e12f7"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:46.197727Z"/>
+<entry
+   committed-rev="1"
+   name="dash_board_spec.rb"
+   text-time="2008-02-09T07:13:46.588359Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="78559803d56b7e7a91af44d4209e287e"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:46.228977Z"/>
+<entry
+   committed-rev="1"
+   name="project_spec.rb"
+   text-time="2008-02-09T07:13:46.650860Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="41330e135709d0cd32773f7668567341"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:46.244603Z"/>
+<entry
+   committed-rev="1"
+   name="tag_spec.rb"
+   text-time="2008-02-09T07:13:46.666486Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="dcd09e2420deefd91404fefc85d2bef1"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:46.275853Z"/>
+<entry
+   committed-rev="75"
+   name="schedule_spec.rb"
+   text-time="2008-02-09T07:13:46.697736Z"
+   committed-date="2008-01-01T06:32:03.419639Z"
+   checksum="67e72e26e09473c7e7ff8dd2e1fee4d9"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:46.322729Z"/>
+<entry
+   committed-rev="1"
+   name="memo_spec.rb"
+   text-time="2008-02-09T07:13:46.728987Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="3014d91be2551e2eca5fb265f8101da2"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:46.338354Z"/>
+<entry
+   committed-rev="33"
+   name="command_spec.rb"
+   text-time="2008-02-09T07:13:46.760238Z"
+   committed-date="2007-12-12T07:23:32.036628Z"
+   checksum="0c8f01c51cd94c1d59dd0df2ca81be68"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:46.353980Z"/>
+<entry
+   committed-rev="1"
+   name="mocktime.rb"
+   text-time="2008-02-09T07:13:46.791488Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="088e938ff580cf6571f9d1058ce4516a"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:46.369605Z"/>
+<entry
+   committed-rev="1"
+   name="user_spec.rb"
+   text-time="2008-02-09T07:13:46.807113Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="ed29fcfa32c600529f55646101c9773e"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:46.416481Z"/>
+<entry
+   committed-rev="1"
+   name="tagging_spec.rb"
+   text-time="2008-02-09T07:13:46.838364Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="b6dc7deaaaaec9ca0f80be323b986e46"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:46.432106Z"/>
+<entry
+   committed-rev="1"
+   name="task_spec.rb"
+   text-time="2008-02-09T07:13:46.869615Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="2a1df9e994dcf7826f7b7d0b115d2308"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:46.463357Z"/>
+<entry
+   committed-rev="96"
+   name="yaml_spec.rb"
+   text-time="2008-02-09T07:13:46.900865Z"
+   committed-date="2008-01-21T09:14:35.098151Z"
+   checksum="74112e860d0a6e7c567ee9d0c4768f48"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:46.478982Z"/>
+</wc-entries>

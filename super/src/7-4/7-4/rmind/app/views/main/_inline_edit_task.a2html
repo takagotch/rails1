@@ -1,0 +1,46 @@
+<%(BeforeCompile)
+  #use_macro(Amrita2View::ARForm)
+%>
+
+<<div#edit_task<
+  <<div#current_task_area :current_task | TaskHelper <
+
+    << task_text= <
+      %= text_field_tag 'task[text]', $_.text, :id=>"task_text",:size=>60
+
+    << url= <
+      %= text_field_tag 'task[url]', $_.url, :id=>"task_url",:size=>60
+
+    << project= <
+      %= select_project_tag "task", "project_id", $_.project_id
+
+    << tag= <
+      <<span#task_tag_area<
+        %= text_field_tag 'task[tag]', $_.tag, :size=>50, :id=>'task_tag'
+        <<:install_tag_complete>>
+
+    << set_tag_button= <
+      %= button_to_function 'settag', remote_function(:submit=> "task_tag_area", :url=> {:action=>:update_tag, :id=>$_.id, :cmd=>:edit_inbox})
+
+    <<table.noborder <
+      <<<-------------------------------------------------------------------------
+        |rowspan || 4      ||           ||                |
+        |        || Common:|| Task:     || <<=task_text>> |
+      <<<-------------------------------------------------------------------------
+        |                  || Tag:      || <<=tag>>       | <<=set_tag_button>>
+      <<<-------------------------------------------------------------------------
+        |                  || Project:  || <<=project>>   |
+      <<<-------------------------------------------------------------------------
+        |                  || Url:      || <<=url>>       |
+      ----------------------------------------------------------------------------
+
+      <<:taggings<
+        <<:show_only_tag_with_form | AcceptData[:hook] <
+          <<:edit_tagging_value>>
+
+    <<div.button_area :| Join['&#160;'] <
+        %= link_to "detail", :controller=>:tasks, :action=>:edit, :id=>$_.id
+
+        % func = remote_function(:submit=> "current_task_area", :url=>{:action=>:edit_task, :id=>$_.id})
+        %= button_to_function "update", func
+

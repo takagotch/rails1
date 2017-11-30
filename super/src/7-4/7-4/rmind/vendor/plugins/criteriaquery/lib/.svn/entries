@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="14"
+   name=""
+   committed-date="2007-10-18T13:35:10.173200Z"
+   url="http://svn.brain-tokyo.net/rmind/branches/pre_release/rmind/vendor/plugins/criteriaquery/lib"
+   last-author="tnaka"
+   kind="dir"
+   uuid="58984862-3718-437e-a6a8-1024abe64f8b"
+   repos="http://svn.brain-tokyo.net/rmind"
+   revision="119"/>
+<entry
+   committed-rev="14"
+   name="join.rb"
+   text-time="2008-02-09T07:14:07.682514Z"
+   committed-date="2007-10-18T13:35:10.173200Z"
+   checksum="a9540ca71c115772b652ca37ad9425f5"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:07.495011Z"/>
+<entry
+   committed-rev="14"
+   name="table_alias.rb"
+   text-time="2008-02-09T07:14:07.729390Z"
+   committed-date="2007-10-18T13:35:10.173200Z"
+   checksum="7405b0436d54d4b7dd2878d9b9f1c33c"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:07.510636Z"/>
+<entry
+   committed-rev="14"
+   name="expressions.rb"
+   text-time="2008-02-09T07:14:07.760641Z"
+   committed-date="2007-10-18T13:35:10.173200Z"
+   checksum="55eb6924422d3629c13d95d6c361111d"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:07.541887Z"/>
+<entry
+   committed-rev="14"
+   name="query.rb"
+   text-time="2008-02-09T07:14:07.807517Z"
+   committed-date="2007-10-18T13:35:10.173200Z"
+   checksum="337568813e3c70ffb419776ea632b966"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:07.573137Z"/>
+<entry
+   committed-rev="14"
+   name="criteria_query.rb"
+   text-time="2008-02-09T07:14:07.838767Z"
+   committed-date="2007-10-18T13:35:10.173200Z"
+   checksum="f9b1a4c44d5977799e7499078a6b0c2c"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:07.588762Z"/>
+<entry
+   committed-rev="14"
+   name="filterable.rb"
+   text-time="2008-02-09T07:14:07.854393Z"
+   committed-date="2007-10-18T13:35:10.173200Z"
+   checksum="75f60f748316132c3bbbe9ea0840a1b8"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:07.651264Z"/>
+</wc-entries>

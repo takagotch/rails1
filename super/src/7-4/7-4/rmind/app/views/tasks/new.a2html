@@ -1,0 +1,21 @@
+
+
+<%(BeforeCompile)
+  use_macro(TwoColumnsForm)
+%>
+
+<<div class="form":|Attr[:title=>:title_helper]<
+  <h3>New Task</h3>
+  <<two_columns_form<
+    <form action='create' />
+    <<<------------------------------------------------------------------------------
+      ||| Text: | <%= text_field_tag  "text", @text, :size => 100 %>                |
+    <<<------------------------------------------------------------------------------
+      ||| Url: | <%= text_field_tag  "url", @task_url, :size => 100 %>                |
+    <<<------------------------------------------------------------------------------
+      ||| Memo  :| %= text_area_tag "memo", @memo, :cols=>60, :rows=>10
+    <<button_bar<--------------------------------------------------------------------
+      %= submit_tag _('create')
+      %= link_to 'index', :action=>:index
+
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2007-10-18T09:20:11.805527Z"
+   url="http://svn.brain-tokyo.net/rmind/branches/pre_release/rmind/vendor/plugins/rspec_on_rails/lib/spec/matchers"
+   last-author="tnaka"
+   kind="dir"
+   uuid="58984862-3718-437e-a6a8-1024abe64f8b"
+   repos="http://svn.brain-tokyo.net/rmind"
+   revision="119"/>
+<entry
+   committed-rev="1"
+   name="have.rb"
+   text-time="2008-02-09T07:13:55.807286Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="fbdc5402d19e4c12483b6aaa7e0f1edf"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:55.744785Z"/>
+</wc-entries>

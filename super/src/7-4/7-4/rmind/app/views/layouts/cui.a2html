@@ -1,0 +1,50 @@
+
+<<html :| IndentByTidyIfDebug <
+  <<head<
+    <title>Reviewable Mind</title>
+    %= stylesheet_link_tag "default", :media=>"screen"
+    %= stylesheet_link_tag "blueprint/screen.css", :media=>"screen, projection"
+    %= stylesheet_link_tag "blueprint/print", :media=>"print"
+  <<body<
+    <<div.container<
+      <<div class="column span-24" <
+        <<div style='text-align: right'<
+          *
+          <<span#spinner style='display: none' <
+            reading...
+          *
+
+        <<h1 style='text-align: center'<
+          Reviewable Mind(
+          %= ENV['RAILS_ENV']
+          )
+
+        <<div style='text-align: right'<
+          %= link_to 'dashboard', :controller=>:main, :action=>:index
+          |
+          %= link_to 'projects', :controller=>:project, :action=>:index
+          |
+          %= link_to 'tags', :controller=>:tag, :action=>:index
+
+        <%
+          msgs = [:notice, :warning, :message].collect do |n|
+            if flash[n]
+              { :name => n, :msg => flash[n] }
+            else
+              nil
+            end
+          end
+        %>
+        <hr />
+      <<:msgs|AcceptData[nil]<
+        <<div:|Attr[:id=>:name, :body=>:msg]>>
+
+      <<div class="column span-3"<
+        left sidebar
+
+      <<div class="column span-18"<
+        <<:content_for_layout|NoSanitize>>
+
+
+      <<div class="column span-3 last"<
+        right sidebar

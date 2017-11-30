@@ -1,0 +1,16 @@
+
+
+  <<p<
+    (Experimental feature)
+    You can export your schedules in iCal format with Export Tag
+
+  <<ul<
+    <<li<
+      %= link_to _('Create a new ExportTag'), :action=>:new
+
+  <<p<
+    existing ExportTags.
+
+  <<ul<
+    <<li :export_tags<
+      %= link_to $_.name, :action=>:show, :id=>$_.id

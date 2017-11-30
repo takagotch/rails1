@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="80"
+   name=""
+   committed-date="2008-01-09T07:27:07.847802Z"
+   url="http://svn.brain-tokyo.net/rmind/branches/pre_release/rmind/spec/views/main"
+   last-author="tnaka"
+   kind="dir"
+   uuid="58984862-3718-437e-a6a8-1024abe64f8b"
+   repos="http://svn.brain-tokyo.net/rmind"
+   revision="119"/>
+<entry
+   committed-rev="1"
+   name="_edit_task.spec.rb"
+   text-time="2008-02-09T07:13:48.682149Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="9c89d03fa387a30abfe0ca30af8933dd"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:48.588398Z"/>
+<entry
+   committed-rev="1"
+   name="_show_task.spec.rb"
+   text-time="2008-02-09T07:13:48.729025Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="dcd2245de4ff7583bc71efc20b9c27a7"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:48.619648Z"/>
+<entry
+   committed-rev="80"
+   name="index_view_spec.rb"
+   text-time="2008-02-09T07:13:48.760276Z"
+   committed-date="2008-01-09T07:27:07.847802Z"
+   checksum="9bdd47f9d78f056b8022b9354d8ca5cd"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:48.635274Z"/>
+</wc-entries>

@@ -1,0 +1,14 @@
+
+page[:inbox].reload
+page[:next_actions].reload
+
+if @current_task
+  current = "task_#{@current_task.id}".intern
+  page[current].visual_effect :highlight,
+                              :startcolor => "#ffcc66",
+                              :endcolor => "#ffffff"
+end
+
+page[:text][:value] = ''
+
+page[:message_area].reload

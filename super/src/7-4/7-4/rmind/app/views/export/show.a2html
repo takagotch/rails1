@@ -1,0 +1,19 @@
+
+
+
+
+  <<div<
+    <<h3 :name>>
+
+    <<p :export_tag | ExportTagHelper <
+      link for ical:
+      %= link_to 'ical', $_.ical_url
+
+    <<p<
+      (Experimental feature)
+      This url is exporting tasks below now.
+
+    <<ul<
+      <<li :schedules <
+        <<:summary>> , <<:dtstart>>, <<:dtend>>
+

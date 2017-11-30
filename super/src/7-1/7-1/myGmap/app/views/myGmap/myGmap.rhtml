@@ -1,0 +1,14 @@
+<%= render :partial => 'form' %>
+<%
+  map = GoogleMap.new
+  map.markers << GoogleMapMarker.new(:map => map, 
+                                     :lat => @lat, 
+                                     :lng => @lng,
+                                     :html => '緯度：' + @lat.to_s + '<br/>経度：' + @lng.to_s)
+%>
+
+  <%= map.to_html %>
+  
+  <div style="width: 500px; height: 500px;">
+    <%= map.div %>
+  </div>

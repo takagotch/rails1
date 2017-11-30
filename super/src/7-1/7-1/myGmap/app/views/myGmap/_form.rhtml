@@ -1,0 +1,10 @@
+<%= form_tag :action=>'myGmap'%>
+
+  <label for="latitude">緯度：</label>
+  <input type="text" name="lat" value="<%=h @lat%>"><br/>
+  <label for="longitude">経度：</label>
+  <input type="text" name="lng" value="<%=h @lng%>">
+  
+  <%= submit_tag '表示' %>
+  
+<%= end_form_tag%>

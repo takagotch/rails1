@@ -1,0 +1,141 @@
+フォルダ パスの一覧
+ボリューム シリアル番号は 006F006F 8C13:51CA です
+C:.
+│  Rakefile
+│  README
+│  tree.txt
+│  
+├─app
+│  ├─controllers
+│  │      address_controller.rb
+│  │      application.rb
+│  │      
+│  ├─helpers
+│  │      address_helper.rb
+│  │      application_helper.rb
+│  │      
+│  ├─models
+│  │      address.rb
+│  │      
+│  └─views
+│      ├─address
+│      │      cancel.rjs
+│      │      component.rhtml
+│      │      create.rjs
+│      │      destroy.rjs
+│      │      edit.rjs
+│      │      list.rhtml
+│      │      new.rjs
+│      │      update.rjs
+│      │      _address.rhtml
+│      │      _column_headings.rhtml
+│      │      _form.rhtml
+│      │      _form_messages.rhtml
+│      │      _messages.rhtml
+│      │      _new_edit.rhtml
+│      │      _pagination_links.rhtml
+│      │      
+│      └─layouts
+│              address.rhtml
+│              
+├─components
+├─config
+│  │  boot.rb
+│  │  database.yml
+│  │  environment.rb
+│  │  routes.rb
+│  │  
+│  └─environments
+│          development.rb
+│          production.rb
+│          test.rb
+│          
+├─db
+├─doc
+│      README_FOR_APP
+│      
+├─lib
+│  │  ajax_scaffold.rb
+│  │  
+│  └─tasks
+├─log
+│      development.log
+│      production.log
+│      server.log
+│      test.log
+│      
+├─public
+│  │  .htaccess
+│  │  404.html
+│  │  500.html
+│  │  dispatch.cgi
+│  │  dispatch.fcgi
+│  │  dispatch.rb
+│  │  favicon.ico
+│  │  index.html
+│  │  robots.txt
+│  │  
+│  ├─images
+│  │      add.gif
+│  │      arrow_down.gif
+│  │      arrow_up.gif
+│  │      indicator-small.gif
+│  │      indicator.gif
+│  │      rails.png
+│  │      
+│  ├─javascripts
+│  │      ajax_scaffold.js
+│  │      application.js
+│  │      controls.js
+│  │      dragdrop.js
+│  │      effects.js
+│  │      prototype.js
+│  │      rico_corner.js
+│  │      
+│  └─stylesheets
+│          ajax_scaffold.css
+│          
+├─script
+│  │  about
+│  │  breakpointer
+│  │  console
+│  │  destroy
+│  │  generate
+│  │  plugin
+│  │  runner
+│  │  server
+│  │  
+│  ├─performance
+│  │      benchmarker
+│  │      profiler
+│  │      
+│  └─process
+│          inspector
+│          reaper
+│          spawner
+│          
+├─test
+│  │  test_helper.rb
+│  │  
+│  ├─fixtures
+│  │      addresses.yml
+│  │      
+│  ├─functional
+│  │      address_controller_test.rb
+│  │      
+│  ├─integration
+│  ├─mocks
+│  │  ├─development
+│  │  └─test
+│  └─unit
+│          address_test.rb
+│          
+├─tmp
+│  ├─cache
+│  ├─pids
+│  ├─sessions
+│  │      ruby_sess.bed36e4b34a47f16
+│  │      
+│  └─sockets
+└─vendor
+    └─plugins

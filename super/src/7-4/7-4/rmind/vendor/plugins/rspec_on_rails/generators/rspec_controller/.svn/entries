@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2007-10-18T09:20:11.805527Z"
+   url="http://svn.brain-tokyo.net/rmind/branches/pre_release/rmind/vendor/plugins/rspec_on_rails/generators/rspec_controller"
+   last-author="tnaka"
+   kind="dir"
+   uuid="58984862-3718-437e-a6a8-1024abe64f8b"
+   repos="http://svn.brain-tokyo.net/rmind"
+   revision="119"/>
+<entry
+   committed-rev="1"
+   name="USAGE"
+   text-time="2008-02-09T07:14:00.166745Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="83147ae23bebf2da634285740776d2df"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:59.635485Z"/>
+<entry
+   committed-rev="1"
+   name="rspec_controller_generator.rb"
+   text-time="2008-02-09T07:14:00.197996Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="4bcb61ce19bddf1f7d6e769de8200a47"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:59.666735Z"/>
+<entry
+   name="templates"
+   kind="dir"/>
+</wc-entries>

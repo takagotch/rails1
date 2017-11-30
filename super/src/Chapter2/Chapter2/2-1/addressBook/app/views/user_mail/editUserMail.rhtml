@@ -1,0 +1,8 @@
+<h1>Editing mail</h1>
+
+<% form_tag :action => 'update', :id => @mail do %>
+  <%= render :partial => 'formUserMail' %>
+  <%= submit_tag 'Edit' %>
+<% end %>
+
+<%= link_to 'Back', :action => 'userMailList' %>

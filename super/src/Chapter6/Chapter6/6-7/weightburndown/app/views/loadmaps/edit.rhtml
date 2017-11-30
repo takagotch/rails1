@@ -1,0 +1,9 @@
+<br>
+<h1>ロードマップを変更する</h1>
+
+<% form_tag :action => 'update', :id => @loadmap do %>
+  <%= render :partial => 'form' %>
+  <%= submit_tag '変更する' %>
+<% end %>
+
+<%= link_to '戻る', :controller => 'weightburndown',:action => 'index' %>

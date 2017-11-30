@@ -1,0 +1,17 @@
+<h1>Listing tasks</h1>
+
+<% for task in @tasks %>
+  <div id="<%=task.id %>" class="task">
+    <%=task.content %><br>
+    <%= link_to 'Show', :action => 'show', :id => task %>
+    <%= link_to 'Edit', :action => 'edit', :id => task %>
+    <%= link_to 'Destroy', { :action => 'destroy', :id => task }, :confirm => 'Are you sure?', :method => :post %>
+  </div><br>
+<% end %>
+
+<%= link_to 'Previous page', { :page => @task_pages.current.previous } if @task_pages.current.previous %>
+<%= link_to 'Next page', { :page => @task_pages.current.next } if @task_pages.current.next %> 
+
+<br/>
+
+<%= link_to 'New task', :action => 'new' %>

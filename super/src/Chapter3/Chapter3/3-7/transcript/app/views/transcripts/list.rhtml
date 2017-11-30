@@ -1,0 +1,43 @@
+<%= stylesheet_link_tag "transcript.css" %>
+<h1>議事録一覧</h1>
+<%= link_to '新規登録', :action => 'new' %><br/><br/>
+<%= link_to '前のページ', { :page => @transcript_pages.current.previous } if @transcript_pages.current.previous %>
+<%= link_to '次のページ', { :page => @transcript_pages.current.next } if @transcript_pages.current.next %> 
+<% for transcript in @transcripts %>
+    <div class="transcript">
+        <table>
+            <tr>
+                <td colspan="2" class="operation">
+                    <%= link_to '詳細', :action => 'show', :id => transcript.id %>
+                    <%= link_to '編集', :action => 'edit', :id => transcript.id %>
+                    <%= link_to '削除', { :action => 'destroy', :id => transcript.id },
+                                        :confirm => '削除してもよろしいですか？',
+                                        :method => :post%>
+                </td>
+            </tr>
+            <tr>
+                <td>タイトル:</td>
+                <td><%= transcript.title%></td>
+            </tr>
+            <tr>
+                <td>登録日:</td>
+                <td><%= transcript.created_on.strftime("%Y/%m/%d %X")%></td>
+            </tr>
+            <tr>
+                <td>更新日:</td>
+                <td><%= transcript.updated_on.strftime("%Y/%m/%d %X")%></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <%=
+                    link_to (image_tag url_for(:action => "get_transcript",:id => transcript.id),
+                                       :size   => "150x150",
+                                       :alt    => transcript.filename,
+                                       :title  => transcript.description,
+                                       :border => 0),
+                            {:action=>'get_transcript',:id=>transcript.id},:popup => ['new_window_name', 'menubar=no,resizable=yes']
+                    %>
+                </td>
+        </table>
+    </div>
+<% end %>

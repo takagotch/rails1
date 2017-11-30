@@ -1,0 +1,27 @@
+<h1>Listing dailyweights</h1>
+
+<table>
+  <tr>
+  <% for column in Dailyweight.content_columns %>
+    <th><%= column.human_name %></th>
+  <% end %>
+  </tr>
+  
+<% for dailyweight in @dailyweights %>
+  <tr>
+  <% for column in Dailyweight.content_columns %>
+    <td><%=h dailyweight.send(column.name) %></td>
+  <% end %>
+    <td><%= link_to 'Show', :action => 'show', :id => dailyweight %></td>
+    <td><%= link_to 'Edit', :action => 'edit', :id => dailyweight %></td>
+    <td><%= link_to 'Destroy', { :action => 'destroy', :id => dailyweight }, :confirm => 'Are you sure?', :method => :post %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to 'Previous page', { :page => @dailyweight_pages.current.previous } if @dailyweight_pages.current.previous %>
+<%= link_to 'Next page', { :page => @dailyweight_pages.current.next } if @dailyweight_pages.current.next %> 
+
+<br />
+
+<%= link_to 'New dailyweight', :action => 'new' %>

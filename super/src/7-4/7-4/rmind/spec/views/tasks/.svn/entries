@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="51"
+   name=""
+   committed-date="2007-12-21T01:50:12.617877Z"
+   url="http://svn.brain-tokyo.net/rmind/branches/pre_release/rmind/spec/views/tasks"
+   last-author="tnaka"
+   kind="dir"
+   uuid="58984862-3718-437e-a6a8-1024abe64f8b"
+   repos="http://svn.brain-tokyo.net/rmind"
+   revision="119"/>
+<entry
+   committed-rev="20"
+   name="show.a2html_spec.rb"
+   text-time="2008-02-09T07:13:49.041531Z"
+   committed-date="2007-10-19T18:05:47.058557Z"
+   checksum="e1cb460748b95bf04900769b7dd25562"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:48.932154Z"/>
+<entry
+   committed-rev="20"
+   name="edit.a2html_spec.rb"
+   text-time="2008-02-09T07:13:49.088407Z"
+   committed-date="2007-10-19T18:05:47.058557Z"
+   checksum="60736e43e67dc3de438ec2d6e7932fe6"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:48.947780Z"/>
+<entry
+   committed-rev="51"
+   name="index.a2html_spec.rb"
+   text-time="2008-02-09T07:13:49.135283Z"
+   committed-date="2007-12-21T01:50:12.617877Z"
+   checksum="1000605cfd2175fef8c0bcd64084865a"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:48.963405Z"/>
+<entry
+   committed-rev="1"
+   name="new.a2html_spec.rb"
+   text-time="2008-02-09T07:13:49.166534Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="23ac26c16351b1d6e240359856daa6f6"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:48.979030Z"/>
+</wc-entries>

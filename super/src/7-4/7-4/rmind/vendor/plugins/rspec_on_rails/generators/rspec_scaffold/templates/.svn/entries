@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2007-10-18T09:20:11.805527Z"
+   url="http://svn.brain-tokyo.net/rmind/branches/pre_release/rmind/vendor/plugins/rspec_on_rails/generators/rspec_scaffold/templates"
+   last-author="tnaka"
+   kind="dir"
+   uuid="58984862-3718-437e-a6a8-1024abe64f8b"
+   repos="http://svn.brain-tokyo.net/rmind"
+   revision="119"/>
+<entry
+   committed-rev="1"
+   name="controller_spec.rb"
+   text-time="2008-02-09T07:14:02.307411Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="2f80007694190155d206807f300b5698"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:02.073032Z"/>
+<entry
+   committed-rev="1"
+   name="show_erb_spec.rb"
+   text-time="2008-02-09T07:14:02.338662Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="1a05f67ea39462111aebbcb86b60a64a"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:02.119907Z"/>
+<entry
+   committed-rev="1"
+   name="edit_erb_spec.rb"
+   text-time="2008-02-09T07:14:02.385538Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="549939f681d9e5f5d91d0c11bff909c5"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:02.151158Z"/>
+<entry
+   committed-rev="1"
+   name="helper_spec.rb"
+   text-time="2008-02-09T07:14:02.416788Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="84ed7f622dbe35b8ae39a483f18d2af0"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:02.166783Z"/>
+<entry
+   committed-rev="1"
+   name="index_erb_spec.rb"
+   text-time="2008-02-09T07:14:02.448039Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="cd13ed68ce12b0bd4975920ed44cb7e8"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:02.213659Z"/>
+<entry
+   committed-rev="1"
+   name="new_erb_spec.rb"
+   text-time="2008-02-09T07:14:02.479289Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="e06d015857639caaebfd96d8c9a03c65"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:02.260535Z"/>
+</wc-entries>

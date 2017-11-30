@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="94"
+   name=""
+   committed-date="2008-01-20T06:32:43.223782Z"
+   url="http://svn.brain-tokyo.net/rmind/branches/pre_release/rmind/spec/controllers"
+   last-author="tnaka"
+   kind="dir"
+   uuid="58984862-3718-437e-a6a8-1024abe64f8b"
+   repos="http://svn.brain-tokyo.net/rmind"
+   revision="119"/>
+<entry
+   committed-rev="1"
+   name="cui_controller_spec.rb"
+   text-time="2008-02-09T07:13:47.213371Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="c7cb0951f6d39d9b70dccc04ebfe2cfb"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:47.041493Z"/>
+<entry
+   committed-rev="94"
+   name="export_controller_spec.rb"
+   text-time="2008-02-09T07:13:47.260247Z"
+   committed-date="2008-01-20T06:32:43.223782Z"
+   checksum="b7b2b7997d49983275b2da3121f75d02"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:47.072744Z"/>
+<entry
+   committed-rev="65"
+   name="main_controller_spec.rb"
+   text-time="2008-02-09T07:13:47.307123Z"
+   committed-date="2007-12-27T11:53:21.167934Z"
+   checksum="7794cec705e9549bf6538bbb1f353db1"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:47.088369Z"/>
+<entry
+   committed-rev="51"
+   name="tasks_controller_spec.rb"
+   text-time="2008-02-09T07:13:47.338374Z"
+   committed-date="2007-12-21T01:50:12.617877Z"
+   checksum="8c50f7d0f008cdc58f89fa39e1892d9b"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:47.119619Z"/>
+<entry
+   committed-rev="43"
+   name="project_controller_spec.rb"
+   text-time="2008-02-09T07:13:47.385250Z"
+   committed-date="2007-12-17T08:20:10.884671Z"
+   checksum="c798362d481bf0d0c01d0df31f33d3b9"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:47.135245Z"/>
+<entry
+   committed-rev="1"
+   name="tag_controller_spec.rb"
+   text-time="2008-02-09T07:13:47.416500Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="6fcdf12006a98fd78b68ce6851f3eb78"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:47.166495Z"/>
+<entry
+   committed-rev="52"
+   name="user_controller_spec.rb"
+   text-time="2008-02-09T07:13:47.447751Z"
+   committed-date="2007-12-21T02:12:40.075143Z"
+   checksum="dde621940ce0393fe2dde53ec97b830b"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:47.182121Z"/>
+</wc-entries>

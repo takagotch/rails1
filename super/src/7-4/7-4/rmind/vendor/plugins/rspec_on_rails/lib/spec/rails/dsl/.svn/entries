@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2007-10-18T09:20:11.805527Z"
+   url="http://svn.brain-tokyo.net/rmind/branches/pre_release/rmind/vendor/plugins/rspec_on_rails/lib/spec/rails/dsl"
+   last-author="tnaka"
+   kind="dir"
+   uuid="58984862-3718-437e-a6a8-1024abe64f8b"
+   repos="http://svn.brain-tokyo.net/rmind"
+   revision="119"/>
+<entry
+   name="behaviour"
+   kind="dir"/>
+<entry
+   committed-rev="1"
+   name="ivar_proxy.rb"
+   text-time="2008-02-09T07:13:58.010454Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="46aea7cb1f4228b355be44bed0c59883"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:57.932327Z"/>
+<entry
+   committed-rev="1"
+   name="behaviour.rb"
+   text-time="2008-02-09T07:13:58.041704Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="668061e0c03f72fbefad8b903e5fd79f"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:57.947952Z"/>
+<entry
+   committed-rev="1"
+   name="assigns_hash_proxy.rb"
+   text-time="2008-02-09T07:13:58.104205Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="3c15b8f67f7c17e5ab0c91e1f778d96e"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:57.963578Z"/>
+</wc-entries>

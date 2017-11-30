@@ -1,0 +1,26 @@
+<%(BeforeCompile)
+  use_macro(FormRemoteTag)
+%>
+
+  <<div<
+    <<h2<
+      current tasks
+
+    <<div :tasks_by_date<
+      <<h3 :date | [:strftime, "%y-%m-%d"] <
+
+      <<table<
+        <<<--------------------------------------------------------------
+         |width   || 10  || 110     || 400  || 60      || 60      ||
+         |        ||     || project || task || created || updated || del
+        <<:tasks | TaskHelper <
+          <<tr :| Attr[:id=>:task_id, :class=>:cycle_class] <
+            <<th<
+              %  onclick = %[document.location.href='#{url_for(:action=>:toggle_done, :id=>$_.id)}']
+              %= check_box_tag $_.checkbox_id, "1", $_.done?, :onclick=>onclick
+            <<td :project_with_link >>
+            <<td :task_window_link >>
+            <<td :created_at | [:strftime, "%y-%m-%d"] >>
+            <<td :updated_at | [:strftime, "%y-%m-%d"] >>
+            <<td <
+              %= link_to '[X]', { :action=>:destroy, :id=>$_.id }, :confirm=>'really?'

@@ -1,0 +1,2 @@
+module DailyweightsHelper
+end

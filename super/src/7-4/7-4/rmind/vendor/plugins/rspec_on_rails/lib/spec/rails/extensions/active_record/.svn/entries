@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2007-10-18T09:20:11.805527Z"
+   url="http://svn.brain-tokyo.net/rmind/branches/pre_release/rmind/vendor/plugins/rspec_on_rails/lib/spec/rails/extensions/active_record"
+   last-author="tnaka"
+   kind="dir"
+   uuid="58984862-3718-437e-a6a8-1024abe64f8b"
+   repos="http://svn.brain-tokyo.net/rmind"
+   revision="119"/>
+<entry
+   committed-rev="1"
+   name="oracle_adapter_patch.rb"
+   text-time="2008-02-09T07:13:56.979184Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="5abb81778ae3cf538638ddb33e9ed233"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:56.885432Z"/>
+<entry
+   committed-rev="1"
+   name="base.rb"
+   text-time="2008-02-09T07:13:57.041685Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="ef769b3d3b57de362c5199a6abb82081"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:56.947933Z"/>
+</wc-entries>

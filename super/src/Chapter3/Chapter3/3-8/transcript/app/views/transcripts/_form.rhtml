@@ -1,0 +1,17 @@
+<%= error_messages_for 'transcript' %>
+
+<!--[form:transcript]-->
+<p><label for="transcript_title">タイトル</label><br/>
+<%= text_field 'transcript', 'title' , :size=>"45"  %></p>
+
+<p><label for="transcript_file">ファイル</label><br/>
+<%= file_field 'transcript','imagefile'%>
+</p>
+
+<p><label for="transcript_description">説明</label><br/>
+<%= text_area 'transcript', 'description' ,:rows=>"5" ,:cols=>"50" %></p>
+
+<p><label for="transcript_tag">タグ</label><br/>
+<%= text_field 'transcript', 'tag' , :size=>"45"  %></p>
+
+<!--[eoform:transcript]-->

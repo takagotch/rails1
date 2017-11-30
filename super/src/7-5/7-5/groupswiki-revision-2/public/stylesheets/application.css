@@ -1,0 +1,362 @@
+/* Editor */
+
+.header{
+  background: #40404a;
+  height: 32px;
+  overflow: hidden;
+  margin: 0 0 16px 0;
+}
+
+.lightbox{
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.editor-dialog{
+  z-index: 2000;
+  position: fixed;
+  background-image: url(/images/lightbox.png); 
+  width: 400px; 
+  height: 200px; 
+  padding: 50px;
+  top: 50%;
+  margin-left: -250px;
+  margin-top: -150px;
+  left: 50%;
+  overflow: hidden;
+}
+
+.sidebar{
+  position: absolute;
+  left: 24px;
+  top: 24px;
+}
+.safari div.edit, .firefox div.edit{
+	position: fixed;
+	top: 48px;
+	left: 580px;
+	width: 160px;
+}
+.ie div.edit{
+	position: absolute;
+	top: 48px;
+	left: 580px;
+	width: 160px;
+}
+h3{
+  font-size: 1.2em;
+}
+.edit h3{
+  margin-top: 0;
+}
+.errorExplanation h2{
+  font-size: 1em;
+  font-weight: bold;
+  color: inherit;
+}
+.editor-dialog h2{
+  margin: 0;
+}
+/* Older */
+
+iframe{
+	border: none;
+}
+body,html{
+  height:  100%;
+  background-color: #ccc;
+  margin: 0;
+  padding: 0;
+}
+
+h1,p,h2{
+  margin: 0 0 1.5em 0;
+}
+
+#wrap{
+  width: 500px;
+  margin: 0;
+}
+
+h1{
+  font: bold 1.8em arial;
+}
+
+#subline{
+  position: absolute;
+  top: 3.5em;
+  margin: 0;
+  left: 1.8em;
+  color: #777;
+}
+h2{
+  font: normal 1.5em arial;
+}
+
+#sidebar{
+  color: #777;
+}
+#sidebar a{
+  color: #29f;
+}
+
+body.firefox{
+  overflow: -moz-overflow-y;
+}
+body.safari{
+  overflow: auto;
+}
+body,html{
+  overflow-x:  hidden;
+}
+a img{
+  border: none;
+}
+.titlearea{
+  background: #afa;
+  height: 44px;
+  padding: 15px;
+}
+.titlearea h1{
+  line-height: 32px;
+  margin-bottom: 32px;
+}
+#other-page-content{
+  padding: 10px;
+}
+#logo{
+  font-size: 1.2em;
+  margin: 0 0 0 32px;
+  line-height: 32px;
+}
+#logo a{
+  color: white;
+  text-decoration: none;
+}
+
+.addition{
+  background:  #afa;
+}
+.deletion{
+  background:  #faa;
+}
+.notice{
+}
+a.current{
+  color:  white;
+  background:  #05f;
+}
+#debug{
+	position: absolute;
+	right: 0;
+	width: 300px;
+}
+#debug textarea{
+	width: 100%;
+	height: 400px;
+}
+#wrap{
+  width: 600px;
+  position: relative;
+}
+html > body #wrap{
+}
+.ie #page{
+  padding-right: 0;
+  margin-right: 225px;
+}
+
+#page{
+  width: 520px;
+  margin-left: 32px;
+  min-height: 400px;
+  margin-right: 192px;
+  position:  relative;
+  background: white;
+  padding: 0;
+  border: 1px solid #ccc;
+  border-right: 2px solid #777;
+  border-bottom: 2px solid #777;
+}
+#page-content{
+  padding: 0;
+}
+#sidebar{
+  position: fixed;
+  top:  0;
+  left: 300px;
+  margin-left: 100px;
+  width:  200px;
+  overflow: hidden;
+  padding: 0;
+}
+.ie #sidebar{
+  position: absolute;
+  left: 280px;
+  padding-left: 20px;
+}
+.safari #sidebar{
+  right: 5px;
+}
+.footer{
+  padding: 1em;
+  font-size: 0.9em;
+  margin-left: 230px;
+  color: #333;
+}
+.sidebar hr{
+  border: none;
+  height: 1px;
+  background: #aaa;
+}
+.create-wiki{
+  margin-top: 2em;
+  background: #f3f3ff;
+  padding: 5px;
+  border-right: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+}
+#sidebar h2{
+ font-size:  1.2em;
+ color: #05f;
+ padding-bottom:  0.5em;
+ margin: 0;
+}
+#sidebar form{
+  display: inline;
+}
+.warning span{
+  display:  inline;
+  background:  #faa;
+}
+p.warning{
+  margin:  0;
+}
+
+.form div.field{
+  position:  relative;
+  margin-left:  12em;
+  margin-bottom:  1em;;
+}
+.form div.field label{
+  position:  absolute;
+  top: 0.2em;
+  left:  -12em;
+  font-weight:  bold;
+}
+
+#sidebar .form div{
+  margin-left: 80px;
+}
+#sidebar .form div label{
+  left: -80px;
+}
+
+
+td{
+  vertical-align:  top;
+}
+
+#search-results li{
+  padding-top: 1em;
+}
+
+/* Editor toolbar */
+
+.style-button{
+  margin: 0 2px;
+  font: inherit;
+}
+.style-button:hover{
+}
+.style-button.active{
+}
+.cancel{
+}
+#toolbar{
+}
+#toolbar select{
+  margin-top: 10px;
+  width: 158px;
+}
+
+#edit-page-name{
+  margin: 0 0 1em 0;
+}
+#edit-page-name input.text{
+  background: #ffa;
+  width: 100%;
+  font: bold 1.8em arial;
+}
+#page-name{
+  padding: 0;
+  margin-top: 0;
+}
+#page-name.hover{
+  background: #ffa;
+  border-color: #777 #ccc #ccc #777;
+}
+
+.search, .wiki-name{
+  margin: 1em 0 0 0.5em;
+}
+.search, .wiki-name img{
+}
+.search form{
+  display: inline;
+}
+
+#editing-toolbar{
+  height: 240px;
+}
+
+div#sidebar.not-fixed{
+  margin-top: 20px;
+  position: absolute;
+  left: 310px;
+}
+
+p.dialog-tabs{
+  border-bottom: 1px solid #777;
+  height: 25px;
+}
+p.dialog-tabs a{
+  cursor: pointer !important;
+  padding: 0 5px 0 5px;
+  text-decoration: underline;
+  line-height: 24px;
+  float: left;
+  display: block;
+}
+p.dialog-tabs a.active{
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid #777;
+}
+
+
+.revisions p{
+  position: relative;
+  margin-left: 6em;
+}
+.revisions p .time{
+  position: absolute;
+  left: -5em;
+  text-align: right;
+  display: block;
+  width: 4em;
+  color: #777;
+}
+
+em{
+  background: #ffa;
+}
+.flash span{
+  background: #afa;
+}

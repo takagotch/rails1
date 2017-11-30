@@ -1,0 +1,23 @@
+
+<<div<
+
+  <<table :the_tag<
+    <<<--------------------------------------------------------
+      |width|| 100 || 300
+      |     || name || <<:name>>
+    <<<--------------------------------------------------------
+      |     || type || <<:class \| :name >>
+
+  <<div#tasks<
+    <h2>Tasks</h2>
+
+    <<table<
+      <<<--------------------------------------------------------
+        |width|| 100 || 500 ||
+        |     || project || task ||
+      <<tr:tasks<
+        <<td :project<
+          %= link_to $_.name, :controller=>:project, :action=>:show, :id=>$_.id
+        <<td<
+          %= task_window_link($_.id, $_.text)
+

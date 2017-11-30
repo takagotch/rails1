@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2007-10-18T09:20:11.805527Z"
+   url="http://svn.brain-tokyo.net/rmind/branches/pre_release/rmind/public/stylesheets/blueprint"
+   last-author="tnaka"
+   kind="dir"
+   uuid="58984862-3718-437e-a6a8-1024abe64f8b"
+   repos="http://svn.brain-tokyo.net/rmind"
+   revision="119"/>
+<entry
+   committed-rev="1"
+   name="License.txt"
+   text-time="2008-02-09T07:14:31.104839Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="dc49a657354dccfaad7907ed68565d4b"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:29.917316Z"/>
+<entry
+   committed-rev="1"
+   name="print.css"
+   text-time="2008-02-09T07:14:31.151715Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="d11da22212f1d51ba297fcc127a7f82b"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:29.948567Z"/>
+<entry
+   name="lib"
+   kind="dir"/>
+<entry
+   committed-rev="1"
+   name="screen.css"
+   text-time="2008-02-09T07:14:31.182965Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="a07aaa2786a32283b838aa4eaea819f4"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:30.995462Z"/>
+<entry
+   committed-rev="1"
+   name="Readme.txt"
+   text-time="2008-02-09T07:14:31.214216Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="3090a75b8ac87df3459a15ff9ced9101"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:31.011087Z"/>
+</wc-entries>

@@ -1,0 +1,25 @@
+
+<h1>tags list</h1>
+
+%= debug @tags
+<<:tags<
+  <<div#context<
+    <h2> Context Tags</h2>
+    <<:ContextTag<
+      %= link_to $_.name, :action=>:tags, :id=>$_.id
+  <<div#plain<
+    <h2> Plain Tags</h2>
+    <<:PlainTag<
+      %= link_to $_.name, :action=>:tags, :id=>$_.id
+  <<div#schedule<
+    <h2> Schedule Tags</h2>
+    <<:ScheduleTag<
+      %= link_to $_.name, :action=>:tags, :id=>$_.id
+  <<div#Delegation<
+    <h2> Delegation Tags</h2>
+    <<:DelegationTag<
+      %= link_to $_.name, :action=>:tags, :id=>$_.id
+  <<div#memo<
+    <h2> Memo Tags</h2>
+    <<:MemoTag<
+      %= link_to $_.name, :action=>:tags, :id=>$_.id

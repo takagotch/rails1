@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/railfrog/cms/!svn/ver/388/contrib/engines/lib/engines
+END
+testing.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/railfrog/cms/!svn/ver/388/contrib/engines/lib/engines/testing.rb
+END
+plugin.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/railfrog/cms/!svn/ver/388/contrib/engines/lib/engines/plugin.rb
+END
+deprecated_config_support.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/railfrog/cms/!svn/ver/388/contrib/engines/lib/engines/deprecated_config_support.rb
+END
+plugin_migrator.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/railfrog/cms/!svn/ver/388/contrib/engines/lib/engines/plugin_migrator.rb
+END
+plugin_list.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/railfrog/cms/!svn/ver/388/contrib/engines/lib/engines/plugin_list.rb
+END
+rails_extensions.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/railfrog/cms/!svn/ver/388/contrib/engines/lib/engines/rails_extensions.rb
+END

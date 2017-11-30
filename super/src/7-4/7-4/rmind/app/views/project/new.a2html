@@ -1,0 +1,22 @@
+
+
+
+<%(BeforeCompile)
+  use_macro(TwoColumnsForm)
+%>
+
+<<div class="form":|Attr[:title=>:title_helper]<
+  <h3>New Project</h3>
+  <<two_columns_form<
+    <form action='create' />
+    <<<------------------------------------------------------------------------------
+      ||| Name: | %= text_field  "project", "name", :size => 100                 |
+    <<<------------------------------------------------------------------------------
+      ||| Parent: | %= select_project "project", "parent_project_id"  |
+    <<<------------------------------------------------------------------------------
+      ||| Review Interval: | %= text_field  "project", "review_interval", :size => 100                 |
+    <<button_bar<--------------------------------------------------------------------
+      %= submit_tag _('create')
+      %= link_to 'index', :action=>:index
+
+

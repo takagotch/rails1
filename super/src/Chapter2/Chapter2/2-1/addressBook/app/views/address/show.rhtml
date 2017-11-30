@@ -1,0 +1,24 @@
+<% for column in Address.content_columns %>
+<p>
+  <b><%= column.human_name %>:</b> <%=h @address.send(column.name) %>
+</p>
+<% end %>
+
+UserDetail:<br>
+<% for column in UserDetail.content_columns %>
+<p>
+  <b><%= column.human_name %>:</b> <%=h @userDetail.send(column.name) %>
+</p>
+<% end %>
+<br>
+
+<% for mail in @mails %>
+  <% for column in Mail.content_columns %>
+  <p>
+  <b><%= column.human_name %>:</b> <%=h mail.send(column.name) %>
+  </p>
+  <% end %>
+<% end %>
+
+<%= link_to 'Edit', :action => 'edit', :id => @address %> |
+<%= link_to 'Back', :action => 'list' %>

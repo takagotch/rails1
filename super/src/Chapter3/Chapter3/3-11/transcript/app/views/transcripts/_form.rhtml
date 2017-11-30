@@ -1,0 +1,29 @@
+<%= error_messages_for 'transcript' %>
+
+<!--[form:transcript]-->
+<p><label for="transcript_title">タイトル</label><br/>
+<%= text_field 'transcript', 'title' , :size=>"45"  %></p>
+
+<p><label for="transcript_file">ファイル</label><br/>
+<%= file_field 'transcript','imagefile'%>
+</p>
+
+<%=
+#アクションがeditの場合のみ画像を表示する
+image_tag url_for(:action => "get_transcript",:id => @transcript.id),
+                                       :size   => "150x150",
+                                       :alt    => @transcript.filename,
+                                       :title  => @transcript.description,
+                                      :border => 0 if params[:action]=='edit'
+
+%>
+
+
+
+<p><label for="transcript_description">説明</label><br/>
+<%= text_area 'transcript', 'description' ,:rows=>"5" ,:cols=>"50" %></p>
+
+<p><label for="transcript_tag">タグ</label><br/>
+<%= text_field 'transcript', 'tag' , :size=>"45"  %></p>
+
+<!--[eoform:transcript]-->

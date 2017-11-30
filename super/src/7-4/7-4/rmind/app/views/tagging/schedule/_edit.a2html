@@ -1,0 +1,20 @@
+
+<<:tagging
+   {
+     :sch => $_.schedule,
+     :date => $_.schedule.date.to_s,
+     :from => $_.schedule.from ? $_.schedule.from.strftime("%H:%M"): "",
+     :to => $_.schedule.to ? $_.schedule.to.strftime("%H:%M"): "",
+     :n => "tv[#{$_.tag.name}]",
+   } <
+  <<<-------------------------------------------------------------------------------
+    |rowspan|| 5
+    |       ||<<:date>>||From:        || %= text_field_tag $_.n+"[from]", $_.from
+  <<<-------------------------------------------------------------------------------
+    |||To:          || %= text_field_tag $_.n+"[to]", $_.to
+  <<<-------------------------------------------------------------------------------
+    |||Preparation: || %= text_field_tag $_.n+"[preparation]", $_.sch.preparation
+  <<<------------------------------------------------------------------------------
+    |||Place:       || %= text_field_tag $_.n+"[place]", $_.sch.place
+  <<<-------------------------------------------------------------------------------
+    |||Memo:        || %= text_area_tag $_.n+"[memo]", $_.sch.memo, :cols=>40, :rows=>5

@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>JavaScript unit test file</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <script src="../../public/javascripts/prototype.js" type="text/javascript"></script>
+  <script src="../../public/javascripts/builder.js" type="text/javascript"></script>
+  <script src="../../public/javascripts/effects.js" type="text/javascript"></script>
+  <script src="assets/unittest.js" type="text/javascript"></script>
+  
+  <script src="../../public/javascripts/application.js" type="text/javascript"></script>
+  
+  <link rel="stylesheet" href="assets/unittest.css" type="text/css" />
+</head>
+<body>
+
+<div id="content">
+
+  <div id="header">
+    <h1>JavaScript unit test file</h1>
+    <p>
+      This file tests <strong>editor.js</strong>.
+    </p>
+  </div>
+
+  <!-- Log output -->
+  <div id="testlog"> </div>
+
+</div>
+
+<script type="text/javascript">
+var safariHTML = '<H1>A test<BR></H1><P><SPAN class="Apple-style-span"><SPAN class="Apple-style-span" style="font-weight: bold;">Bold</SPAN> <SPAN class="Apple-style-span" style="font-style: italic;">italic</SPAN> <A class="wiki-link" href="link">link</A></SPAN><BR class="khtml-block-placeholder">.</P>',
+  normalizedHTML = '<H1>A test<BR></H1><P><B>Bold</B> <I>italic</I> <A class="wiki-link" href="link">link</A><BR>.</P>';
+
+function createDiv(str){
+  var div = document.createElement("div");
+  div.innerHTML = str;
+  return div;
+}
+
+// <![CDATA[
+
+  new Test.Unit.Runner({
+    
+    // replace this with your real tests
+    
+    setup: function() {
+      $('demo-content').update('<h1>Header 1</h1><p>some big long file</p><br /><br />Some lonely <b id="bold-text">bold</b> text that goes here.<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><p id="etc-paragraph">etc etc etc etc etc etc etc etc etc etc etc etc etc etc etc etc etc etc etc etc</p><br /><br /><br /><br /><br /><br /><br /><br /><p id="some-element-at-the-bottom">blah</p>')
+      $('editor-placeholder').update();
+      $('toolbar').update();
+    },
+    
+    teardown: function() {
+      
+    },
+    
+    testConvertTo : function() { with(this) {
+        assert($(document.body).convertTo);
+        
+        var el = document.createElement("b");
+        el.id = "some-id";
+        el.className = "some-class";
+        el.innerHTML = "testing";
+        document.body.appendChild(el);
+        
+        el = $(el).convertTo('i');
+        
+        // converTo returns the new element
+        assert(el)
+        assertEqual('I', el.nodeName)
+        assertEqual('I', document.body.lastChild.nodeName)
+        assertEqual('testing', el.innerHTML)
+        
+        // Note that attributes are not copied over
+        assertEqual("", el.id)
+        assertEqual("", el.className)
+      }},
+      
+      testSafariNormalize: function() { with(this) {
+        var e = new Editor;
+        
+        assertEqual(normalizedHTML.toLowerCase(), e.normalizeElementSafari(createDiv(safariHTML)).innerHTML.toLowerCase())
+      }},
+      
+      testIENormalize : function() { with(this) {
+      }},
+      
+      testSelectNode : function() { with(this) {
+        var e = new Editor($('editor-placeholder'), $('demo-content'));
+     
+        wait(1000, function() { with(this) {
+          e.selectNode(e.document.body.getElementsBySelector('h1')[0]);
+          assertEqual('H1', e.getSelectedBlock().nodeName)
+          
+          var el = e.document.getElementById('bold-text').firstChild;
+          e.selectNode(el);
+          assertEqual(1, e.getSelectedElement().nodeType)
+     
+          var el = e.document.getElementById('bold-text').firstChild
+          e.selectNode(el);
+          assertEqual(3, e.getSelectedNode().nodeType)
+     
+          e.close();
+        }});
+      }},
+      
+      testSwitchToEditorModeKeepsSameLayout : function() { with(this) {
+        var el = $('some-element-at-the-bottom');
+        assert(el);
+        assertVisible(el);
+        var y = Position.cumulativeOffset(el)[1];
+        
+        var e = new Editor($('editor-placeholder'), $('demo-content'));
+        
+        wait(1000, function() { with(this) {
+          var el = e.document.getElementById('some-element-at-the-bottom');
+          assert(el);
+          var new_y = Position.cumulativeOffset(el)[1];
+          assertEqual(y, new_y, "#some-element-at-the-bottom is at the same y position before and after entering iframe mode")
+     
+          e.close();
+        }});
+        
+      }},
+      
+      testDocumentAndBody : function() { with(this) {
+        var editor = new Editor($('editor-placeholder'), $('demo-content'));
+        
+        wait(1000, function() { with(this) {
+          assertEqual('#document', editor.document.nodeName);
+          assertEqual('BODY', editor.document.body.nodeName);
+          assert(editor.window);
+        
+          assert(editor.document.body.getElementsBySelector);
+          assertEqual('H1', editor.document.body.getElementsBySelector('h1')[0].nodeName);
+     
+          editor.close();
+        }});
+      }},
+      
+      testDollarWorksInIframe : function() { with(this) {
+        assertType(Function, function(){});
+     
+        var editor = new Editor($('editor-placeholder'), $('demo-content'));
+        
+        wait(1000, function() { with(this) {
+          assertType(Function, $(editor.document.getElementById('etc-paragraph')).update);
+     
+          editor.close();
+        }});
+      }},
+       
+      testGetSelectedDoesntGoAcrossFrames : function() { with(this) {
+        var input = document.createElement("input");
+        document.body.appendChild(input);
+        
+        var e = new Editor($('editor-placeholder'), $('demo-content'));
+     
+        wait(1000, function() { with(this) {
+          e.selectNode(e.document.body.getElementsBySelector('h1')[0]);
+          input.focus();
+          assert('h1', e.getSelectedNode().nodeName);
+     
+          e.close();
+        }});
+        
+        $(input).remove();
+      }},
+      
+      testSetBlockStyle : function(){with(this){
+        var e = new Editor($('editor-placeholder'), $('demo-content'));
+
+        wait(1000, function() { with(this) {
+          // Change block
+          e.selectNode(e.document.body.getElementsBySelector('h1')[0]);
+          e.setBlockType('code');
+          assertEqual('Header 1', e.document.body.getElementsBySelector('code')[0].innerHTML);
+
+          // Create block
+          var el = e.document.getElementById('bold-text').firstChild;
+          e.selectNode(el);
+          e.setBlockType('h2');
+          assert(e.document.getElementById('bold-text'));
+          assertEqual('bold', e.document.body.getElementsBySelector('h2')[0].innerHTML);
+
+          e.close();
+        }});
+      }},
+
+      testCreateLink : function(){with(this){
+        //var e = new Editor($('editor-placeholder'), $('demo-content'));
+      }}
+
+    
+      
+  }, "testlog");
+// ]]>
+</script>
+
+<div id="test-fixtures">
+  <div id="editor-placeholder"></div>
+  <div id="demo-content"></div>
+  <div id="search-results"></div>
+  <div id="editing-toolbar">
+    <div id="toolbar">
+    </div>
+  </div>
+  <div id="enable-editing"></div>
+</div>
+</body>
+</html>

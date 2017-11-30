@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="86"
+   name=""
+   committed-date="2008-01-16T06:48:01.926568Z"
+   url="http://svn.brain-tokyo.net/rmind/branches/pre_release/rmind/vendor/plugins/amrita2"
+   last-author="tnaka"
+   kind="dir"
+   uuid="58984862-3718-437e-a6a8-1024abe64f8b"
+   repos="http://svn.brain-tokyo.net/rmind"
+   revision="119"/>
+<entry
+   committed-rev="86"
+   name="init.rb"
+   text-time="2008-02-09T07:13:50.088426Z"
+   committed-date="2008-01-16T06:48:01.926568Z"
+   checksum="032d0f2628fad34ce47f9b45bc4f9b12"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:50.057176Z"/>
+</wc-entries>

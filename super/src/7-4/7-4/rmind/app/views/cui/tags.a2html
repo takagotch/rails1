@@ -1,0 +1,31 @@
+
+
+<<div<
+
+  %= button_to 'edit', :action=>:edit_tag, :id=>@the_tag.id
+  <<table :the_tag
+      {
+        :cls=>$_.class.name
+      }
+    <
+    <<<--------------------------------------------------------
+      ||| name || <<:name>>
+    <<<--------------------------------------------------------
+      ||| type || <<:cls>>
+
+
+  <h2> tasks </h2>
+  <<table<
+    <<<--------------------------------------------------------
+      ||| text || project || updated
+    <<tr :tasks
+      { :url => url_for(:action=>:edit_task, :id=>$_.id ) }
+      <
+      <<td<
+        <<a : | Attr[:href=>:url, :body=>:text ]>>
+      <<td :project {
+          :url=> url_for(:action=>:projects, :id=>$_.id)
+        }<
+        <<a : | Attr[:href=>:url, :body=>:name ]>> >>
+      <<td:updated_at>>
+

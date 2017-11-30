@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2007-10-18T09:20:11.805527Z"
+   url="http://svn.brain-tokyo.net/rmind/branches/pre_release/rmind/vendor/plugins/rspec_on_rails/spec/rails/extensions"
+   last-author="tnaka"
+   kind="dir"
+   uuid="58984862-3718-437e-a6a8-1024abe64f8b"
+   repos="http://svn.brain-tokyo.net/rmind"
+   revision="119"/>
+<entry
+   committed-rev="1"
+   name="action_controller_rescue_action_spec.rb"
+   text-time="2008-02-09T07:14:03.119927Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="be2887ec5d2d6520aa9ec84ad14fe1d9"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:02.963674Z"/>
+<entry
+   committed-rev="1"
+   name="active_record_spec.rb"
+   text-time="2008-02-09T07:14:03.135552Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="545231acb146d87a8cc8dfe1137134a1"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:03.010550Z"/>
+<entry
+   committed-rev="1"
+   name="action_view_base_spec.rb"
+   text-time="2008-02-09T07:14:03.198053Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="c792e12df01e818f2a8b26510e7ac7a5"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:03.041800Z"/>
+</wc-entries>

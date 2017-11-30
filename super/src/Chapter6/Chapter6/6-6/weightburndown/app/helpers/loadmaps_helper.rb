@@ -1,0 +1,2 @@
+module LoadmapsHelper
+end

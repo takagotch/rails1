@@ -1,0 +1,30 @@
+<<div#projects<
+  <h2>Project</h2>
+
+  <<table<
+    <<tr<----------------------------------------------------
+     ||| name || last review || interval || next review ||
+    <<tr :projects
+         {
+           :url => url_for(:action=>:projects, :id=> $_[:project].id),
+           :mark => '-' * $_[:level],
+           :name => $_[:project].name,
+           :reviewed_at => $_[:project].reviewed_at,
+           :next_review => $_[:project].next_review,
+           :review_interval => $_[:project].review_interval.to_s
+         } <
+      <<td<
+        <<:mark>>
+        <<a :| Attr[:href=>:url, :body=>:name] >>
+
+      <<td<
+        <<:reviewed_at ?![$_.blank?] <
+          << :| StandardDateFormat >>
+
+      <<td<
+        %= $_[:review_interval]
+
+      <<td<
+        <<:next_review ?[$_]<
+          << :| StandardDateFormat >>
+

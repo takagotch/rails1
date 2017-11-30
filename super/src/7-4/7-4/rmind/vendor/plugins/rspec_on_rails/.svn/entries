@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2007-10-18T09:20:11.805527Z"
+   url="http://svn.brain-tokyo.net/rmind/branches/pre_release/rmind/vendor/plugins/rspec_on_rails"
+   last-author="tnaka"
+   kind="dir"
+   uuid="58984862-3718-437e-a6a8-1024abe64f8b"
+   repos="http://svn.brain-tokyo.net/rmind"
+   revision="119"/>
+<entry
+   committed-rev="1"
+   name="Rakefile"
+   text-time="2008-02-09T07:14:05.510598Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="739de93985df731408dc32643c5d577a"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:50.213429Z"/>
+<entry
+   name="spec_resources"
+   kind="dir"/>
+<entry
+   name="tasks"
+   kind="dir"/>
+<entry
+   committed-rev="1"
+   name="init.rb"
+   text-time="2008-02-09T07:14:05.573099Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="a1cdc97315b78cace547d8a82e819cd3"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:54.854143Z"/>
+<entry
+   name="lib"
+   kind="dir"/>
+<entry
+   name="generators"
+   kind="dir"/>
+<entry
+   committed-rev="1"
+   name="MIT-LICENSE"
+   text-time="2008-02-09T07:14:05.588724Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="313081092d4b1e5f1e1a72e356485c1a"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:59.182351Z"/>
+<entry
+   name="spec"
+   kind="dir"/>
+<entry
+   committed-rev="1"
+   name="README"
+   text-time="2008-02-09T07:14:05.651225Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="3b47f24078e76f6bdccd41c1d84a0264"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:05.479347Z"/>
+</wc-entries>

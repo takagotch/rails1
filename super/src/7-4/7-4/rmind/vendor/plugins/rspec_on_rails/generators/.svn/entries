@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2007-10-18T09:20:11.805527Z"
+   url="http://svn.brain-tokyo.net/rmind/branches/pre_release/rmind/vendor/plugins/rspec_on_rails/generators"
+   last-author="tnaka"
+   kind="dir"
+   uuid="58984862-3718-437e-a6a8-1024abe64f8b"
+   repos="http://svn.brain-tokyo.net/rmind"
+   revision="119"/>
+<entry
+   name="rspec_controller"
+   kind="dir"/>
+<entry
+   name="rspec"
+   kind="dir"/>
+<entry
+   name="rspec_model"
+   kind="dir"/>
+<entry
+   name="rspec_scaffold"
+   kind="dir"/>
+</wc-entries>

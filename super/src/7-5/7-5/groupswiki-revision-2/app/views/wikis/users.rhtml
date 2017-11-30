@@ -1,0 +1,32 @@
+<div id="page">
+<div id="page-content">
+
+<h1>
+	Users
+</h1>
+
+<% form_for(@wiki) do |f| %>
+	<div class="f">
+		<label>Who can view the wiki?</label>
+		<%= f.checkbox_tag 'anyone' %> Anyone<br />
+		<%= f.checkbox_tag 'anyone' %> Only people in the list below
+	</div>
+
+	<div class="f">
+		<label>Who can edit the wiki?</label>
+		<%= f.checkbox_tag 'anyone' %> Anyone<br />
+		<%= f.checkbox_tag 'anyone' %> People with this password:<br />
+		<%= f.text_field 'password' %>
+		<%= f.checkbox_tag 'anyone' %> Only people in the list below
+	</div>
+
+	<table id="users">
+		...
+	</table>
+
+	<%= submit_tag 'Save' %>	
+
+<% end %>
+
+</div>
+</div>

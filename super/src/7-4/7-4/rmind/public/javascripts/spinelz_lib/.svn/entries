@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2007-10-18T09:20:11.805527Z"
+   url="http://svn.brain-tokyo.net/rmind/branches/pre_release/rmind/public/javascripts/spinelz_lib"
+   last-author="tnaka"
+   kind="dir"
+   uuid="58984862-3718-437e-a6a8-1024abe64f8b"
+   repos="http://svn.brain-tokyo.net/rmind"
+   revision="119"/>
+<entry
+   committed-rev="1"
+   name="prototype.js"
+   text-time="2008-02-09T07:14:28.870421Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="79a3a26ce0cf36da1e16d7eac3e43cdd"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:28.464163Z"/>
+<entry
+   committed-rev="1"
+   name="builder.js"
+   text-time="2008-02-09T07:14:28.901672Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="09bcb24e92ed01f582f45c14cec2b47f"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:28.479789Z"/>
+<entry
+   committed-rev="1"
+   name="json.js"
+   text-time="2008-02-09T07:14:28.932922Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="34f7231a0a213167e801318716261d1e"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:28.511039Z"/>
+<entry
+   committed-rev="1"
+   name="effects.js"
+   text-time="2008-02-09T07:14:29.026674Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="9739220ad1d1903a67c669d0028b3573"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:28.589166Z"/>
+<entry
+   committed-rev="1"
+   name="unittest.js"
+   text-time="2008-02-09T07:14:29.057925Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="704435081b33f33616e86c4127b713fa"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:28.620416Z"/>
+<entry
+   committed-rev="1"
+   name="scriptaculous.js"
+   text-time="2008-02-09T07:14:29.089175Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="2379e43931989fba9c4837631ff36493"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:28.636042Z"/>
+<entry
+   committed-rev="1"
+   name="resize.js"
+   text-time="2008-02-09T07:14:29.120426Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="09831ed38ee9b370ba8089439b993ef3"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:28.682917Z"/>
+<entry
+   committed-rev="1"
+   name="spinelz_util.js"
+   text-time="2008-02-09T07:14:29.151676Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="091f0ac17383e6a1a3889aefa861ec6d"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:28.714168Z"/>
+<entry
+   committed-rev="1"
+   name="dragdrop.js"
+   text-time="2008-02-09T07:14:29.198552Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="e81bcb5a62616ff00551ffb3abfdae6d"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:28.761044Z"/>
+<entry
+   committed-rev="1"
+   name="slider.js"
+   text-time="2008-02-09T07:14:29.229803Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="b269a3bc58a705e7971a991df421d512"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:28.776669Z"/>
+<entry
+   committed-rev="1"
+   name="controls.js"
+   text-time="2008-02-09T07:14:29.261054Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="245572dbb90f531a5a07ac1bb0646e39"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:28.823545Z"/>
+</wc-entries>

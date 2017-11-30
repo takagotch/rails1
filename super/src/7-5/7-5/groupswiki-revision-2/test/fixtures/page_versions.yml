@@ -1,0 +1,37 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+index_new:
+  id: 2
+  path: index
+  name: Homepage
+  wiki_id: 1
+  page_id: 1
+  content: <h1>Overview</h1><p>This is the homepage of the beer wiki where we talk about beer and stuff!</p>
+  version: 10
+  updated_at: <%= 6.days.ago.to_formatted_s(:db) %>
+
+
+
+index_newer:
+  id: 3
+  path: index
+  name: Homepage
+  wiki_id: 1
+  page_id: 1
+  content: <p>blah what a change</p>
+  version: 11
+  updated_at: <%= 5.days.ago.to_formatted_s(:db) %>
+
+
+
+index_newest:
+  id: 4
+  path: index
+  name: Homepage
+  wiki_id: 1
+  page_id: 1
+  content: <h1>Kinda changed back</h1>
+  version: 12
+  updated_at: <%= 4.days.ago.to_formatted_s(:db) %>
+
+
+

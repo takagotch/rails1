@@ -1,0 +1,42 @@
+
+
+  <<div#current_task_area :show_task | TaskHelper <
+    <<div#tabBox style="display:none"<
+      <<div<
+        main
+        <<div<
+         <<table.noborder  <
+          <<<----------------------------------------------------------------
+            ||| Task:          || <<:text>>                                 |
+          <<<----------------------------------------------------------------
+            ||| Project:       || <<:project \| :name >>                    |
+          <<<----------------------------------------------------------------
+            ||| Tag:           || <<:tag>>                                  |
+          << ?[ ! $_.url.blank? ] <------------------------------------------
+            ||| URL:           || <<a: \| Attr[:href=>:url, :body=>:url] >> |
+
+      << :taggings <
+        <<div :show_only_tag_with_form | AcceptData[:hook] <
+          <<:tag | :name>>
+          <<div<
+            <<table.noborder :show_tagging_value >>
+
+      <<div<
+        time
+        <<div<
+         <<table.noborder  <
+          <<<------------------------------------------------------------
+            ||| Created at:    || <<:created_at \| StandardDateFormat>> |
+          <<<------------------------------------------------------------
+            ||| Updated at:    || <<:updated_at \| StandardDateFormat>> |
+          <<<------------------------------------------------------------
+            ||| Done at:       || <<:done_at    \| StandardDateFormat>> |
+
+    <<script type="text/javascript"<
+      new TabBox("tabBox") ;
+
+    <<div.button_area :| Join['&#160;'] <
+        %= link_to _('detail'), :controller=>:tasks, :action=>:show, :id=>$_.id
+
+        %= link_to _('edit'), :controller=>:tasks, :action=>:edit, :id=>$_.id
+

@@ -1,0 +1,28 @@
+<%= error_messages_for 'transcript' %>
+
+<!--[form:transcript]-->
+<p><label for="transcript_title">Title</label><br/>
+<%= text_field 'transcript', 'title'  %></p>
+
+<p><label for="transcript_filename">Filename</label><br/>
+<%= text_field 'transcript', 'filename'  %></p>
+
+<p><label for="transcript_file">File</label><br/>
+</p>
+
+<p><label for="transcript_content_type">Content type</label><br/>
+<%= text_field 'transcript', 'content_type'  %></p>
+
+<p><label for="transcript_description">Description</label><br/>
+<%= text_area 'transcript', 'description'  %></p>
+
+<p><label for="transcript_tag">Tag</label><br/>
+<%= text_field 'transcript', 'tag'  %></p>
+
+<p><label for="transcript_created_on">Created on</label><br/>
+<%= datetime_select 'transcript', 'created_on'  %></p>
+
+<p><label for="transcript_updated_on">Updated on</label><br/>
+<%= datetime_select 'transcript', 'updated_on'  %></p>
+<!--[eoform:transcript]-->
+

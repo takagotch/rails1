@@ -1,0 +1,22 @@
+
+
+<%(BeforeCompile)
+  use_macro(TwoColumnsForm)
+%>
+
+<<div class="form":|Attr[:title=>:title_helper]<
+  <h3>New ExportTag</h3>
+  <<two_columns_form<
+    << timezone_select= <
+
+    <form action='new' />
+    <<<------------------------------------------------------------------------------
+      ||| Name: | %= text_field_tag "tag[name]", @export_tag.name, :size=>30
+    <<<------------------------------------------------------------------------------
+      ||| Timezone: |       <<select name="timezone"<
+      |||           |         <option value="asia/japan">asia/japan</option>
+    <<button_bar<--------------------------------------------------------------------
+      %= submit_tag _('create')
+      %= link_to 'index', :action=>:index
+
+

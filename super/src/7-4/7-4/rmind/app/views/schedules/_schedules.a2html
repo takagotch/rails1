@@ -1,0 +1,6 @@
+
+
+<<data<
+    <<event  :schedules| ModuleExtendFilter[TaskHelper] | Attr[:start=>:sch_date, :title=>:text, :taskId=>:id] <
+      <<:text>>
+

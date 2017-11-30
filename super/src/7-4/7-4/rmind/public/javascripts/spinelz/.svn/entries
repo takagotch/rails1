@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2007-10-18T09:20:11.805527Z"
+   url="http://svn.brain-tokyo.net/rmind/branches/pre_release/rmind/public/javascripts/spinelz"
+   last-author="tnaka"
+   kind="dir"
+   uuid="58984862-3718-437e-a6a8-1024abe64f8b"
+   repos="http://svn.brain-tokyo.net/rmind"
+   revision="119"/>
+<entry
+   committed-rev="1"
+   name="navPanel.js"
+   text-time="2008-02-09T07:14:19.917124Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="e566aa1dd2bb3fc746e93f97b7d98767"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:19.213986Z"/>
+<entry
+   committed-rev="1"
+   name="ajaxHistory.js"
+   text-time="2008-02-09T07:14:19.979625Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="8675f10b679bd866e8ec97a919543669"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:19.229611Z"/>
+<entry
+   committed-rev="1"
+   name="window.js"
+   text-time="2008-02-09T07:14:20.010876Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="1c9dfe50b8f6ea049b4504df8dba22a5"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:19.245236Z"/>
+<entry
+   committed-rev="1"
+   name="calendar.js"
+   text-time="2008-02-09T07:14:20.073377Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="1f23ab6009af015c8048149bd9f00a5b"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:19.276487Z"/>
+<entry
+   committed-rev="1"
+   name="datepicker.js"
+   text-time="2008-02-09T07:14:20.135878Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="280b5bfe91b806bee8958e8a77d31cb4"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:19.338988Z"/>
+<entry
+   committed-rev="1"
+   name="selectableTable.js"
+   text-time="2008-02-09T07:14:20.104628Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="ae402bebbfa34d52814bed7a562a6102"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:19.307737Z"/>
+<entry
+   committed-rev="1"
+   name="tabBox.js"
+   text-time="2008-02-09T07:14:20.214005Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="e6e83fa566af787e9917ab28050e5e8f"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:19.385864Z"/>
+<entry
+   committed-rev="1"
+   name="inplaceEditorEx.js"
+   text-time="2008-02-09T07:14:20.182754Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="975d19b0e23b7d59c251a25674b0cff8"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:19.370239Z"/>
+<entry
+   committed-rev="1"
+   name="sideBarBox_effects.js"
+   text-time="2008-02-09T07:14:20.245255Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="af2cad4b92322e3c16e5e7dc753d1d4d"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:19.417115Z"/>
+<entry
+   committed-rev="1"
+   name="sideBarBox.js"
+   text-time="2008-02-09T07:14:20.276506Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="b6ca5191dd3fd40669a9d5e4141118b6"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:19.448365Z"/>
+<entry
+   committed-rev="1"
+   name="sortableTable.js"
+   text-time="2008-02-09T07:14:20.307757Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="73a498452551daedf1991d002327f2f3"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:19.479616Z"/>
+<entry
+   committed-rev="1"
+   name="window_resizeEx.js"
+   text-time="2008-02-09T07:14:20.401508Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="7c72a15a5675cee53c416bad19c9261d"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:19.588993Z"/>
+<entry
+   committed-rev="1"
+   name="grid.js"
+   text-time="2008-02-09T07:14:20.370258Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="bf42f057a3d373d571839c22fe9f07d3"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:19.557742Z"/>
+<entry
+   committed-rev="1"
+   name="grid_sortabletableEx.js"
+   text-time="2008-02-09T07:14:20.339007Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="6a4c6730a2a129d26493218651f0efb7"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:19.526492Z"/>
+<entry
+   committed-rev="1"
+   name="barchart.js"
+   text-time="2008-02-09T07:14:20.432759Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="157322da53c6f6abfb3d8809f677dd5b"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:19.651494Z"/>
+<entry
+   committed-rev="1"
+   name="balloon.js"
+   text-time="2008-02-09T07:14:20.464010Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="64578c7fd29dfa631327b7f5da3006f2"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:19.682745Z"/>
+<entry
+   committed-rev="1"
+   name="switcher.js"
+   text-time="2008-02-09T07:14:20.526511Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="93764ad9dced7ee2d1dc2d45116ba89f"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:19.713995Z"/>
+<entry
+   committed-rev="1"
+   name="menubar.js"
+   text-time="2008-02-09T07:14:20.557761Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="f3de8acd8b82433361af972a2f9e1134"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:19.729621Z"/>
+<entry
+   committed-rev="1"
+   name="treeview.js"
+   text-time="2008-02-09T07:14:20.589012Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="a9b29deb10ca247aff3038945da5c710"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:19.760871Z"/>
+<entry
+   committed-rev="1"
+   name="timepicker.js"
+   text-time="2008-02-09T07:14:20.620263Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="30419876cf925c162b454cc7898d1ec7"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:19.807747Z"/>
+<entry
+   committed-rev="1"
+   name="accordion.js"
+   text-time="2008-02-09T07:14:20.651513Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="c5b54ed23df2bfc6b2750abecfca4f75"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:19.838998Z"/>
+<entry
+   committed-rev="1"
+   name="toolbar.js"
+   text-time="2008-02-09T07:14:20.682764Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="0102bf21d97f8880dc627e5b4158f8a2"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:19.854623Z"/>
+<entry
+   committed-rev="1"
+   name="grid_resizeEx.js"
+   text-time="2008-02-09T07:14:20.714014Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="e9cd954d1906cef25455627bd84d26f6"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:19.885874Z"/>
+</wc-entries>

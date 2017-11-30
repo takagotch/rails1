@@ -1,0 +1,16 @@
+<%(BeforeCompile)
+  use_macro(TwoColumnsForm)
+%>
+
+<<div class="form":|Attr[:title=>:title_helper]<
+  <h3>Please Login</h3>
+  <<two_columns_form<
+    <<<------------------------------------------------------------------------------
+      ||| Login ID: | <%= text_field "user", "login", :size => 30 %>                |
+    <<<------------------------------------------------------------------------------
+      ||| Password: | <%= password_field "user", "password", :size=>30, :value=>"" %>|
+    <<button_bar<--------------------------------------------------------------------
+      <%= submit_tag _('Login') %>
+      <%= link_to _('Register for an account'), :action => 'signup' %> |
+      <%= link_to _('Forgot my password'), :action => 'forgot_password' %>
+

@@ -1,0 +1,10 @@
+<%= error_messages_for 'condition' %>
+
+<p>User<br/>
+<%= collection_select :condition, :user_id, User.find_all, :id, :login %></p>
+
+<p><label for="condition_name">Condition Name</label><br/>
+<%= select :condition, :name, %w{ good bad normal }  %></p>
+
+<p><label for="condition_date">Date</label><br/>
+<%= date_select 'condition', 'date'  %></p>

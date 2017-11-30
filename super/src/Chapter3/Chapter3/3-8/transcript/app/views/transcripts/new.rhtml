@@ -1,0 +1,9 @@
+<br>
+<h1>議事録の登録</h1>
+<% form_tag({:action => 'create'},{:multipart=>true}) do %>
+  <%= render :partial => 'form' %>
+  <%= submit_tag "登録",:disable_with=>"処理中..." %>
+
+<% end %>
+
+<%= link_to '戻る', :action => 'list' %>

@@ -1,0 +1,60 @@
+
+=begin
+if @current_task and @cmd == 'close'
+  if @status_before == Task::Status::Inbox and not @inbox.blank?
+    page << visual_effect(:scroll_to, "inbox_area")
+  else
+    case @current_task.status
+    when Task::Status::Inbox
+      page << visual_effect(:scroll_to, "inbox_area")
+    when Task::Status::NextAction
+      page << visual_effect(:scroll_to, "next_actions_area")
+    when Task::Status::Done
+      page << visual_effect(:scroll_to, "tasks_done_area")
+    else
+      case @status_before
+      when Task::Status::Inbox
+        page << visual_effect(:scroll_to, "inbox_area")
+      when Task::Status::NextAction
+        page << visual_effect(:scroll_to, "next_actions_area")
+      end
+    end
+  end
+end
+=end
+
+if @current_task and @current_task.status == @status_before and @cmd != 'close'
+  case @current_task.status
+  when Task::Status::Inbox
+    page[:inbox].reload
+    # for a bug of IE
+    # IE can't render properly without reloading of next actions
+    page[:next_actions].reload
+  when Task::Status::NextAction
+    page[:next_actions].reload
+  when Task::Status::Waiting
+    page[:schedules].reload
+  when Task::Status::Done
+    page[:tasks_done].reload
+  else
+    page[:inbox].reload
+    page[:next_actions].reload
+    page[:schedules].reload
+    page[:tasks_done].reload
+  end
+else
+  page[:inbox].reload
+  page[:next_actions].reload
+  page[:schedules].reload
+  page[:tasks_done].reload
+end
+
+if @current_task
+  # use collection proxy for avoiding error when the task is not diplayed
+  page.select("tr##{@current_task.tr_id}").each do |e|
+    #e.visual_effect(:scroll_to) unless @cmd == 'close'
+    e.visual_effect(:highlight,:duration=>4, :queue=>'end')
+  end
+end
+
+page[:message_area].reload

@@ -1,0 +1,29 @@
+body, p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size:   13px;
+  line-height: 18px;
+}
+
+table {
+  empty-cells : show;
+  border-collapse : collapse ;
+}
+
+th, td {
+  word-brake: brake-all;
+  padding : 0.3em;
+  border : thin solid gray;
+}
+
+th {
+  color : silver;
+  background-color : navy;
+}
+
+td {
+  text-align:center;
+}
+
+td.login_user {
+  background-color : silver;
+}

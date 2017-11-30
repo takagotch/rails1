@@ -1,0 +1,34 @@
+
+<%(BeforeCompile)
+  use_macro(FormTag)
+%>
+
+<<div:task | TaskHelper <
+  <<form_tag<
+    <<table<
+      <<<--------------------------------------------------------------
+        |rowspan || 6      ||           ||                |
+        |        || Common:|| Task:     || %= text_field 'task', 'text',:size=>70
+      <<<--------------------------------------------------------------
+        ||| Tag      || <<field<                                       |
+        |||          ||     %= text_field 'task', 'tag'             |
+        |||          ||     %= submit_tag 'settag'                   |
+        |||          ||     <<:install_tag_complete>>                |
+      <<<--------------------------------------------------------------
+        ||| Project:  || %= select_project "task", "project_id"      |
+      <<<--------------------------------------------------------------
+        ||| URL:  ||    %= text_field 'task', 'url',  :size=>70
+      <<<--------------------------------------------------------------
+        ||| Done at:  ||  %= text_field 'task', 'done_at'
+      <<<--------------------------------------------------------------
+        ||| Trashed at:  ||  %= text_field 'task', 'trashed_at'
+
+      <<:taggings<
+        <<:show_only_tag_with_form | AcceptData[:hook] <
+          <<:edit_tagging_value>>
+
+    %= submit_tag "update", :class => "submit"
+  << ?![@task.trashed_at] <
+    %= button_to 'trash', :action=>:destroy, :id=>@task.id
+  << ?[@task.trashed_at] <
+    %= button_to 'untrash', :action=>:untrash, :id=>@task.id

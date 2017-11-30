@@ -1,0 +1,23 @@
+development:
+  adapter: mysql
+  database: taskBoard_development
+  username: root
+  password:
+  host: localhost
+  encoding: utf8
+
+test:
+  adapter: mysql
+  database: taskBoard_test
+  username: root
+  password:
+  host: localhost
+encoding: utf8
+
+production:
+  adapter: mysql
+  database: taskBoard_production
+  username: root
+  password: 
+  host: localhost
+  encoding: utf8

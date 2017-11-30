@@ -1,0 +1,83 @@
+# Add your own tasks in files placed in lib/tasks ending in .rake,
+# for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.
+
+require(File.join(File.dirname(__FILE__), 'config', 'boot'))
+
+require 'rake'
+require 'rake/testtask'
+require 'rake/rdoctask'
+
+require 'tasks/rails'
+
+#HOME=File::expand_path("~")
+HOME=File::expand_path("~share")
+SAVE_DATA="#{HOME}/rmind/rmind_data.yml"
+
+task :use_active_record do
+  require 'active_record'
+  require 'lib/switchable_timestamp'
+  $: << 'vendor/plugins/criteriaquery/lib/'
+  require 'vendor/plugins/criteriaquery/lib/criteria_query'
+  require 'app/models/criteria_query_plus'
+  require 'app/models/dash_board'
+  require 'app/models/command'
+  require 'app/models/command_proxy'
+  require 'app/models/project'
+  require 'app/models/user'
+  require 'app/models/tag'
+  require 'app/models/tagging'
+  require 'app/models/task'
+  require 'app/models/schedule'
+  require 'app/models/memo'
+  require 'app/models/address'
+  para = YAML::load File::open('config/database.yml')
+  #ActiveRecord::Base.establish_connection(para['development'])
+  env = ENV['RAILS_ENV'] || 'development'
+  STDERR.puts "setup connection using #{env}"
+  ActiveRecord::Base.establish_connection(para[env])
+end
+
+
+desc "Setup a user for test"
+task :create_test_user => :use_active_record do
+  u1 = User.find_by_login('u1')
+  if u1
+    root = u1.root_project
+    root.locked = false ;
+    root.save!
+    u1.destroy
+  end
+  u1 = User.load_yaml File::open(SAVE_DATA)
+  u1.password='abc'
+  u1.save!
+  #u2 = User.create(:login=>'u2', :password=>'abc').initial_setup
+end
+
+desc "save data for test user"
+task :save_data => :use_active_record do
+  require 'vendor/plugins/yaml_waml/lib/yaml_waml'
+  File::open(SAVE_DATA, "w") do |f|
+    u1 = User.find_by_login('u1')
+    f.puts u1.to_yaml
+  end
+end
+
+task :updatepo do
+  $: << 'vendor/plugins/amrita2/lib'
+  require 'gettext/utils'
+  require 'amrita2/gettext'
+  require 'amrita2/macro'
+  GetText.update_pofiles("rmind", 
+                Dir.glob("{app,config,components,lib}/**/*.{rb,rhtml,a2html}"),
+                         "rmind 1.0.0" )
+end
+
+desc "Create mo-files"
+task :makemo do
+  require 'gettext/utils'
+  GetText.create_mofiles(true, "po", "locale")
+end
+
+task :save do
+  ruby %[script/runner -e #{ENV["RAILS_ENV"]} 'User.save_all()']
+end

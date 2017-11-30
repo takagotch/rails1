@@ -1,0 +1,16 @@
+
+<%(BeforeCompile)
+  use_macro(TwoColumnsForm)
+%>
+
+abcdefg
+<<div class="form":|Attr[:title=>:title_helper]<
+  <h3>AddTask</h3>
+  <<two_columns_form<
+    <<<------------------------------------------------------------------------------
+      ||| Text: | <%= text_field_tag  "text", nil, :size => 100 %>                |
+    <<button_bar<--------------------------------------------------------------------
+      %= submit_tag _('add_task')
+      %= link_to 'inbox', :action=>:inbox
+
+

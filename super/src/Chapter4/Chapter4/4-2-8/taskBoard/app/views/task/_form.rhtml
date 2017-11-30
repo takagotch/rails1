@@ -1,0 +1,22 @@
+<%= error_messages_for 'task' %>
+
+<!--[form:task]-->
+<p><label for="task_content">Content</label><br/>
+<%= text_area 'task', 'content'  %></p>
+
+<p><label for="task_status">Status</label><br/>
+<%= text_field 'task', 'status'  %></p>
+
+<p><label for="task_priority">Priority</label><br/>
+<%= text_field 'task', 'priority'  %></p>
+
+<p><label for="task_owner">Owner</label><br/>
+<%= text_field 'task', 'owner'  %></p>
+
+<p><label for="task_created_on">Created on</label><br/>
+<%= datetime_select 'task', 'created_on'  %></p>
+
+<p><label for="task_updated_on">Updated on</label><br/>
+<%= datetime_select 'task', 'updated_on'  %></p>
+<!--[eoform:task]-->
+

@@ -1,0 +1,4 @@
+
+page.replace("current_task_area", :partial=>'inline_edit_task')
+
+page[:message_area].reload

@@ -1,0 +1,46 @@
+<%= image_tag('NikoNikoCalendar.png', :alt => "Niko-Niko Calender") %>
+
+<%= javascript_include_tag :defaults %>
+<p>
+ログインしている利用者: <%= session[:user].login %>
+
+<% store_location %>
+<%= link_to 'Logout', :controller => 'user', :action => 'logout' %>
+<% condition_strings.each do |opt| %>
+  <%= image_tag(facemarks[opt], :id => "#{opt}", :alt => "#{opt}", :class => "options") %>
+  <%= draggable_element "#{opt}", :revert => true %>
+<% end %>
+</p>
+
+<table>
+  <tr>
+    <th>Login name</th>               
+    <% for date in date_columns %>
+      <th><%= date %></th>
+    <% end %>
+  </tr>
+
+
+  <% for user in User.find_all %>
+    <tr>
+      <% if user.id == session[:user].id %>
+        <td class="login_user"><%= user.login %></td>
+      <% else %>
+        <td><%= user.login %></td>
+      <% end %>
+
+      <% cond_hash = hash_by_date(user.conditions) %>
+      <% for date in date_array %>
+        <% cond = cond_hash[date] %>
+        <% if user.id == session[:user].id %>    
+          <td class="login_user">
+            <%= render :partial => 'cell',  
+                :locals => { :user_id => user.id, :login => user.login, :cond => cond, :date => date  } %> 
+          </td>
+        <% else %>
+          <td><%= image_tag(image_src(cond), :alt=>image_alt(cond)) %></td>
+        <% end %>
+      <% end %>
+    </tr>
+  <% end %>
+</table>

@@ -1,0 +1,37 @@
+<div id='page'>
+  <div class="titlearea">
+    <h1>All pages</h1>
+  </div>
+    
+  <div id="other-page-content">
+    <%= form_tag pages_url, :method => 'get' %>
+      <%= text_field_tag 'q', h(params[:q]) %> <%= submit_tag 'Search wiki'%>
+    </form>
+    <p>
+      <% if @query %>
+        There are <%= @pages.length %> pages in total
+        matching the query <b>&ldquo; <%= h @query %> &rdquo;</b>.
+      <% else %>
+        There are <%= @pages.length %> pages in total.
+      <% end %>
+    </p>
+
+    <ul>
+    <% @pages.each do |page| %>
+      <li>
+        <%= link_to page.name, page %><br />
+        <% if @query %>
+          <%= highlight(excerpt(strip_tags(page.content), @query, 20), @query) %>
+        <% else%>
+          <%= h(truncate(strip_tags(page.content), 60)) %>
+        <% end %>
+        <br /><br />
+      </li>
+    <% end %>
+    </ul>
+  </div>
+</div>
+
+<div class="edit">
+  <%= render_sidebar %>
+</div>

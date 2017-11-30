@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2007-10-18T09:20:11.805527Z"
+   url="http://svn.brain-tokyo.net/rmind/branches/pre_release/rmind/vendor/plugins/rspec_on_rails/generators/rspec/templates/script"
+   last-author="tnaka"
+   kind="dir"
+   uuid="58984862-3718-437e-a6a8-1024abe64f8b"
+   repos="http://svn.brain-tokyo.net/rmind"
+   revision="119"/>
+<entry
+   committed-rev="1"
+   name="spec_server"
+   text-time="2008-02-09T07:14:00.901134Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="d25fc67270c3d57e0ef95b01b1910850"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:00.791757Z"/>
+<entry
+   committed-rev="1"
+   name="spec"
+   text-time="2008-02-09T07:14:00.948010Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="64dacc1ae38c2a259eda49d05fa1e794"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:00.823008Z"/>
+</wc-entries>

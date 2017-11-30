@@ -1,0 +1,23 @@
+development:
+  adapter: mysql
+  database: weightburndown_development
+  username: root
+  password:
+  host: localhost
+  encoding: utf8
+
+test:
+  adapter: mysql
+  database: weightburndown_test
+  username: root
+  password:
+  host: localhost
+  encoding: utf8
+
+production:
+  adapter: mysql
+  database: weightburndown_production
+  username: root
+  password: 
+  host: localhost
+  encoding: utf8

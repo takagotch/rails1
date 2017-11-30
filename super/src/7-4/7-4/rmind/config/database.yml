@@ -1,0 +1,19 @@
+development:
+  adapter: mysql
+  database: rmind_dev
+  username: root
+  password: 
+  socket: /var/run/mysqld/mysqld.sock
+test:
+  adapter: mysql
+  database: rmind_test
+  username: root
+  password: 
+  socket: /var/run/mysqld/mysqld.sock
+
+production:
+  adapter: mysql
+  database: rmind
+  username: root
+  password: 
+  socket: /var/run/mysqld/mysqld.sock

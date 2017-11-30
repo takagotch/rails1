@@ -1,0 +1,25 @@
+groupswiki:
+  id: 1
+  domain: localhost
+  name: The Groupswiki Wiki
+  user_id: 1
+  email: groupswiki@localhost.local
+  accepted: true
+
+cars:
+  id: 2
+  domain: otherhost
+  name: The cars wiki!
+  user_id: 2
+  
+horses:
+  id: 3
+  domain: horses.groupswiki.com
+  name: Horses wiki
+  user_id: 1
+  
+andrews_private_wiki:
+  id: 4
+  domain: andrew-private.groupswiki.com
+  name: andrews private wiki
+  user_id: 3

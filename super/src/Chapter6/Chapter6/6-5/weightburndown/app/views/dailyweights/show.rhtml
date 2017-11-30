@@ -1,0 +1,8 @@
+<% for column in Dailyweight.content_columns %>
+<p>
+  <b><%= column.human_name %>:</b> <%=h @dailyweight.send(column.name) %>
+</p>
+<% end %>
+
+<%= link_to 'Edit', :action => 'edit', :id => @dailyweight %> |
+<%= link_to 'Back', :action => 'list' %>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2007-10-18T09:20:11.805527Z"
+   url="http://svn.brain-tokyo.net/rmind/branches/pre_release/rmind/vendor/plugins/rspec_on_rails/generators/rspec_model/templates"
+   last-author="tnaka"
+   kind="dir"
+   uuid="58984862-3718-437e-a6a8-1024abe64f8b"
+   repos="http://svn.brain-tokyo.net/rmind"
+   revision="119"/>
+<entry
+   committed-rev="1"
+   name="model_spec.rb"
+   text-time="2008-02-09T07:14:01.713650Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="742f472ed7a573f7a03d57202630f8eb"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:01.666774Z"/>
+</wc-entries>

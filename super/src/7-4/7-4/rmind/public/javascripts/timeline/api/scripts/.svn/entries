@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="88"
+   name=""
+   committed-date="2008-01-18T05:56:16.138860Z"
+   url="http://svn.brain-tokyo.net/rmind/branches/pre_release/rmind/public/javascripts/timeline/api/scripts"
+   last-author="tnaka"
+   kind="dir"
+   uuid="58984862-3718-437e-a6a8-1024abe64f8b"
+   repos="http://svn.brain-tokyo.net/rmind"
+   revision="119"/>
+<entry
+   name="ext"
+   kind="dir"/>
+<entry
+   committed-rev="87"
+   name="decorators.js"
+   text-time="2008-02-09T07:14:27.667273Z"
+   committed-date="2008-01-18T05:51:02.681598Z"
+   checksum="cad66635e8db6a72e029c269ae47996d"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:23.385941Z"/>
+<entry
+   committed-rev="87"
+   name="labellers.js"
+   text-time="2008-02-09T07:14:27.698524Z"
+   committed-date="2008-01-18T05:51:02.681598Z"
+   checksum="5316ed1a0fa7d533fe4b83c698c94d4e"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:23.620320Z"/>
+<entry
+   committed-rev="87"
+   name="painters.js"
+   text-time="2008-02-09T07:14:27.745399Z"
+   committed-date="2008-01-18T05:51:02.681598Z"
+   checksum="5e6815bc495957f270e06de09bd378f8"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:23.635946Z"/>
+<entry
+   committed-rev="87"
+   name="themes.js"
+   text-time="2008-02-09T07:14:27.792275Z"
+   committed-date="2008-01-18T05:51:02.681598Z"
+   checksum="05bfe5f9f664c90c2944f6ffb4c4fd8d"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:23.667196Z"/>
+<entry
+   committed-rev="87"
+   name="timeline.js"
+   text-time="2008-02-09T07:14:27.823526Z"
+   committed-date="2008-01-18T05:51:02.681598Z"
+   checksum="25d512c4ee0158cf8514d324e10e22a1"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:23.682821Z"/>
+<entry
+   committed-rev="87"
+   name="ether-painters.js"
+   text-time="2008-02-09T07:14:27.854777Z"
+   committed-date="2008-01-18T05:51:02.681598Z"
+   checksum="def47a2370a3fe1ff4eb2f140208a44a"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:23.745323Z"/>
+<entry
+   committed-rev="87"
+   name="ethers.js"
+   text-time="2008-02-09T07:14:27.886027Z"
+   committed-date="2008-01-18T05:51:02.681598Z"
+   checksum="d0e746cbde7a3f16d35216404b4102de"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:23.807824Z"/>
+<entry
+   name="l10n"
+   kind="dir"/>
+<entry
+   committed-rev="87"
+   name="layouts.js"
+   text-time="2008-02-09T07:14:27.917278Z"
+   committed-date="2008-01-18T05:51:02.681598Z"
+   checksum="4a9b0992b7453a765c64ac2762abb43c"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:26.807881Z"/>
+<entry
+   name="util"
+   kind="dir"/>
+<entry
+   committed-rev="87"
+   name="units.js"
+   text-time="2008-02-09T07:14:27.964154Z"
+   committed-date="2008-01-18T05:51:02.681598Z"
+   checksum="fe096a44667cee2f9fe32b7721d92d10"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:26.823507Z"/>
+<entry
+   committed-rev="87"
+   name="sources.js"
+   text-time="2008-02-09T07:14:27.995404Z"
+   committed-date="2008-01-18T05:51:02.681598Z"
+   checksum="0ba409186fe68b2bc5306db6ead0cfa2"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:27.636022Z"/>
+</wc-entries>

@@ -1,0 +1,48 @@
+
+  << ?[ task_list.size == 0 ] <
+    (There is no task in  [<<:list_name>>]  now)
+
+  << ?[ task_list.size > 0 ] <
+    <<table<
+      <<tr<
+        <<th :header | Attr[:width => :width, :body=>:title] >>
+      <<:task_list | TaskHelper <
+        %  tag_edit = (@current_task and @current_task.id == $_.id and @cmd == 'tag_edit')
+        %  prj_sel = (@current_task and @current_task.id == $_.id and @cmd == 'prj_sel')
+        <<tr :| Attr[:class=>:cycle_class] <
+          <<th <
+            <<?[ajax_task_done]<
+              <<:done_check_ajax>>
+            <<?![ajax_task_done]<
+              <<:done_check>>
+
+          << ?![prj_sel]<
+            <<td :| Attr[:onclick=>:project_select_link] <
+              <<:project_with_link>>
+
+          << ?[prj_sel] <
+            <<td <
+              %= render :partial=>'inline_project_select', :locals=> { :task=>$_ }
+
+          <<td <
+              <<div :| Attr[:id=>:task_id] | Join[:nbsp] <
+                <<span :| Attr[:id=>:handle_id] <
+                  [+]
+                <<:task_window_link>>
+              <<:install_draggable>>
+
+          << ?[show_tag and not tag_edit] <
+            <<td :| Attr[:onclick=>:tag_edit_link] <
+              << :taggings <
+                <<a : | Attr[:href=>:tag_url, :body=>:tag_name] >>
+                &#160;
+              %= image_tag "s.gif",:alt=>"spacer",:height=>"1"
+
+          << ?[show_tag and tag_edit] <
+            <<td <
+              %= render :partial=>'inline_edit_tag', :locals=> { :task=>$_ }
+
+      << ?[show_done_at] <
+              <<td:done_at | StandardDateFormat>>
+
+

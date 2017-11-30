@@ -1,0 +1,11 @@
+<ul>
+<% for task in @ownerList do -%>
+        <li>
+<table>
+<tr><td class="taskOwner">
+<%=task.owner %>
+</td></tr>
+</table>
+        </li>
+    <% end -%>
+</ul>

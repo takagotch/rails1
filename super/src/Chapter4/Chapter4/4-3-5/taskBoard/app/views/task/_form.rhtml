@@ -1,0 +1,37 @@
+<%= error_messages_for 'task' %>
+<div id='task_form_block'>
+<%= form_remote_tag :url => { :action => @form_action, :id => @task.id},:html => {:id => 'task_form'}%>
+  <label for="task_content">何をしようかな？</label>
+  <br/>
+  <%= text_area 'task', 'content',"cols" => 80, "rows" => 3  %>
+  <br/>
+  <label for="priority">あとで</label>
+  <span>
+    <%= radio_button("task", "priority", "1") %>
+    <%=image_tag("priority1.jpg",:size => "20x20",:border => 0)%>
+  </span>
+  <span>
+    <%= radio_button("task", "priority", "2")%>
+    <%=image_tag("priority2.jpg",:size => "20x20",:border => 0)%>
+  </span>
+  <span>
+    <%= radio_button("task", "priority", "3") %>
+    <%=image_tag("priority3.jpg",:size => "20x20",:border => 0)%>
+  </span>
+  <label for="priority">すぐに</label>
+  <br>
+   <label for="task_owner">誰の？</label>
+   <br/>
+   <%= auto_complete_stylesheet %>
+   <%= text_field_tag  'task_owner' ,{} , :size=>'30' %>
+   <div id="completing" style=display:none" >検索中</div>
+   <div id="task_owner_auto_complete"></div>
+   <%= auto_complete_field 'task_owner', :url=>{:action =>'ownerList'} ,
+       :indicator=>"completing" ,:select=>"taskOwner"
+   %>
+  <br/>
+  <br/>
+  <%= submit_tag @form_button %>
+<%= end_form_tag%>
+<!--[eoform:task]-->
+</div>

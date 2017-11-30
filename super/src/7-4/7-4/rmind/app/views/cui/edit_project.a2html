@@ -1,0 +1,21 @@
+
+<%(BeforeCompile)
+  use_macro(TwoColumnsForm)
+%>
+
+<<div class="form":|Attr[:title=>:title_helper]<
+  <h3>edit Project</h3>
+  <<two_columns_form<
+    <<<------------------------------------------------------------------------------
+      ||| Parent: | %= select_project "project", "parent_project_id"                |
+    <<<------------------------------------------------------------------------------
+      ||| Name:   | %= text_field "project",  "name",  :size => 60                 |
+    <<<------------------------------------------------------------------------------
+      ||| Goal:   | %= text_field "project",  "goal",  :size => 60                 |
+    <<<------------------------------------------------------------------------------
+      ||| Review interval:   | %= text_field  "project", "review_interval"       |
+    <<button_bar<--------------------------------------------------------------------
+      %= submit_tag _('edit_project')
+      %= link_to 'index', :action=>:index
+
+

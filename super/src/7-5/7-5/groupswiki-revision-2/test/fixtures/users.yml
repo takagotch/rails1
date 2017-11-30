@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+ben:
+  id: 1
+  name: Ben
+  email: bnolan@gmail.com
+  password: pass
+  verified: true
+  
+pedro:
+  id: 2
+  name: Pedro Gonzalez!
+  email: pedro@localhost
+  password: zing!
+  verified: true
+  
+andrew:
+  id: 3
+  name: Andrew Mayfield
+  email: andrew@spikefin.com
+  password: blah
+  verified: true

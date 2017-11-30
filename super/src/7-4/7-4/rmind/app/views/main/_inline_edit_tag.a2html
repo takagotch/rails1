@@ -1,0 +1,9 @@
+
+  <<div :task | TaskHelper <
+    <<span#task_tag_area<
+      %= text_field_tag 'task[tag]', $_.tag, :size=>10, :id=>'task_tag'
+      % func = remote_function(:submit=> "task_tag_area", :url=>{:action=>:update_tag, :id=>$_.id})
+      %= button_to_function "ok", func
+      &#160;
+      %= link_to_remote 'cancel', :url => { :action=>:show_task, :id=>$_.id, :cmd=>'close'}
+      <<:install_tag_complete>>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2007-10-18T09:20:11.805527Z"
+   url="http://svn.brain-tokyo.net/rmind/branches/pre_release/rmind/vendor/plugins/rspec_on_rails/lib/spec/rails/dsl/behaviour"
+   last-author="tnaka"
+   kind="dir"
+   uuid="58984862-3718-437e-a6a8-1024abe64f8b"
+   repos="http://svn.brain-tokyo.net/rmind"
+   revision="119"/>
+<entry
+   committed-rev="1"
+   name="helper.rb"
+   text-time="2008-02-09T07:13:57.651072Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="898f5cb234bcd84715b1e2253c74a2a8"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:57.354191Z"/>
+<entry
+   committed-rev="1"
+   name="model.rb"
+   text-time="2008-02-09T07:13:57.682322Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="86ec16f6d5344068a76b11f65a0b419c"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:57.401067Z"/>
+<entry
+   committed-rev="1"
+   name="functional.rb"
+   text-time="2008-02-09T07:13:57.729198Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="b0e63d3fec86433c0223868d0bb0edda"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:57.416692Z"/>
+<entry
+   committed-rev="1"
+   name="controller.rb"
+   text-time="2008-02-09T07:13:57.760449Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="e14f73b6868f9fa25e46db82cf281347"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:57.447943Z"/>
+<entry
+   committed-rev="1"
+   name="render_observer.rb"
+   text-time="2008-02-09T07:13:57.791699Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="72b683946f2ff9565eea5c0d8a40018e"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:57.510444Z"/>
+<entry
+   committed-rev="1"
+   name="base.rb"
+   text-time="2008-02-09T07:13:57.854201Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="f94d64d5e3343312bff4c0d966913f3f"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:57.557320Z"/>
+<entry
+   committed-rev="1"
+   name="view.rb"
+   text-time="2008-02-09T07:13:57.885451Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="0d445a87fb844c3129dfd3eb3ba450f8"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:57.588570Z"/>
+</wc-entries>

@@ -1,0 +1,53 @@
+
+
+<<div<
+
+  %= button_to 'edit', :action=>:edit_project, :id=>@project.id
+  %= button_to 'record review', :action=>:record_project_review, :id=>@project.id, :method=>:post
+  <<table:project<
+    <<<--------------------------------------------------------
+      ||| name || <<:name>>
+    <<<--------------------------------------------------------
+      ||| goal || <<:goal>>
+    <<<--------------------------------------------------------
+      ||| last review || <<:reviewed_at>>
+    <<<--------------------------------------------------------
+      ||| review interval || <<:review_interval>>
+    <<<--------------------------------------------------------
+      ||| next review || <<:next_review>>
+
+<<div#tasks<
+
+  <h2> task done </h2>
+  <<table<
+    <<<--------------------------------------------------------
+      ||| text || tags || done
+    <<:task_done<----------------------------------------------
+      <<td:text>>
+      <<td:tag>>
+      <<td:done_at>>
+
+  <h2> next actions </h2>
+  <<table<
+    <<<--------------------------------------------------------
+      ||| text || tags || updated
+    <<tr :next_action_task
+      { :url => url_for(:action=>:edit_task, :id=>$_.id ) }
+      <
+      <<td<
+        <<a : | Attr[:href=>:url, :body=>:text ]>>
+      <<td:tag>>
+      <<td:updated_at>>
+
+  <h2> other tasks </h2>
+  <<table<
+    <<<--------------------------------------------------------
+      ||| text || tags || updated
+    <<tr :tasks
+      { :url => url_for(:action=>:edit_task, :id=>$_.id ) }
+      <
+      <<td<
+        <<a : | Attr[:href=>:url, :body=>:text ]>>
+      <<td:tag>>
+      <<td:updated_at>>
+

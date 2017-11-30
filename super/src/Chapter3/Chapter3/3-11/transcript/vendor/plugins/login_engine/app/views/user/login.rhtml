@@ -1,0 +1,20 @@
+<div title="<%= title_helper %>" class="form">
+  <h3>ログイン</h3>
+
+  <p style="color: green"><%= flash[:warning] %></p>
+  <div class="form-padding">
+    <%= start_form_tag :action => 'login'  %>
+      <table>
+        <%= form_input :text_field, "ログイン ID", "login", :size => 30 %><br/>
+        <%= form_input :password_field, "パスワード", "password", :size => 30 %><br/>
+      </table>
+
+      <div class="button-bar">
+        <%= submit_tag 'ログイン' %>
+        <%= link_to '新しいアカウントを登録する', :action => 'signup' %> 
+        
+        <%#= link_to 'Forgot my password', :action => 'forgot_password' %>
+      </div>
+    <%= end_form_tag %>
+  </div>
+</div>

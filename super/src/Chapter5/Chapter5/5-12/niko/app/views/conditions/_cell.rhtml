@@ -1,0 +1,7 @@
+        <div id="<%= login%>-<%= date%>">
+        <%= image_tag(image_src(cond), :alt=>image_alt(cond)) %>
+        </div>
+        <%= drop_receiving_element "#{login}-#{date}", 
+          :update => "#{login}-#{date}",
+          :url => { :action => "cell_update", :date => date, :user_id => user_id, :cond => cond}
+        %>

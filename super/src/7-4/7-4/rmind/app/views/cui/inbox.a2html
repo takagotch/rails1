@@ -1,0 +1,14 @@
+
+
+%= link_to 'add task', :action=>:add_task
+
+<<table<
+  <<tr<
+    <th>task</th>
+    <th>tags</th>
+  <<tr:inbox<
+    <<td:text>>
+    <<td:tag>>
+    <<td<
+      %= link_to 'edit', :action=>:edit_task, :id=>$_.id
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="88"
+   name=""
+   committed-date="2008-01-18T05:56:16.138860Z"
+   url="http://svn.brain-tokyo.net/rmind/branches/pre_release/rmind/public/javascripts/timeline/api/scripts/l10n/es"
+   last-author="tnaka"
+   kind="dir"
+   uuid="58984862-3718-437e-a6a8-1024abe64f8b"
+   repos="http://svn.brain-tokyo.net/rmind"
+   revision="119"/>
+<entry
+   committed-rev="88"
+   name="labellers.js"
+   text-time="2008-02-09T07:14:25.307853Z"
+   committed-date="2008-01-18T05:56:16.138860Z"
+   checksum="3dbaae55820ea97a831894b9445dff84"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:25.229726Z"/>
+<entry
+   committed-rev="88"
+   name="timeline.js"
+   text-time="2008-02-09T07:14:25.323478Z"
+   committed-date="2008-01-18T05:56:16.138860Z"
+   checksum="60b9d13c9ac1eef56fa8ed7d407f837d"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:25.245351Z"/>
+</wc-entries>

@@ -1,0 +1,32 @@
+<% form_for :user, @user, :url => signup_url do |f| %>
+  <p class="your-name">
+    Your name:
+    <br />
+    <%= f.text_field :name, :style => 'width: 200px' %>
+  </p>
+
+  <p>
+    Email address:
+    <br />
+    <%= f.text_field :email, :style => 'width: 200px' %>
+  </p>
+
+  <script>
+    $('user_name').focus();
+  </script>
+  
+  <p>
+    Password:<br />
+    <%= f.password_field :password, :style => 'width: 120px' %>
+  </p>
+
+  <p>
+    Password confirmation<br />
+    <%= f.password_field :password_confirmation, :style => 'width: 120px' %>
+  </p>
+
+  <p>
+    <%= submit_tag 'SIGN ME UP' %>
+  </p>
+
+<% end %>

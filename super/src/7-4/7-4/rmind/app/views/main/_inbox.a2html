@@ -1,0 +1,42 @@
+<<div#inbox<
+
+  << ?[ @inbox.size == 0 ] <
+    (There is no task in the inbox now)
+
+  << ?[ @inbox.size > 0 ] <
+    <<table<
+      <<<--------------------------------------------
+        | width || 30 || 500  || 100
+        |       ||     || task || tag
+      <<:inbox | TaskHelper<
+        %  edit = (@current_task and @current_task.id == $_.id and @cmd == 'edit')
+        %  tag_edit = (@current_task and @current_task.id == $_.id and @cmd == 'tag_edit')
+        << ?![edit] <
+          <<tr :| Attr[:class=>:cycle_class] <
+            <<th :done_check_ajax>>
+
+            <<td <
+              <<div :| Attr[:id=>:task_id] | Join[:nbsp] <
+                <<span :| Attr[:id=>:handle_id] <
+                  [+]
+                %= link_to_remote $_.text, :url => { :action=>:edit_task, :id=>$_.id }, :method=>:get
+              <<:install_draggable>>
+
+            << ?![tag_edit] <
+              <<td :| Attr[:onclick=>:tag_edit_link] <
+                << :taggings <
+                  <<a : | Attr[:href=>:tag_url, :body=>:tag_name] >>
+                  &#160;
+                %= image_tag "s.gif", :alt=>"spacer",:height=>"1"
+
+            <<td ?[tag_edit] <
+              %= render :partial=>'inline_edit_tag', :locals=> { :task=>$_ }
+
+        << ?[edit] <
+          <<tr :| Attr[:id=>:tr_id] <
+            << th <
+              <<:done_check_ajax>>
+              %= link_to_remote 'close', :url => { :action=>:show_task, :id=>$_.id, :cmd=>'close'}
+            << td colspan="2"<
+              %= render :partial=>'inline_edit_task', :object=>$_
+

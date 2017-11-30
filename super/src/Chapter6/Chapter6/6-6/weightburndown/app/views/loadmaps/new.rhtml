@@ -1,0 +1,9 @@
+<br>
+<h1>ロードマップ作成</h1>
+
+<% form_tag :action => 'create' do %>
+  <%= render :partial => 'form' %>
+  <%= submit_tag "作成する" %>
+<% end %>
+
+<%= link_to '戻る', :controller => 'loadmaps' , :action => 'index' %>

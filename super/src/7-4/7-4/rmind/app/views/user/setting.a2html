@@ -1,0 +1,50 @@
+
+
+<<div<
+  <<div#tabBox style="display:none"<
+    <<div<
+      user profile
+
+      <<div<
+        <<table.noborder :user<
+          <<<------------------------------
+            ||| Login ID: | <<:login>>    |
+          <<<------------------------------
+            ||| Password: | <<:password>> |
+          <<<------------------------------
+            ||| Email:    | <<:email>>    |
+
+        %= link_to 'edit', :action=>:edit
+
+
+    <<div<
+      bookmarklet
+      <<div<
+        Drag this to your bookmark toolbar. <br />
+        % href=%[javascript:(function(){x=document;y=window;if(x.selection) {Q=x.selection.createRange().text;} else if (y.getSelection) {Q=y.getSelection();} else if (x.getSelection) {Q=x.getSelection();};m='#{index_url}tasks/new?memo='+encodeURIComponent(Q)+'&url='+encodeURIComponent(location.href)+'&text='+encodeURIComponent(document.title);y.open(m,'_blank','');})();]
+
+
+        %= %[<a href="#{href}">rmind task</a>]
+
+    <<div<
+      export
+      <<div<
+        <<p<
+          exporting all data in a special format of ReviewableMind
+        %= link_to 'click here to export', :action=>:export
+
+    <<div<
+      logout
+      <<div<
+        %= link_to 'click here to logout', :action=>:logout
+
+    <<div<
+      delete user profiles
+      <<div<
+
+        cation!: THIS IS NOT UNDOABLE! IF YOU CLICK THIS, YOUR DATA WILL BE DELETED PERMANENTLY!!
+        <br />
+        <%= button_to _('Delete'), { :action => 'delete', :id=> @user.id}, :confirm=>'really?' %>
+
+  <<script type="text/javascript"<
+    new TabBox("tabBox") ;

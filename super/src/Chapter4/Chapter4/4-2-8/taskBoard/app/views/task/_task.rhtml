@@ -1,0 +1,32 @@
+<%
+case task.priority
+  when 1
+    @color = "#67BA37"
+  when 2
+    @color = "#9DB1FF"
+  when 3
+    @color = "#FF3333"
+  else
+    @color = "#9DB1FF"
+end
+%>
+<div class="task" id="<%=task.id%>" style="border:2px solid <%=@color%>">
+  <div class="task_priority_bar_<%=task.priority%>">
+    <%= link_to  '編集', :action => 'edit', :id => task.id %>
+    <%= link_to_remote 	'X', :url => {:action => "destroy", :id => task.id} %>
+  </div>
+  <div class="owner">
+    <table style="padding:0px;margin:0px;">
+      <tr>
+        <td><%=task.owner %></td>
+      </tr>
+    </table>
+  </div>
+  <%=task.content %><br><br>
+  <hr>
+  <span class="datetime">
+    作成<%=h task.created_on.strftime("%Y/%m/%d %H:%M") %><br>
+    更新<%=h task.updated_on.strftime("%Y/%m/%d %H:%M") %><br>
+  </span>
+  <%=draggable_element  "#{task.id }",:revert=>false %>
+</div>

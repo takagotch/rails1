@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="88"
+   name=""
+   committed-date="2008-01-18T05:56:16.138860Z"
+   url="http://svn.brain-tokyo.net/rmind/branches/pre_release/rmind/public/javascripts/timeline/api/scripts/util"
+   last-author="tnaka"
+   kind="dir"
+   uuid="58984862-3718-437e-a6a8-1024abe64f8b"
+   repos="http://svn.brain-tokyo.net/rmind"
+   revision="119"/>
+<entry
+   committed-rev="88"
+   name="html.js"
+   text-time="2008-02-09T07:14:27.307891Z"
+   committed-date="2008-01-18T05:56:16.138860Z"
+   checksum="00d896b2adf4ff569f74c101a68276c9"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:26.979760Z"/>
+<entry
+   committed-rev="88"
+   name="platform.js"
+   text-time="2008-02-09T07:14:27.370392Z"
+   committed-date="2008-01-18T05:56:16.138860Z"
+   checksum="e3d9e6957f3947c5116d4894c0907ff2"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:27.042261Z"/>
+<entry
+   committed-rev="88"
+   name="debug.js"
+   text-time="2008-02-09T07:14:27.386018Z"
+   committed-date="2008-01-18T05:56:16.138860Z"
+   checksum="df02e37f1d32ae0447d9745f7ae02753"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:27.073512Z"/>
+<entry
+   committed-rev="88"
+   name="data-structure.js"
+   text-time="2008-02-09T07:14:27.448519Z"
+   committed-date="2008-01-18T05:56:16.138860Z"
+   checksum="1d48cb3f6c8bac2453d27c384b17d626"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:27.089137Z"/>
+<entry
+   committed-rev="88"
+   name="date-time.js"
+   text-time="2008-02-09T07:14:27.479769Z"
+   committed-date="2008-01-18T05:56:16.138860Z"
+   checksum="7d9732e2ad5baffdf556c912c0ebf11a"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:27.151638Z"/>
+<entry
+   committed-rev="88"
+   name="dom.js"
+   text-time="2008-02-09T07:14:27.511020Z"
+   committed-date="2008-01-18T05:56:16.138860Z"
+   checksum="427e0a32290f66871a2beb2265797c09"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:27.182889Z"/>
+<entry
+   committed-rev="88"
+   name="graphics.js"
+   text-time="2008-02-09T07:14:27.542271Z"
+   committed-date="2008-01-18T05:56:16.138860Z"
+   checksum="18dcf515f0128082096aeace997bfe9e"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:27.229765Z"/>
+<entry
+   committed-rev="88"
+   name="xmlhttp.js"
+   text-time="2008-02-09T07:14:27.573521Z"
+   committed-date="2008-01-18T05:56:16.138860Z"
+   checksum="2034c01890301d850cc2bbcf4c5876f2"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:27.245390Z"/>
+</wc-entries>

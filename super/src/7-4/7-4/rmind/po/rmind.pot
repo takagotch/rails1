@@ -1,0 +1,1129 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: rmind 1.0.0\n"
+"POT-Creation-Date: 2007-12-06 15:50+0900\n"
+"PO-Revision-Date: 2007-12-03 14:46+0900\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: app/controllers/user_controller.rb:-
+msgid "Login successful"
+msgstr ""
+
+#: app/controllers/user_controller.rb:-
+msgid "Signup successful"
+msgstr ""
+
+#: app/models/address.rb:-
+msgid "address"
+msgstr ""
+
+#: app/models/address.rb:-
+msgid "Address|User"
+msgstr ""
+
+#: app/models/address.rb:-
+msgid "Address|Delegation tag"
+msgstr ""
+
+#: app/models/address.rb:-
+msgid "Address|Email"
+msgstr ""
+
+#: app/models/address.rb:-
+msgid "Address|Tel1"
+msgstr ""
+
+#: app/models/address.rb:-
+msgid "Address|Tel2"
+msgstr ""
+
+#: app/models/address.rb:-
+msgid "Address|Memo"
+msgstr ""
+
+#: app/models/address.rb:-
+msgid "Address|Skype"
+msgstr ""
+
+#: app/models/address.rb:-
+msgid "Address|Mixi"
+msgstr ""
+
+#: app/models/address.rb:-
+msgid "Address|Twitter"
+msgstr ""
+
+#: app/models/address.rb:-
+msgid "Address|Created at"
+msgstr ""
+
+#: app/models/address.rb:-
+msgid "Address|Updated at"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "command"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "createprojectcommand"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "CreateProjectCommand|User"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "CreateProjectCommand|Task"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "CreateProjectCommand|Tag"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "CreateProjectCommand|Project"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "CreateProjectCommand|Type"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "CreateProjectCommand|Done at"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "CreateProjectCommand|Params"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "CreateProjectCommand|Data for undo"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "projectreviewcommand"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "ProjectReviewCommand|User"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "ProjectReviewCommand|Task"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "ProjectReviewCommand|Tag"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "ProjectReviewCommand|Project"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "ProjectReviewCommand|Type"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "ProjectReviewCommand|Done at"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "ProjectReviewCommand|Params"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "ProjectReviewCommand|Data for undo"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "updateprojectcommand"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "UpdateProjectCommand|User"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "UpdateProjectCommand|Task"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "UpdateProjectCommand|Tag"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "UpdateProjectCommand|Project"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "UpdateProjectCommand|Type"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "UpdateProjectCommand|Done at"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "UpdateProjectCommand|Params"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "UpdateProjectCommand|Data for undo"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "createtaskcommand"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "CreateTaskCommand|User"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "CreateTaskCommand|Task"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "CreateTaskCommand|Tag"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "CreateTaskCommand|Project"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "CreateTaskCommand|Type"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "CreateTaskCommand|Done at"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "CreateTaskCommand|Params"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "CreateTaskCommand|Data for undo"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "taskstatuscommand"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "TaskStatusCommand|User"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "TaskStatusCommand|Task"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "TaskStatusCommand|Tag"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "TaskStatusCommand|Project"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "TaskStatusCommand|Type"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "TaskStatusCommand|Done at"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "TaskStatusCommand|Params"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "TaskStatusCommand|Data for undo"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "Command|User"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "Command|Task"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "Command|Tag"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "Command|Project"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "Command|Type"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "Command|Done at"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "Command|Params"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "Command|Data for undo"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "updatetaskcommand"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "UpdateTaskCommand|User"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "UpdateTaskCommand|Task"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "UpdateTaskCommand|Tag"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "UpdateTaskCommand|Project"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "UpdateTaskCommand|Type"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "UpdateTaskCommand|Done at"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "UpdateTaskCommand|Params"
+msgstr ""
+
+#: app/models/command.rb:-
+msgid "UpdateTaskCommand|Data for undo"
+msgstr ""
+
+#: app/models/memo.rb:-
+msgid "memo"
+msgstr ""
+
+#: app/models/memo.rb:-
+msgid "Memo|User"
+msgstr ""
+
+#: app/models/memo.rb:-
+msgid "Memo|Memo tagging"
+msgstr ""
+
+#: app/models/memo.rb:-
+msgid "Memo|Memo"
+msgstr ""
+
+#: app/models/project.rb:-
+msgid "project"
+msgstr ""
+
+#: app/models/project.rb:-
+msgid "Project|User"
+msgstr ""
+
+#: app/models/project.rb:-
+msgid "Project|Parent project"
+msgstr ""
+
+#: app/models/project.rb:-
+msgid "Project|Name"
+msgstr ""
+
+#: app/models/project.rb:-
+msgid "Project|Goal"
+msgstr ""
+
+#: app/models/project.rb:-
+msgid "Project|Review interval"
+msgstr ""
+
+#: app/models/project.rb:-
+msgid "Project|Created at"
+msgstr ""
+
+#: app/models/project.rb:-
+msgid "Project|Updated at"
+msgstr ""
+
+#: app/models/project.rb:-
+msgid "Project|Reviewed at"
+msgstr ""
+
+#: app/models/project.rb:-
+msgid "Project|Next review"
+msgstr ""
+
+#: app/models/project.rb:-
+msgid "Project|Locked"
+msgstr ""
+
+#: app/models/schedule.rb:-
+msgid "schedule"
+msgstr ""
+
+#: app/models/schedule.rb:-
+msgid "Schedule|User"
+msgstr ""
+
+#: app/models/schedule.rb:-
+msgid "Schedule|Schedule tagging"
+msgstr ""
+
+#: app/models/schedule.rb:-
+msgid "Schedule|Date"
+msgstr ""
+
+#: app/models/schedule.rb:-
+msgid "Schedule|From"
+msgstr ""
+
+#: app/models/schedule.rb:-
+msgid "Schedule|To"
+msgstr ""
+
+#: app/models/schedule.rb:-
+msgid "Schedule|Preparation"
+msgstr ""
+
+#: app/models/schedule.rb:-
+msgid "Schedule|Place"
+msgstr ""
+
+#: app/models/schedule.rb:-
+msgid "Schedule|Memo"
+msgstr ""
+
+#: app/models/schedule.rb:-
+msgid "Schedule|Created at"
+msgstr ""
+
+#: app/models/schedule.rb:-
+msgid "Schedule|Updated at"
+msgstr ""
+
+#: app/models/tag.rb:-
+msgid "tag"
+msgstr ""
+
+#: app/models/tag.rb:-
+msgid "Tag|User"
+msgstr ""
+
+#: app/models/tag.rb:-
+msgid "Tag|Name"
+msgstr ""
+
+#: app/models/tag.rb:-
+msgid "Tag|Type"
+msgstr ""
+
+#: app/models/tag.rb:-
+msgid "delegationtag"
+msgstr ""
+
+#: app/models/tag.rb:-
+msgid "DelegationTag|User"
+msgstr ""
+
+#: app/models/tag.rb:-
+msgid "DelegationTag|Name"
+msgstr ""
+
+#: app/models/tag.rb:-
+msgid "DelegationTag|Type"
+msgstr ""
+
+#: app/models/tag.rb:-
+msgid "contexttag"
+msgstr ""
+
+#: app/models/tag.rb:-
+msgid "ContextTag|User"
+msgstr ""
+
+#: app/models/tag.rb:-
+msgid "ContextTag|Name"
+msgstr ""
+
+#: app/models/tag.rb:-
+msgid "ContextTag|Type"
+msgstr ""
+
+#: app/models/tag.rb:-
+msgid "scheduletag"
+msgstr ""
+
+#: app/models/tag.rb:-
+msgid "ScheduleTag|User"
+msgstr ""
+
+#: app/models/tag.rb:-
+msgid "ScheduleTag|Name"
+msgstr ""
+
+#: app/models/tag.rb:-
+msgid "ScheduleTag|Type"
+msgstr ""
+
+#: app/models/tag.rb:-
+msgid "memotag"
+msgstr ""
+
+#: app/models/tag.rb:-
+msgid "MemoTag|User"
+msgstr ""
+
+#: app/models/tag.rb:-
+msgid "MemoTag|Name"
+msgstr ""
+
+#: app/models/tag.rb:-
+msgid "MemoTag|Type"
+msgstr ""
+
+#: app/models/tag.rb:-
+msgid "plaintag"
+msgstr ""
+
+#: app/models/tag.rb:-
+msgid "PlainTag|User"
+msgstr ""
+
+#: app/models/tag.rb:-
+msgid "PlainTag|Name"
+msgstr ""
+
+#: app/models/tag.rb:-
+msgid "PlainTag|Type"
+msgstr ""
+
+#: app/models/tagging.rb:-
+msgid "tagging"
+msgstr ""
+
+#: app/models/tagging.rb:-
+msgid "plaintagging"
+msgstr ""
+
+#: app/models/tagging.rb:-
+msgid "PlainTagging|User"
+msgstr ""
+
+#: app/models/tagging.rb:-
+msgid "PlainTagging|Task"
+msgstr ""
+
+#: app/models/tagging.rb:-
+msgid "PlainTagging|Tag"
+msgstr ""
+
+#: app/models/tagging.rb:-
+msgid "PlainTagging|Type"
+msgstr ""
+
+#: app/models/tagging.rb:-
+msgid "memotagging"
+msgstr ""
+
+#: app/models/tagging.rb:-
+msgid "MemoTagging|User"
+msgstr ""
+
+#: app/models/tagging.rb:-
+msgid "MemoTagging|Task"
+msgstr ""
+
+#: app/models/tagging.rb:-
+msgid "MemoTagging|Tag"
+msgstr ""
+
+#: app/models/tagging.rb:-
+msgid "MemoTagging|Type"
+msgstr ""
+
+#: app/models/tagging.rb:-
+msgid "Tagging|User"
+msgstr ""
+
+#: app/models/tagging.rb:-
+msgid "Tagging|Task"
+msgstr ""
+
+#: app/models/tagging.rb:-
+msgid "Tagging|Tag"
+msgstr ""
+
+#: app/models/tagging.rb:-
+msgid "Tagging|Type"
+msgstr ""
+
+#: app/models/tagging.rb:-
+msgid "scheduletagging"
+msgstr ""
+
+#: app/models/tagging.rb:-
+msgid "ScheduleTagging|User"
+msgstr ""
+
+#: app/models/tagging.rb:-
+msgid "ScheduleTagging|Task"
+msgstr ""
+
+#: app/models/tagging.rb:-
+msgid "ScheduleTagging|Tag"
+msgstr ""
+
+#: app/models/tagging.rb:-
+msgid "ScheduleTagging|Type"
+msgstr ""
+
+#: app/models/task.rb:-
+msgid "task"
+msgstr ""
+
+#: app/models/task.rb:-
+msgid "Task|User"
+msgstr ""
+
+#: app/models/task.rb:-
+msgid "Task|Project"
+msgstr ""
+
+#: app/models/task.rb:-
+msgid "Task|Text"
+msgstr ""
+
+#: app/models/task.rb:-
+msgid "Task|Url"
+msgstr ""
+
+#: app/models/task.rb:-
+msgid "Task|Status"
+msgstr ""
+
+#: app/models/task.rb:-
+msgid "Task|Created at"
+msgstr ""
+
+#: app/models/task.rb:-
+msgid "Task|Updated at"
+msgstr ""
+
+#: app/models/task.rb:-
+msgid "Task|Done at"
+msgstr ""
+
+#: app/models/task.rb:-
+msgid "Task|Trashed at"
+msgstr ""
+
+#: app/models/user.rb:-
+msgid "user"
+msgstr ""
+
+#: app/models/user.rb:-
+msgid "User|Login"
+msgstr ""
+
+#: app/models/user.rb:-
+msgid "User|Email"
+msgstr ""
+
+#: app/models/user.rb:-
+msgid "User|Firstname"
+msgstr ""
+
+#: app/models/user.rb:-
+msgid "User|Lastname"
+msgstr ""
+
+#: app/models/user.rb:-
+msgid "User|Password salt"
+msgstr ""
+
+#: app/models/user.rb:-
+msgid "User|Password hash"
+msgstr ""
+
+#: app/models/user.rb:-
+msgid "User|Created at"
+msgstr ""
+
+#: app/models/user.rb:-
+msgid "User|Updated at"
+msgstr ""
+
+#: app/views/cui/add_project.a2html:-
+msgid "abcdefg"
+msgstr ""
+
+#: app/views/cui/add_project.a2html:-
+msgid "Add Project"
+msgstr ""
+
+#: app/views/cui/add_project.a2html:-
+msgid "Parent:"
+msgstr ""
+
+#: app/views/cui/add_project.a2html:-
+msgid "Name:"
+msgstr ""
+
+#: app/views/cui/add_task.a2html:-
+msgid "AddTask"
+msgstr ""
+
+#: app/views/cui/add_task.a2html:-
+msgid "Text:"
+msgstr ""
+
+#: app/views/cui/edit_project.a2html:-
+msgid "edit Project"
+msgstr ""
+
+#: app/views/cui/edit_project.a2html:-
+msgid "Goal:"
+msgstr ""
+
+#: app/views/cui/edit_project.a2html:-
+msgid "Review interval:"
+msgstr ""
+
+#: app/views/cui/edit_task.a2html:-
+msgid "Text"
+msgstr ""
+
+#: app/views/cui/edit_task.a2html:-
+msgid "Project:"
+msgstr ""
+
+#: app/views/cui/edit_task.a2html:-
+msgid "Tag"
+msgstr ""
+
+#: app/views/cui/edit_task.a2html:-
+msgid "continue processing inbox tasks"
+msgstr ""
+
+#: app/views/cui/inbox.a2html:-
+msgid "tags"
+msgstr ""
+
+#: app/views/cui/index.a2html:-
+msgid "inbox"
+msgstr ""
+
+#: app/views/cui/index.a2html:-
+msgid "next actions"
+msgstr ""
+
+#: app/views/cui/index.a2html:-
+msgid "schedules"
+msgstr ""
+
+#: app/views/cui/index.a2html:-
+msgid "tasks done today"
+msgstr ""
+
+#: app/views/cui/index.a2html:-
+msgid "done_at"
+msgstr ""
+
+#: app/views/cui/index.a2html:-
+msgid "Projects to review"
+msgstr ""
+
+#: app/views/cui/index.a2html:-
+msgid "name"
+msgstr ""
+
+#: app/views/cui/index.a2html:-
+msgid "last review"
+msgstr ""
+
+#: app/views/cui/index.a2html:-
+msgid "next review"
+msgstr ""
+
+#: app/views/cui/index.a2html:-
+msgid "(There is no task in INBOX now.)"
+msgstr ""
+
+#: app/views/cui/index.a2html:-
+msgid "preparation"
+msgstr ""
+
+#: app/views/cui/list_projects.a2html:-
+msgid "Project"
+msgstr ""
+
+#: app/views/cui/list_projects.a2html:-
+msgid "interval"
+msgstr ""
+
+#: app/views/cui/list_tags.a2html:-
+msgid "tags list"
+msgstr ""
+
+#: app/views/cui/list_tags.a2html:-
+msgid "Context Tags"
+msgstr ""
+
+#: app/views/cui/list_tags.a2html:-
+msgid "Plain Tags"
+msgstr ""
+
+#: app/views/cui/list_tags.a2html:-
+msgid "Schedule Tags"
+msgstr ""
+
+#: app/views/cui/list_tags.a2html:-
+msgid "Delegation Tags"
+msgstr ""
+
+#: app/views/cui/list_tags.a2html:-
+msgid "Memo Tags"
+msgstr ""
+
+#: app/views/cui/projects.a2html:-
+msgid "task done"
+msgstr ""
+
+#: app/views/cui/projects.a2html:-
+msgid "text"
+msgstr ""
+
+#: app/views/cui/projects.a2html:-
+msgid "done"
+msgstr ""
+
+#: app/views/cui/projects.a2html:-
+msgid "updated"
+msgstr ""
+
+#: app/views/cui/projects.a2html:-
+msgid "other tasks"
+msgstr ""
+
+#: app/views/cui/projects.a2html:-
+msgid "goal"
+msgstr ""
+
+#: app/views/cui/projects.a2html:-
+msgid "review interval"
+msgstr ""
+
+#: app/views/cui/tags.a2html:-
+msgid "tasks"
+msgstr ""
+
+#: app/views/cui/tags.a2html:-
+msgid "type"
+msgstr ""
+
+#: app/views/cui/tags.a2html:-
+msgid ">>"
+msgstr ""
+
+#: app/views/layouts/application.a2html:-
+msgid "Reviewable Mind"
+msgstr ""
+
+#: app/views/layouts/application.a2html:-
+msgid "Reviewable Mind("
+msgstr ""
+
+#: app/views/layouts/application.a2html:-
+msgid ")"
+msgstr ""
+
+#: app/views/layouts/application.a2html:-
+msgid "right sidebar"
+msgstr ""
+
+#: app/views/layouts/application.a2html:-
+msgid "Task Window"
+msgstr ""
+
+#: app/views/layouts/application.a2html:-
+msgid "task display area"
+msgstr ""
+
+#: app/views/layouts/application.a2html:-
+msgid " "
+msgstr ""
+
+#: app/views/layouts/application.a2html:-
+msgid "|"
+msgstr ""
+
+#: app/views/layouts/cui.a2html:-
+msgid "*"
+msgstr ""
+
+#: app/views/layouts/cui.a2html:-
+msgid "reading..."
+msgstr ""
+
+#: app/views/layouts/cui.a2html:-
+msgid "left sidebar"
+msgstr ""
+
+#: app/views/main/_edit_task.a2html:-
+msgid "Common:"
+msgstr ""
+
+#: app/views/main/_edit_task.a2html:-
+msgid "Task:"
+msgstr ""
+
+#: app/views/main/_edit_task.a2html:-
+msgid "Url:"
+msgstr ""
+
+#: app/views/main/_edit_task.a2html:-
+msgid "Tag:"
+msgstr ""
+
+#: app/views/main/_edit_task.a2html:-
+msgid "&nbsp;"
+msgstr ""
+
+#: app/views/main/_inbox.a2html:-
+msgid "(There is no task in the inbox now)"
+msgstr ""
+
+#: app/views/main/_next_actions.a2html:-
+msgid "context"
+msgstr ""
+
+#: app/views/main/_schedules.a2html:-
+msgid "show schedules until"
+msgstr ""
+
+#: app/views/main/_show_task.a2html:-
+msgid "Created at:"
+msgstr ""
+
+#: app/views/main/_task_list.a2html:-
+msgid "(There is no task in  ["
+msgstr ""
+
+#: app/views/main/_task_list.a2html:-
+msgid "]  now)"
+msgstr ""
+
+#: app/views/main/_tasks_done.a2html:-
+msgid "show tasks done since"
+msgstr ""
+
+#: app/views/main/index.a2html:-
+msgid "Inbox"
+msgstr ""
+
+#: app/views/main/index.a2html:-
+msgid "Next Actions"
+msgstr ""
+
+#: app/views/main/index.a2html:-
+msgid "Schedules"
+msgstr ""
+
+#: app/views/main/index.a2html:-
+msgid "Tasks done"
+msgstr ""
+
+#: app/views/project/index.a2html:-
+msgid "[S]"
+msgstr ""
+
+#: app/views/project/new.a2html:-
+msgid "New Project"
+msgstr ""
+
+#: app/views/project/new.a2html:-
+msgid "Review Interval:"
+msgstr ""
+
+#: app/views/project/show.a2html:-
+msgid "Processing Tasks"
+msgstr ""
+
+#: app/views/tag/show.a2html:-
+msgid "Tasks"
+msgstr ""
+
+#: app/views/tagging/cui/_memo.a2html:-
+msgid "Memo:"
+msgstr ""
+
+#: app/views/tagging/cui/_schedule.a2html:-
+msgid "Schedule for"
+msgstr ""
+
+#: app/views/tagging/cui/_schedule.a2html:-
+msgid "From:"
+msgstr ""
+
+#: app/views/tagging/cui/_schedule.a2html:-
+msgid "To:"
+msgstr ""
+
+#: app/views/tagging/cui/_schedule.a2html:-
+msgid "Preparation:"
+msgstr ""
+
+#: app/views/tagging/cui/_schedule.a2html:-
+msgid "Place:"
+msgstr ""
+
+#: app/views/tagging/memo/_edit.a2html:-
+msgid "Memo  :"
+msgstr ""
+
+#: app/views/tagging/schedule/_show.a2html:-
+msgid "Time:"
+msgstr ""
+
+#: app/views/tasks/done.a2html:-
+msgid "Completed Tasks"
+msgstr ""
+
+#: app/views/tasks/done.a2html:-
+msgid "created"
+msgstr ""
+
+#: app/views/tasks/done.a2html:-
+msgid "del"
+msgstr ""
+
+#: app/views/tasks/edit.a2html:-
+msgid "URL:"
+msgstr ""
+
+#: app/views/tasks/edit.a2html:-
+msgid "(not implemented )"
+msgstr ""
+
+#: app/views/tasks/edit.a2html:-
+msgid "Done at:"
+msgstr ""
+
+#: app/views/tasks/index.a2html:-
+msgid "current tasks"
+msgstr ""
+
+#: app/views/tasks/new.a2html:-
+msgid "New Task"
+msgstr ""
+
+#: app/views/tasks/show.a2html:-
+msgid "Url"
+msgstr ""
+
+#: app/views/tasks/show.a2html:-
+msgid "Updated at:"
+msgstr ""
+
+#: app/views/tasks/show.a2html:-
+msgid "Trashed at:"
+msgstr ""
+
+#: app/views/tasks/trashed.a2html:-
+msgid "Trashed Tasks"
+msgstr ""
+
+#: app/views/tasks/trashed.a2html:-
+msgid "trashed"
+msgstr ""
+
+#: app/views/user/edit.a2html:-
+msgid "Please Edit"
+msgstr ""
+
+#: app/views/user/edit.a2html:-
+msgid "Login ID:"
+msgstr ""
+
+#: app/views/user/edit.a2html:-
+msgid "Password:"
+msgstr ""
+
+#: app/views/user/edit.a2html:-
+msgid "Password(confirm):"
+msgstr ""
+
+#: app/views/user/edit.a2html:-
+msgid "Email:"
+msgstr ""
+
+#: app/views/user/edit.a2html:-
+msgid "Update"
+msgstr ""
+
+#: app/views/user/edit.a2html:-
+msgid "Delete"
+msgstr ""
+
+#: app/views/user/edit.a2html:-
+msgid "Login"
+msgstr ""
+
+#: app/views/user/edit.a2html:-
+msgid "DeleteNoConfirm"
+msgstr ""
+
+#: app/views/user/login.a2html:-
+msgid "Please Login"
+msgstr ""
+
+#: app/views/user/login.a2html:-
+msgid "Register for an account"
+msgstr ""
+
+#: app/views/user/login.a2html:-
+msgid "Forgot my password"
+msgstr ""
+
+#: app/views/user/setting.a2html:-
+msgid "bookmarklet"
+msgstr ""
+
+#: app/views/user/setting.a2html:-
+msgid "Drag this to your bookmark toolbar."
+msgstr ""
+
+#: app/views/user/signup.a2html:-
+msgid "Please Sighup"
+msgstr ""
+
+#: app/views/user/signup.a2html:-
+msgid "Singup"
+msgstr ""

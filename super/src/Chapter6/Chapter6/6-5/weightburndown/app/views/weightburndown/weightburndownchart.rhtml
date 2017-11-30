@@ -1,0 +1,54 @@
+<%=image_tag 'burndownweight'%>
+
+<%#グラフ画像を表示します%>
+<div style="float:left;width:auto;">
+<%if @loadmap %>
+  <img src="<%=url_for(:controller=>'weightburndown', :action=>'draw')%>">
+<% end%>
+</div>
+
+
+<div style="width:auto;">
+  <%= link_to 'ロードマップを作成する',:controller => 'loadmaps',:action => 'new' if @loadmap.blank?%>
+  <%if @loadmap %>
+    <table>
+      <tr style="background-color:#CCCCFF;font-weight:bold;">
+        <td colspan="2">
+          あなたのロードマップ
+        </td>
+      </tr>
+      <tr>
+        <td style="background-color:#CCCCFF;">
+          開始時の体重(kg):
+        </td>
+        <td>
+          <%= @loadmap.current_weight%>
+        </td>
+      </tr>
+      <tr>
+        <td style="background-color:#CCCCFF;">
+          本日の体重(kg):
+        </td>
+        <td>
+          <%=link_to "記録しましょう！",:controller => 'dailyweights',:action => 'new' if @dailyweight.blank? && Date.today<@loadmap.target_date%>
+          <%=@dailyweight.todays_weight unless @dailyweight.blank?%>
+          <%=link_to "修正する",:controller => 'dailyweights',:action => 'edit',:id => @dailyweight unless @dailyweight.blank?%>
+        </td>
+      </tr>
+      <tr>
+        <td style="background-color:#CCCCFF;">
+          ゴール:
+        </td>
+        <td>
+          <%= @loadmap.target_date.strftime("%Y年%m月%d日") %>までに
+          <%= @loadmap.target_weight%>kg
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <%= link_to 'ロードマップを見直す',:controller => 'loadmaps',:action => 'edit',:id=>@loadmap unless @loadmap.blank?%>
+        </td>
+      </tr>
+    </table>
+  <%end%>
+</div>

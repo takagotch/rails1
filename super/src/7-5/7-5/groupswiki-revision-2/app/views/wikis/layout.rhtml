@@ -1,0 +1,25 @@
+
+<% form_for(@wiki) do |f| %>
+	<h2>
+		CSS
+	</h2>
+
+	<%= f.text_area :css %>
+
+	<p>
+		Read <%= link_to 'css help', 'http://groupswiki.com/pages/css_help' %> for information.
+	</p>
+
+	<h2>
+		Layout HTML
+	</h2>
+
+	<%= f.text_area :template %>
+
+	<p>
+		Read <%= link_to 'layout help', 'http://groupswiki.com/pages/layout_help' %> for information.
+	</p>
+
+	<%= submit_tag 'Save' %> or <%= link_to 'Cancel', @wiki %>
+<% end %>
+

@@ -1,0 +1,20 @@
+<h2>
+  Upload an image
+</h2>
+
+<br />
+
+<%= error_messages_for :attachment %>
+
+<% form_for(:attachment, :url => attachments_path, :html => { :target => 'upload-frame', :multipart => true, :onsubmit => 'dialog_.loading()'}) do |f| -%>
+  
+  <%# hidden_field_tag 'attachment[user_id]', @user.id %>
+  
+  <p>
+    <%= f.file_field :uploaded_data %>
+  </p>
+
+  <p>
+    <%= submit_tag 'UPLOAD' %> or <%= link_to_function 'Cancel', 'window.dialog_.close()' %>
+  </p>
+<% end -%>

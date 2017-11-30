@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2007-10-18T09:20:11.805527Z"
+   url="http://svn.brain-tokyo.net/rmind/branches/pre_release/rmind/vendor/plugins/rspec_on_rails/spec/rails/autotest"
+   last-author="tnaka"
+   kind="dir"
+   uuid="58984862-3718-437e-a6a8-1024abe64f8b"
+   repos="http://svn.brain-tokyo.net/rmind"
+   revision="119"/>
+<entry
+   committed-rev="1"
+   name="rails_rspec_spec.rb"
+   text-time="2008-02-09T07:14:04.916836Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="419f88062d7f5597b7f214ae074e2bff"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:04.854335Z"/>
+<entry
+   committed-rev="1"
+   name="mappings_spec.rb"
+   text-time="2008-02-09T07:14:04.948087Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="173d18ffc49ac71307fc9e0b522053c3"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:04.869960Z"/>
+</wc-entries>

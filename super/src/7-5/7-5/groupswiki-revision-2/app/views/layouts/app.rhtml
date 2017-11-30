@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN">
+<html>
+<head>
+  <meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
+  <title><%= current_wiki ? current_wiki.name : "Groupswiki" %> :: <%= @page ? @page.name : '' %></title>
+  <%= javascript_include_tag 'prototype' %>
+  <%= javascript_include_tag 'application' %>
+  <%= javascript_include_tag 'effects' %>
+  <%= javascript_include_tag 'builder' %>
+  <%= stylesheet_link_tag 'application' %>
+  <%= stylesheet_link_tag 'user' %>
+</head>
+<body>
+  <script>document.body.className = ie ? 'ie' : (safari ? 'safari' : 'firefox');</script>
+  <div class="header">
+    <div id="logo"><a href="/">Groupswiki</a></div>
+  </div>
+  <%= yield %>
+  <div class="footer">Powered by <a href="http://www.groupswiki.com/">Groupswiki</a></div>
+  <script>
+    new Onload;
+  </script>
+</body>
+</html>

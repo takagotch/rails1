@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="14"
+   name=""
+   committed-date="2007-10-18T13:35:10.173200Z"
+   url="http://svn.brain-tokyo.net/rmind/branches/pre_release/rmind/vendor/plugins/criteriaquery"
+   last-author="tnaka"
+   kind="dir"
+   uuid="58984862-3718-437e-a6a8-1024abe64f8b"
+   repos="http://svn.brain-tokyo.net/rmind"
+   revision="119"/>
+<entry
+   name="test"
+   kind="dir"/>
+<entry
+   committed-rev="14"
+   name="HISTORY"
+   text-time="2008-02-09T07:14:07.963770Z"
+   committed-date="2007-10-18T13:35:10.173200Z"
+   checksum="0d8a7e2608b3047536964105b5e963ec"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:07.088753Z"/>
+<entry
+   committed-rev="14"
+   name="LICENSE"
+   text-time="2008-02-09T07:14:08.010646Z"
+   committed-date="2007-10-18T13:35:10.173200Z"
+   checksum="875cf1ee048bb37bcd6f8c435fc928b8"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:07.120003Z"/>
+<entry
+   committed-rev="14"
+   name="Rakefile"
+   text-time="2008-02-09T07:14:08.057521Z"
+   committed-date="2007-10-18T13:35:10.173200Z"
+   checksum="2bb3c0c11ddb3f55dddb711589ed9e51"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:07.135629Z"/>
+<entry
+   name="tasks"
+   kind="dir"/>
+<entry
+   committed-rev="14"
+   name="init.rb"
+   text-time="2008-02-09T07:14:08.088772Z"
+   committed-date="2007-10-18T13:35:10.173200Z"
+   checksum="af1ed7d41e9e1f9b68383e585d3a2a90"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:07.151254Z"/>
+<entry
+   name="lib"
+   kind="dir"/>
+<entry
+   committed-rev="14"
+   name=".svnignore"
+   text-time="2008-02-09T07:14:08.120023Z"
+   committed-date="2007-10-18T13:35:10.173200Z"
+   checksum="ee98b58a2a91c58b51a6b645912ada18"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:07.901268Z"/>
+<entry
+   committed-rev="14"
+   name="install.rb"
+   text-time="2008-02-09T07:14:08.151273Z"
+   committed-date="2007-10-18T13:35:10.173200Z"
+   checksum="cbe738c10eba4ae2da8c6859c9723e44"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:07.916894Z"/>
+<entry
+   committed-rev="14"
+   name="README"
+   text-time="2008-02-09T07:14:08.182524Z"
+   committed-date="2007-10-18T13:35:10.173200Z"
+   checksum="65ee51620ca9cf5ce4004c6b9c67d31e"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:07.932519Z"/>
+</wc-entries>

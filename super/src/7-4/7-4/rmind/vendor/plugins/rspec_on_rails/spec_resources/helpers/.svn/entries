@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2007-10-18T09:20:11.805527Z"
+   url="http://svn.brain-tokyo.net/rmind/branches/pre_release/rmind/vendor/plugins/rspec_on_rails/spec_resources/helpers"
+   last-author="tnaka"
+   kind="dir"
+   uuid="58984862-3718-437e-a6a8-1024abe64f8b"
+   repos="http://svn.brain-tokyo.net/rmind"
+   revision="119"/>
+<entry
+   committed-rev="1"
+   name="explicit_helper.rb"
+   text-time="2008-02-09T07:13:50.541560Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="47916843ed462ea1ea9e5463794545e2"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:50.369682Z"/>
+<entry
+   committed-rev="1"
+   name="plugin_application_helper.rb"
+   text-time="2008-02-09T07:13:50.557185Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="99a039ea0f981571cc02ccc73f559d6d"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:50.400932Z"/>
+<entry
+   committed-rev="1"
+   name="more_explicit_helper.rb"
+   text-time="2008-02-09T07:13:50.619687Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="9ce69d51cd082a89f5a3246115020643"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:50.447808Z"/>
+<entry
+   committed-rev="1"
+   name="view_spec_helper.rb"
+   text-time="2008-02-09T07:13:50.650937Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="797838ef39bfcd294c479e6530865402"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:13:50.463434Z"/>
+</wc-entries>

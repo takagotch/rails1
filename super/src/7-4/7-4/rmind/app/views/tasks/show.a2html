@@ -1,0 +1,32 @@
+
+
+  %= link_to 'index', :action=>:index
+  &#160;
+  %= link_to 'edit', :action=>:edit, :id=>@task.id
+
+  <<div#current_task_area<
+      <<table.noborder :task <
+        <<<------------------------------------------------
+            |rowspan || 8      ||
+            |valign  || middle ||
+            |        || Common:||Task:     || <<:text>> |
+        <<<--------------------------------------------------
+            ||| Url            || <<a :\| Attr[:href=>:url, :body=>:url]>>
+        <<<--------------------------------------------------
+            ||| Project:       || <<:project \| :name >> |
+        <<<--------------------------------------------------
+            ||| Tag:           || <<:tag>> |
+        <<<--------------------------------------------------
+            ||| Created at:    || <<:created_at \| StandardDateFormat>> |
+        <<<--------------------------------------------------
+            ||| Updated at:    || <<:updated_at \| StandardDateFormat>> |
+        <<<--------------------------------------------------
+            ||| Done at:    || <<:done_at \| StandardDateFormat>> |
+        <<<--------------------------------------------------
+            ||| Trashed at:    || <<:trashed_at \| StandardDateFormat>> |
+        <<:taggings<
+          % if $_.form_name
+          %   form_name = "tagging/#{$_.form_name}/detail"
+          %   @tagging = $_
+          %=  render :partial=>form_name, :object=>$_
+          % end

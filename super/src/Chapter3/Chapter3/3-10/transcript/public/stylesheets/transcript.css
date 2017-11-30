@@ -1,0 +1,13 @@
+.transcript{
+    border:1px solid #000000;
+    float:left;
+    width:auto;
+    height:auto;
+    margin:2px;
+    padding:2px;
+    font-size:10pt;
+}
+.operation{
+    text-align:right;
+    font-size:10pt;
+}

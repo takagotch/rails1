@@ -1,0 +1,21 @@
+<h2>
+  Create a table
+</h2>
+
+<hr />
+
+<p>
+  How many columns do you want in your table?
+
+  <%= select_tag 'columns', (2..10).map{|i|"<option value='#{i}'>#{i}</option>"}, :id => 'columns' %>
+</p>
+
+<p>
+  <small>
+    We'll create your table with 3 rows - but you can add more by pressing
+  Tab in the last cell.</small>
+</p>
+
+<p>
+  <%= submit_tag 'Create', :onclick=>"editor.insertTable()" %> or <%= link_to 'Cancel', 'javascript:;', :onclick=>'window.lightbox.destroy()' %>
+</p>

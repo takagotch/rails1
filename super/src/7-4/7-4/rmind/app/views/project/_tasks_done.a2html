@@ -1,0 +1,24 @@
+<<div#tasks_done<
+
+    <<div#done_cond<
+      show tasks done since
+      %= ' '
+      %= text_field_tag("show_done_since", @done_since.strftime("%y-%m-%d"))
+      %= button_to_function _("reload"), remote_function(:submit=> "done_cond", :url=>{:action=>:show_task })
+
+    <%
+      locals = {
+        :list_name => "tasks done list",
+        :header => [
+          { :title=>'', :width=>'30' },
+          { :title=>'task', :width=>'400' },
+          { :title=>'tag', :width=>'120' },
+          { :title=>'done_at', :width=>'100' },
+        ],
+        :show_tag => true,
+        :show_project => false,
+        :show_done_at => true,
+        :ajax_task_done => false,
+      }
+    %>
+    %= render :partial=>'task_list', :object=>@tasks_done, :locals=>locals

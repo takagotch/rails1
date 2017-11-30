@@ -1,0 +1,12 @@
+
+
+
+    <<h5<
+      projects
+
+    <<div.project_list [project_tree] <
+       <<span id="prj_$2" title="$1" :| NVarForAttr[:name, :id] <
+         %= link_to $_[:name], :controller=>:project, :action=>:show, :id=>$_[:id]
+       <br />
+       % hover= %[function(task, project) { $('message_area').update(project.title); }]
+       %= drop_receiving_element("prj_#{$_[:id]}", :onHover => hover, :url => { :controller=>:project, :action => "move_task", :to_project_id=>$_[:id]})

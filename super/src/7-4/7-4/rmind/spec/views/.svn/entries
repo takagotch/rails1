@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="80"
+   name=""
+   committed-date="2008-01-09T07:27:07.847802Z"
+   url="http://svn.brain-tokyo.net/rmind/branches/pre_release/rmind/spec/views"
+   last-author="tnaka"
+   kind="dir"
+   uuid="58984862-3718-437e-a6a8-1024abe64f8b"
+   repos="http://svn.brain-tokyo.net/rmind"
+   revision="119"/>
+<entry
+   name="cui"
+   kind="dir"/>
+<entry
+   name="main"
+   kind="dir"/>
+<entry
+   name="tasks"
+   kind="dir"/>
+<entry
+   name="project"
+   kind="dir"/>
+<entry
+   name="tag"
+   kind="dir"/>
+<entry
+   name="user"
+   kind="dir"/>
+</wc-entries>

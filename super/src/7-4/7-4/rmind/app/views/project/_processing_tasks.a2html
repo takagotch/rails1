@@ -1,0 +1,17 @@
+<<div#processing_tasks<
+
+    <%
+      locals = {
+        :list_name => "tasks done list",
+        :header => [
+          { :title=>'', :width=>'30' },
+          { :title=>'task', :width=>'500' },
+          { :title=>'tag', :width=>'120' },
+        ],
+        :show_tag => true,
+        :show_project => false,
+        :show_done_at => false,
+        :ajax_task_done => false,
+      }
+    %>
+    %= render :partial=>'task_list', :object=>@processing_tasks, :locals=>locals

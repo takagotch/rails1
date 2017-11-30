@@ -1,0 +1,10 @@
+<div class="col1">
+  <p>
+    &nbsp; &nbsp;&laquo;&nbsp; <%= link_to 'Back to Groupswiki', 'http://www.groupswiki.com/' %>
+    
+    <% if current_user %>
+      <br />
+      &nbsp; &nbsp;&raquo;&nbsp; <%= link_to 'Log out', logout_url %>
+    <% end %>
+  </p>
+</div>

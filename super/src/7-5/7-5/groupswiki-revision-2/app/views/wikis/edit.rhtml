@@ -1,0 +1,67 @@
+<div class="col2">
+
+<h1>
+  Wiki settings
+</h1>
+
+<%= render_flash %>
+
+<!--
+  <p>
+    &gt; <%# link_to 'Download this wiki as a .zip', export_wiki_url %>
+  </p>
+-->
+
+<p>
+  These settings affect <%= link_to h(current_wiki.name), home_url %>:
+</p>
+
+<% form_for(@wiki) do |f| %>
+
+  <h3>
+    CSS
+  </h3>
+  
+  <div class="f">
+    <label>CSS Styleesheet</label>
+    <%= f.text_area 'css', :style => 'width: 100%; height: 10em' %>
+    <br />
+    This is the CSS that is used for the site.
+  </div>
+
+  <div class="f">
+    <label>Author-selectable classes</label>
+    <%= f.text_area 'classes', :style => 'width: 100%; height: 10em' %>
+    <br />
+    Any classes in this textbox will be available as block level and inline styles to people
+    editing your pages.
+  </div>
+  
+  <h3>
+    HTML editing
+  </h3>
+
+  <p>
+    You can edit the header and footer of your html page here. Groupswiki will still
+    add some other stuff to the page for editing purposes.
+  </p>
+  
+  <div class="f">
+    <label>Header HTML</label>
+    <%= f.text_area 'header', :style => 'width: 100%; height: 10em' %>
+    <br />
+    This is the HTML that comes before the page content.
+  </div>
+
+  <div class="f">
+    <label>Footer HTML</label>
+    <%= f.text_area 'footer', :style => 'width: 100%; height: 10em' %>
+    <br />
+    This is the HTML that comes after the page content.
+  </div>
+
+	<%= submit_tag 'Save' %>	
+<% end %>
+</div>
+
+<%= render_sidebar %>

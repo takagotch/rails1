@@ -1,0 +1,106 @@
+<%(BeforeCompile)
+  use_macro(FormTag)
+%>
+
+  <hr />
+  <<div<
+    <<form_tag<
+      <url action="add_task" />
+      %= text_field_tag 'text',nil
+      %= submit_tag "add_task", :class => "submit"
+
+<<form_tag<
+  <url action="index" />
+  <method method="get" />
+  <<div#inbox<
+
+    <h2>inbox</h2>
+
+    <<table ?[ @inbox.size > 0 ] <
+      <<tr<
+        <th>task</th>
+        <th>tags</th>
+      <<tr:inbox<
+        <<td:text>>
+        <<td:tag>>
+        <<td<
+          %= link_to 'edit', :action=>:edit_task, :id=>$_.id
+    <<?![ @inbox.size > 0 ] <
+      (There is no task in INBOX now.)
+
+  <hr />
+  <<div#next_actions<
+    <h2>next actions</h2>
+    % ctags = ContextTag.find(:all, :conditions =>['user_id = ?', @user.id]).collect do |t|
+    %   [t.name, t.id]
+    % end + [["all", nil]]
+    % options = options_for_select(ctags, (@context ? @context.id : nil))
+    %= select_tag("na", options)
+    %= submit_tag "reload", :class => "submit"
+    <<table ?[ @next_actions.size > 0 ] <
+      <<tr<----------------------------------------------------
+       ||| project || task || tags ||
+      <<:next_actions {
+          :tr_class => cycle('list-line-odd', 'list-line-even'),
+        } <
+        <<tr valign="top" :| Attr[:class => :tr_class] <
+          <<td:project<
+            %= link_to $_.name, :action=>:projects, :id=>$_.id
+          <<td:text>>
+          <<td<
+            <<:tags
+              {
+                 :url => url_for(:action=>:tags, :id=>$_.id)
+              } <
+              <<a : | Attr[:href=>:url, :body=>:name] >>
+          <<td<
+            %= link_to 'edit', :action=>:edit_task, :id=>$_.id
+
+  <hr />
+  <<div#schedules<
+    <h2>schedules</h2>
+    %= text_field_tag("sch", @sch.strftime("%y-%m-%d"))
+    %= submit_tag "reload", :class => "submit"
+    <<table ?[ @schedules.size > 0 ] <
+      <<tr<----------------------------------------------------
+       ||| project || task || tags || preparation
+      <<tr:schedules<
+        <<td:project | :name >>
+        <<td:text>>
+        <<td:tag>>
+        <<td<
+          %= link_to 'edit', :action=>:edit_task, :id=>$_.id
+
+  <hr />
+  <<div#done<
+    <h2>tasks done today</h2>
+
+    <<table<
+      <<tr<----------------------------------------------------
+       ||| project || task || done_at ||
+      <<tr:done_today<
+        <<td:project<
+          %= link_to $_.name, :action=>:projects, :id=>$_.id
+        <<td:text>>
+        <<td:done_at | StandardDateFormat >>
+        <<td<
+          %= link_to 'edit', :action=>:edit_task, :id=>$_.id
+
+  <hr />
+  <<div#projects<
+    <h2>Projects to review</h2>
+
+    <<table<
+      <<tr<----------------------------------------------------
+       ||| name || last review || next review ||
+      <<tr:project_to_review<
+        <<td<
+          %= link_to $_.name, :action=>:projects, :id=>$_.id
+        <<td<
+          <<:reviewed_at ?![$_.blank?] <
+            << :| StandardDateFormat >>
+
+        <<td<
+          <<:next_review ?[$_]<
+            << :| StandardDateFormat >>
+

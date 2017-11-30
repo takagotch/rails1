@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2007-10-18T09:20:11.805527Z"
+   url="http://svn.brain-tokyo.net/rmind/branches/pre_release/rmind/public/stylesheets/spinelz"
+   last-author="tnaka"
+   kind="dir"
+   uuid="58984862-3718-437e-a6a8-1024abe64f8b"
+   repos="http://svn.brain-tokyo.net/rmind"
+   revision="119"/>
+<entry
+   committed-rev="1"
+   name="switcher.css"
+   text-time="2008-02-09T07:14:31.886104Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="f2542d5727b8fb8077e28ad49e2b2052"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:31.401720Z"/>
+<entry
+   committed-rev="1"
+   name="menubar.css"
+   text-time="2008-02-09T07:14:31.932980Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="abda256bf4d164943ffedb25486e64b5"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:31.432970Z"/>
+<entry
+   committed-rev="1"
+   name="treeview.css"
+   text-time="2008-02-09T07:14:31.964230Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="c657b382720fdd52e0fb10628c642a9d"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:31.448596Z"/>
+<entry
+   committed-rev="1"
+   name="modal.css"
+   text-time="2008-02-09T07:14:32.042357Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="f2d3c8fa2868e3029ba50aff55e125fb"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:31.526722Z"/>
+<entry
+   committed-rev="1"
+   name="timepicker.css"
+   text-time="2008-02-09T07:14:32.011106Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="85fd4c8cd4ba12788489bcce20392247"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:31.479846Z"/>
+<entry
+   committed-rev="1"
+   name="accordion.css"
+   text-time="2008-02-09T07:14:32.089233Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="6dd91f714c7677bdce66f91c4613a118"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:31.542347Z"/>
+<entry
+   committed-rev="1"
+   name="toolbar.css"
+   text-time="2008-02-09T07:14:32.136109Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="43bcdc93187fa1cf5da736e7faddadf6"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:31.557973Z"/>
+<entry
+   committed-rev="1"
+   name="navPanel.css"
+   text-time="2008-02-09T07:14:32.167359Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="e59aa34a4f449bf535816db815a3f182"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:31.604849Z"/>
+<entry
+   committed-rev="1"
+   name="window.css"
+   text-time="2008-02-09T07:14:32.292362Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="aed95f49eaafd0a66ea42d34807f0873"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:31.636099Z"/>
+<entry
+   committed-rev="1"
+   name="calendar.css"
+   text-time="2008-02-09T07:14:32.323612Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="5342dde9e7a422f2c7b976eb67ffc8fa"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:31.651724Z"/>
+<entry
+   committed-rev="1"
+   name="datepicker.css"
+   text-time="2008-02-09T07:14:32.386114Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="fe98ce3859e812eaf1f841e40bae482c"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:31.714226Z"/>
+<entry
+   committed-rev="1"
+   name="selectableTable.css"
+   text-time="2008-02-09T07:14:32.354863Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="561d34762a14cda7dcd7d9765502e986"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:31.698600Z"/>
+<entry
+   committed-rev="1"
+   name="tabBox.css"
+   text-time="2008-02-09T07:14:32.417364Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="a8c0d512bb7d4388e51307799a8357aa"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:31.761102Z"/>
+<entry
+   committed-rev="1"
+   name="sideBarBox.css"
+   text-time="2008-02-09T07:14:32.432989Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="af575dff67f49768c3223519b21c4b78"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:31.776727Z"/>
+<entry
+   committed-rev="1"
+   name="sortableTable.css"
+   text-time="2008-02-09T07:14:32.479865Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="1d1e74df8bd1fc9458f49c1d341c1c53"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:31.792352Z"/>
+<entry
+   committed-rev="1"
+   name="grid.css"
+   text-time="2008-02-09T07:14:32.511116Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="67f6b262e335bbd97ff3f9fa5aa39b0c"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:31.807977Z"/>
+<entry
+   committed-rev="1"
+   name="balloon.css"
+   text-time="2008-02-09T07:14:32.526741Z"
+   committed-date="2007-10-18T09:20:11.805527Z"
+   checksum="f4487d6863d37fd967137e19ac5a32dd"
+   last-author="tnaka"
+   kind="file"
+   prop-time="2008-02-09T07:14:31.854853Z"/>
+</wc-entries>

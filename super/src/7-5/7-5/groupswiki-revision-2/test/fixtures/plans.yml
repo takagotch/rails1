@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+little:
+  id: 1
+  name: Little
+  monthly_fee: 3
+  
+middlesized:
+  id: 2
+  name: Middle-sized
+  monthly_fee: 9
+  
+big:
+  id: 3
+  name: Big!
+  monthly_fee: 18

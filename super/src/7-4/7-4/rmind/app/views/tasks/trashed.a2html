@@ -1,0 +1,24 @@
+<%(BeforeCompile)
+  use_macro(FormRemoteTag)
+%>
+
+  <<div<
+    <<h2<
+      Trashed Tasks
+
+    <<div :tasks_by_date<
+      <<h3 :date | [:strftime, "%y-%m-%d"] <
+
+      <<table<
+        <<<--------------------------------------------------------------
+         |width   ||  110     || 400  || 60      || 60      ||
+         |        ||  project || task || created || trash   || del
+        <<:tasks | TaskHelper <
+          <<tr :| Attr[:id=>:task_id, :class=>:cycle_class] <
+            <<td :project_with_link >>
+            <<td :task_window_link >>
+            <<td :created_at | [:strftime, "%y-%m-%d"] >>
+            <<td :trashed_at | [:strftime, "%y-%m-%d"] >>
+            <<td<
+              %= link_to '[X]', { :action=>:destroy, :id=>$_.id }, :confirm=>'really?'
+

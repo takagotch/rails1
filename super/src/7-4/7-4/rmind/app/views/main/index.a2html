@@ -1,0 +1,68 @@
+
+  <<div<
+      %  form_remote_tag :url=>{ :action=>:add_task } do
+      %=  text_field_tag 'text',nil, :size=>70
+      %=  submit_tag _("add_task"), :class => "submit"
+      %  end
+
+  <hr />
+  <<div#inbox_area<
+    <<h2#inbox_title<
+      Inbox
+
+    %= render :partial=>'inbox'
+
+    <<script type="text/javascript" <
+      %= %[new SubTitleWithSwitch('inbox_title', 'inbox')]
+
+    <hr />
+
+  <<div#next_actions_area<
+    <<h2#next_actions_title<
+      Next Actions
+    %= render :partial=>'next_actions'
+
+    <<script type="text/javascript" <
+      %= %[new SubTitleWithSwitch('next_actions_title', 'next_actions')]
+    <hr />
+
+  <<div#schedule_area<
+    <<h2#schedule_title<
+      Schedules
+    %= render :partial=>'schedules'
+
+    <<script type="text/javascript" <
+      %= %[new SubTitleWithSwitch('schedule_title', 'schedules')]
+    <hr />
+
+
+  <<div#tasks_done_area<
+    <<h2#tasks_done_title<
+      Tasks done
+    %= render :partial=>'tasks_done'
+
+    <<script type="text/javascript" <
+      %= %[new SubTitleWithSwitch('tasks_done_title', 'tasks_done')]
+    <hr />
+
+  <<div#projects_area<
+    <<h2#projects_title<
+      Projects to review
+
+    <<table#projects<
+      <<tr<----------------------------------------------------
+       ||| name || last review || next review ||
+      <<tr:project_to_review<
+        <<td<
+          %= link_to $_.name, :controller=>:project, :action=>:show, :id=>$_.id
+        <<td<
+          <<:reviewed_at ?![$_.blank?] <
+            << :| StandardDateFormat >>
+
+        <<td<
+          <<:next_review ?[$_]<
+            << :| StandardDateFormat >>
+
+    <<script type="text/javascript" <
+      %= %[new SubTitleWithSwitch('projects_title', 'projects')]
+    <hr />

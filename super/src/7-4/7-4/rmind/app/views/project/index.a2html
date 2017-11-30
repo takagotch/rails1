@@ -1,0 +1,42 @@
+<<div#projects<
+  <h2>Project</h2>
+
+  <<table<
+    <<tr<----------------------------------------------------
+     ||| * || name || last review || interval || next review ||
+    <<:projects
+         {
+           :url => url_for(:action=>:show, :id=> $_[:project].id),
+           :mark => '--' * $_[:level],
+           :name => $_[:project].name,
+           :reviewed_at => $_[:project].reviewed_at,
+           :next_review => $_[:project].next_review,
+           :review_interval => $_[:project].review_interval.to_s,
+           :prj_id => $_[:project].id
+         } <
+     <<tr<
+      <<td<
+        <<a :| Attr[:href=>:url, :body=>:name] <
+          [S]
+      <<td<
+        <<:mark>>
+        <<span id="prj_$1" href="$2":| NVar[:prj_id, :url, :name]<
+          $3
+        <<script type="text/javascript" <
+          <<%<
+            new Draggable('prj_<%= $_.prj_id %>');
+        %= drop_receiving_element("prj_#{$_.prj_id}", :url => { :action => "move", :target_id=>$_.prj_id })
+
+      <<td<
+        <<:reviewed_at ?![$_.blank?] <
+          << :| StandardDateFormat >>
+
+      <<td<
+        %= $_[:review_interval]
+
+      <<td<
+        <<:next_review ?[$_]<
+          << :| StandardDateFormat >>
+
+
+  %= link_to 'new project', :action=>:new
