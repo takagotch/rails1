@@ -1,0 +1,36 @@
+= Depotオンラインストア
+
+このアプリケーションは、カタログ、カート、注文を備えたオンラインストアを実装するものです。
+
+これは次の3つの主セクションに分かれます:
+
+* カタログ、カート、チェックアウトを管理する購入者側のアプリケーション。
+  4つのモデル (Cart, LineItem, Order, Product) とそれに関連するコントローラ
+  とビューで実装されています。
+  また、店舗側の StoreController と、セッション管理用の SessionsController があります。
+
+* 管理者だけが販売側の中身（商品管理、注文のフルフィルメント）にアクセスできます。
+  これは LoginController によって実装され、
+  ApplicationController#authorize メソッドで実施されます。
+  また、Users と Carts のリソースも利用します。
+
+このコードは書籍 {Agile Web Development with Rails}[http://www.pragprog.com/titles/rails4/agile-web-development-with-rails-4th-edition]
+のための例題として作成されました。現実のオンラインストアで動かすもの
+ではありません。
+
+=== 作者
+
+ * Sam Ruby, IBM
+ * Dave Thomas, The Pragmatic Programmers, LLC
+ * David Heinemeier Hansson, 37signals
+
+=== 保証について
+
+このコードは教育目的のみで提供され、完全に無保証です。
+実在のアプリケーションで使うべきではありません。
+
+== 著作権
+
+This code is Copyright (c) 2010 The Pragmatic Programmers, LLC.
+
+Rubyと同一のライセンス下でリリースされます。

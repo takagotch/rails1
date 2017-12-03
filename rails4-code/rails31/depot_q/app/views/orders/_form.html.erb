@@ -1,0 +1,45 @@
+<!--
+ Excerpted from "Agile Web Development with Rails, 4th Ed.",
+ published by The Pragmatic Bookshelf.
+ Copyrights apply to this code. It may not be used to create training material, 
+ courses, books, articles, and the like. Contact us if you are in doubt.
+ We make no guarantees that this code is fit for any purpose. 
+ Visit http://www.pragmaticprogrammer.com/titles/rails4 for more book information.
+
+ 日本語版については http://ssl.ohmsha.co.jp/cgi-bin/menu.cgi?ISBN=978-4-274-06866-9
+-->
+<%= form_for(@order) do |f| %>
+  <% if @order.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@order.errors.count, "error") %>
+      prohibited this order from being saved:</h2>
+
+      <ul>
+      <% @order.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name, size: 40 %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br />
+    <%= f.text_area :address, rows: 3, cols: 40 %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, size: 40 %>
+  </div>
+  <div class="field">
+    <%= f.label :pay_type %><br />
+    <%= f.select :pay_type, Order::PAYMENT_TYPES,
+                  prompt: 'お支払い方法を選択してください' %>
+  </div>
+  <div class="actions">
+    <%= f.submit '注文する' %>
+  </div>
+<% end %>

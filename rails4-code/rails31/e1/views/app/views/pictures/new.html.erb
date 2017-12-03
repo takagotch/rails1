@@ -1,0 +1,28 @@
+<!--
+ Excerpted from "Agile Web Development with Rails, 4th Ed.",
+ published by The Pragmatic Bookshelf.
+ Copyrights apply to this code. It may not be used to create training material, 
+ courses, books, articles, and the like. Contact us if you are in doubt.
+ We make no guarantees that this code is fit for any purpose. 
+ Visit http://www.pragmaticprogrammer.com/titles/rails4 for more book information.
+
+ 日本語版については http://ssl.ohmsha.co.jp/cgi-bin/menu.cgi?ISBN=978-4-274-06866-9
+-->
+<%= form_for(@picture, 
+            url: {action: 'create'}, 
+            html: {multipart: true}) do |form| %>
+
+    <% if @picture.errors.any? %>
+      <h2><%= @picture.errors.count %>個のエラーが発生しました。</h2>
+      <ul>
+      <% @picture.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    <% end %>
+
+    コメント:             <%= form.text_field("comment") %><br/>
+    アップロードする画像: <%= form.file_field("uploaded_picture") %><br/>
+
+    <%= submit_tag("ファイルをアップロード") %>
+<% end %>
